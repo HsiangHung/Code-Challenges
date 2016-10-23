@@ -134,7 +134,7 @@ class Solution(object):
         
     def traverse(self, node, path, pathSum):
         if node.left == None and node.right == None:
-            #print (path)
+            #print (path):
             self.sum[pathSum] = path
             return
 
@@ -146,5 +146,34 @@ class Solution(object):
 ```
 
 
-
-
+## Q4 Invert Binary Tree
+```Python
+class Solution(object):
+    def invertTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        if root == None: return root
+        self.traverse(root)
+        return root
+        
+    def traverse(self, root):
+        if root.left == None and root.right == None: return
+    
+        if root.left != None and root.right != None:
+            Left = root.left
+            self.traverse(Left)
+            Right = root.right
+            self.traverse(Right)
+            root.right = Left
+            root.left = Right
+        elif root.left != None and root.right == None:
+            self.traverse(root.left)
+            root.right = root.left
+            root.left = None
+        elif root.left == None and root.right != None:
+            self.traverse(root.right)
+            root.left = root.right
+            root.right = None
+```
