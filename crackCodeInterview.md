@@ -66,7 +66,7 @@ class Solution(object):
             self.path[node.val] = path
             self.traverse(node.right, str(node.right.val)+','+path)
 ```
-but the followings don't work:
+but the followings:
 ```Python
     def lowestCommonAncestor(self, root, p, q):
         self.path = {}
@@ -89,16 +89,8 @@ but the followings don't work:
             self.path[node.val] = path
             self.wrongTraverse(node.right, path.append(node.right.val))
 ```
-will give all zero. ```print [5].append(6) gives None``` will give ```None```.
-```Python
-    def lowestCommonAncestor(self, root, p, q):
-        self.path = {}
-        self.wrongTraverse2(root, [root.val])
-        a1 = self.path[p.val]
-        a2 = self.path[q.val]
-        for ans1 in a1:
-            if ans1 in a2: return int(ans1)
-            
+or
+```
     def wrongTraverse2(self, node, path):
         if node.left == None and node.right == None:
             self.path[node.val] = path
@@ -114,7 +106,10 @@ will give all zero. ```print [5].append(6) gives None``` will give ```None```.
             path.append(node.right.val)
             self.wrongTraverse2(node.right, path)
 ```
-will give all nodes in the ```path```, won't generate each list for each path.
+don't work. The first one, pass ```list.append(x)``` will give ```None```, so
+it won't give anything. (One can check ```print [5].append(6)``` gives ```None```).
+The second one append ```x``` before passing in recursion. But doing this
+will give all nodes in the ```path``` list; won't generate each list for each path.
 
 
 
