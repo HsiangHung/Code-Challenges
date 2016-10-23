@@ -36,7 +36,7 @@ gives
 
 
 
-## Q2: Lowest Common Ancestor of a Binary Search Tree: 
+## Q2: Lowest Common Ancestor of a Binary Search Tree
 ### Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 ```Python
 class Solution(object):
@@ -113,7 +113,7 @@ The second one is to append ```x``` before passing ```path``` in recursion. But 
 will append all nodes in the ```path``` list; won't generate each list for each path.
 
 
-## Q3: Path Sum: 
+## Q3: Path Sum
 ### Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 ```Python
 class Solution(object):
