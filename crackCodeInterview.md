@@ -112,8 +112,36 @@ The second one is to append ```x``` before passing ```path``` in recursion. But 
 will append all nodes in the ```path``` list; won't generate each list for each path.
 
 
+#### Q3: Path Sum
+```Python
+class Solution(object):
+    def hasPathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: bool
+        """
+        if root == None: return False
+        
+        self.sum = {}
+        self.traverse(root, str(root.val), root.val)
+        
+        if sum in self.sum: return True
+        return False
 
+        
+    def traverse(self, node, path, pathSum):
+        if node.left == None and node.right == None:
+            #print (path)
+            self.sum[pathSum] = path
+            return
 
+        if node.left != None:
+            self.traverse(node.left, str(node.left.val)+'->'+path, pathSum+node.left.val)
+                
+        if node.right != None:
+            self.traverse(node.right, str(node.right.val)+'->'+path, pathSum+node.right.val)
+```
 
 
 
