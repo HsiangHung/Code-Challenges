@@ -108,8 +108,8 @@ and
 ```
 don't work. The first one, passing ```list.append(x)``` will give ```None```, so
 it won't give anything. (One can check ```print [5].append(6)``` gives ```None```).
-The second one append ```x``` before passing in recursion. But doing this
-will give all nodes in the ```path``` list; won't generate each list for each path.
+The second one is to append ```x``` before passing ```path``` in recursion. But doing this
+will append all nodes in the ```path``` list; won't generate each list for each path.
 
 
 
