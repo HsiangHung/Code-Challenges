@@ -89,8 +89,8 @@ but the followings:
             self.path[node.val] = path
             self.wrongTraverse(node.right, path.append(node.right.val))
 ```
-or
-```
+and
+```Python
     def wrongTraverse2(self, node, path):
         if node.left == None and node.right == None:
             self.path[node.val] = path
