@@ -233,3 +233,29 @@ class Solution(object):
             
         return False
 ```
+
+## Q7: Minimum Depth of Binary Tree
+### Given a binary tree, find its minimum depth.
+```Python
+class Solution(object):
+    def minDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root == None: return 0
+        self.min = float('inf')
+        self.traverse(root, 1)
+        return self.min
+        
+    def traverse (self, root, depth):
+        if root.left == None and root.right == None: 
+            self.min = min(self.min, depth)
+            return
+    
+        if root.left != None:
+            self.traverse(root.left, depth+1)
+        
+        if root.right != None:
+            self.traverse(root.right, depth+1)
+```
