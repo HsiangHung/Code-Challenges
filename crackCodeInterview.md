@@ -1,5 +1,5 @@
 
-## A. Moving-Rating Query Exercise
+## A. Tree 
 
 
 #### Q1: Given a binary tree, print all root-to-leaf paths
