@@ -33,9 +33,6 @@ gives
 1->6->8->5
 ```
 
-
-
-
 ## Q2: Lowest Common Ancestor of a Binary Search Tree
 ### Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 ```Python
@@ -178,7 +175,33 @@ class Solution(object):
             root.right = None
 ```
 
-## Q5: 
+## Q5: Same Tree
+### Given two binary trees, write a function to check if they are equal or not.
+```Python
+class Solution(object):
+    def isSameTree(self, p, q):
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
+        if p == None and q == None: return True
+        if p == None or q == None: return False
+        return self.traverse(p,q)
+        
+    def traverse(self, p, q):
+        if p.val != q.val: return False
+        if p.left == None and p.right == None and q.left == None and q.right == None: return True
+
+        if p.left != None and q.left != None and p.right != None and q.right != None:
+            return self.traverse(p.left, q.left) and self.traverse(p.right, q.right)
+        elif p.left != None and q.left != None and p.right == None and q.right == None:
+            return self.traverse(p.left, q.left)
+        elif p.left == None and q.left == None and  p.right != None and q.right != None:
+            return self.traverse(p.right, q.right)
+        else:    
+            return False
+```
 
 ## Q6: Symmetric Tree
 ### Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, the binary tree ```[1,2,2,3,4,4,3]``` is symmetric, but ```[1,2,2,null,3,null,3]``` is not.
