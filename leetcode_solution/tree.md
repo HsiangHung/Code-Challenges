@@ -1,5 +1,5 @@
 
-# A. Tree 
+# Datastructure: Tree 
 
 
 ## Q1: Given a binary tree, print all root-to-leaf paths.
@@ -258,4 +258,34 @@ class Solution(object):
         
         if root.right != None:
             self.traverse(root.right, depth+1)
+```
+
+## Q8: Balanced Binary Tree
+### Given a binary tree, determine if it is height-balanced.
+```Python
+class Solution(object):
+    def isBalanced(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if root == None: return True
+        self.isBalanced = True
+        self.traverse(root)
+        return self.isBalanced
+        
+    def traverse(self, root):
+        if root.left == None and root.right == None: return 0
+        Ldepth = 0
+        Rdepth = 0
+        
+        if root.left != None:
+            Ldepth = self.traverse(root.left)+1
+            
+        if root.right != None:
+            Rdepth = self.traverse(root.right)+1
+            
+        if abs(Ldepth-Rdepth) >1: self.isBalanced = False
+ 
+        return max(Ldepth, Rdepth)
 ```
