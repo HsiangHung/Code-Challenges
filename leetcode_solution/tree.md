@@ -290,3 +290,30 @@ class Solution(object):
  
         return max(Ldepth, Rdepth)
 ```
+
+## Q9: Sum of Left Leaves
+### Find the sum of all left leaves in a given binary tree.
+```Python
+class Solution(object):
+    def sumOfLeftLeaves(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root == None: return 0
+        self.leftSum = 0
+        self.isLeaf(root)
+        return self.leftSum
+        
+    def isLeaf(self, root):
+        if root.left == None and root.right == None: return True
+    
+        if root.left != None:
+            if self.isLeaf(root.left) == True: 
+                self.leftSum += root.left.val
+            
+        if root.right != None:
+            self.isLeaf(root.right)
+            
+        return False
+```
