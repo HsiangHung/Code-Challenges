@@ -1,6 +1,14 @@
 
 # Datastructure: Tree 
 
+### The tree class in Leetcode is defined as
+```Python
+class TreeNode(object):
+     def __init__(self, x):
+         self.val = x
+         self.left = None
+         self.right = None
+```
 
 ## Q1: Binary Tree Paths
 ### Given a binary tree, return all root-to-leaf paths.
