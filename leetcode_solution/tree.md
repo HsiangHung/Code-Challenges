@@ -2,7 +2,8 @@
 # Datastructure: Tree 
 
 
-## Q1: Given a binary tree, print all root-to-leaf paths.
+## Q1: Binary Tree Paths
+### Given a binary tree, return all root-to-leaf paths.
 ```
 input: [5,4,8,11,null,13,6,7,2,null,null,null,1]
 ```
