@@ -325,3 +325,35 @@ class Solution(object):
             
         return False
 ```
+
+## Q10: Closest Binary Search Tree Value
+### Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
+```Python
+class Solution(object):
+    def closestValue(self, root, target):
+        """
+        :type root: TreeNode
+        :type target: float
+        :rtype: int
+        """
+        self.closetNode = float('inf')
+        self.traverse(root, target)
+        return self.closetNode
+        
+    def traverse(self, node, target):
+        print node.val
+        
+        if float(node.val) == target:
+            self.closetNode = node.val
+            return
+        
+        if abs(self.closetNode-target) > abs(node.val-target): self.closetNode = node.val
+        
+        if node.left == None and node.right == None: return
+    
+        if node.val > target and node.left != None:
+            self.traverse(node.left, target)
+        
+        if node.val < target and node.right != None:
+            self.traverse(node.right, target)
+```
