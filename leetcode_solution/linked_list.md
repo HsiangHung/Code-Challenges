@@ -39,12 +39,11 @@ class Solution(object):
 
 ```Python
 for cv in range(num_cvFold):   ### using cross-validation                                          
-    weights = [.8, .2]
-    train, val = self.trainData.randomSplit(weights, seed=randint(0,100))
-    model = ALS.train(train,rank,seed=self.seed,iterations=self.iterations,lambda_=reg)
-    X_val = val.map(lambda x: (x[0], x[1]))
-    predictions = model.predictAll(X_val).map(lambda r: ((r[0], r[1]), r[2]))
-    rates_and_preds = val.map(lambda r: ((int(r[0]), int(r[1])), float(r[2]))).join(predictions)
-    RMSE = RMSE+math.sqrt(rates_and_preds.map(lambda r: (r[1][0] - r[1][1])**2).mean())
-    MAE = MAE+rates_and_preds.map(lambda r: abs(r[1][0] - r[1][1])).mean()
+     train, val = self.trainData.randomSplit(weights = [0.8,0.2], seed=randint(0,100))
+     model = ALS.train(train,rank,seed=self.seed,iterations=self.iterations,lambda_=reg)
+     X_val = val.map(lambda x: (x[0], x[1]))
+     predictions = model.predictAll(X_val).map(lambda r: ((r[0], r[1]), r[2]))
+     rates_and_preds = val.map(lambda r: ((int(r[0]), int(r[1])), float(r[2]))).join(predictions)
+     RMSE = RMSE+math.sqrt(rates_and_preds.map(lambda r: (r[1][0] - r[1][1])**2).mean())
+     MAE = MAE+rates_and_preds.map(lambda r: abs(r[1][0] - r[1][1])).mean()
 ```
