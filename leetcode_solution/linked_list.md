@@ -47,3 +47,10 @@ for cv in range(num_cvFold):   ### using cross-validation
      RMSE = RMSE+math.sqrt(rates_and_preds.map(lambda r: (r[1][0] - r[1][1])**2).mean())
      MAE = MAE+rates_and_preds.map(lambda r: abs(r[1][0] - r[1][1])).mean()
 ```
+
+```Python
+        KMeans.train(parsedData, k_clusters, maxIterations=100,
+                                runs=20, initializationMode="k-means||")
+        WSSSE = parsedData.map(lambda point: error(point)).reduce(lambda x, y: x + y)
+        print("Within Set Sum of Squared Error = " + str(WSSSE))
+```
