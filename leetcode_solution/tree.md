@@ -61,16 +61,13 @@ class Solution(object):
             if ans1 in a2: return int(ans1)
             
     def traverse(self, node, path):
-        if node.left == None and node.right == None:
-            self.path[node.val] = path
-            return
+        self.path[node.val] = path
+        if node.left == None and node.right == None: return
             
         if node.left != None:
-            self.path[node.val] = path
             self.traverse(node.left, str(node.left.val)+','+path)
                 
         if node.right != None:
-            self.path[node.val] = path
             self.traverse(node.right, str(node.right.val)+','+path)
 ```
 but the followings:
