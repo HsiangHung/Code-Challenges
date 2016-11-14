@@ -355,7 +355,7 @@ class Solution(object):
             self.traverse(node.right, target)
 ```
 
-## Q11: Leetcode#366 Find Leaves of Binary Tree
+## Q11: Leetcode#366, Find Leaves of Binary Tree
 ### Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
 ```Python
 class Solution(object):
@@ -383,7 +383,6 @@ class Solution(object):
         if root.left != None:
             if self.traverse(root.left) == 'Leaves':
                 root.left = None
-            
             
         if root.right != None:
             if self.traverse(root.right) == 'Leaves':
