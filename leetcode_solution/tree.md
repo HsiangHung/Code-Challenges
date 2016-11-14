@@ -354,3 +354,38 @@ class Solution(object):
         if node.val < target and node.right != None:
             self.traverse(node.right, target)
 ```
+
+## Q11: Leetcode#366 Find Leaves of Binary Tree
+### Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
+```Python
+class Solution(object):
+    def findLeaves(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if root == None: return []
+        
+        self.leavesDepth = []
+        while root.left != None or root.right != None:
+            self.leaves = []
+            self.traverse(root)
+            self.leavesDepth.append(self.leaves)
+            
+        self.leavesDepth.append([root.val])
+        return self.leavesDepth
+        
+    def traverse(self, root):
+        if root.left == None and root.right == None: 
+            self.leaves.append(root.val)
+            return 'Leaves'
+        
+        if root.left != None:
+            if self.traverse(root.left) == 'Leaves':
+                root.left = None
+            
+            
+        if root.right != None:
+            if self.traverse(root.right) == 'Leaves':
+                root.right = None
+```
