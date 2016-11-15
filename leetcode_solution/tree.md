@@ -10,6 +10,8 @@ class TreeNode(object):
          self.right = None
 ```
 
+# Easy level
+
 ## Q1: Binary Tree Paths
 ### Given a binary tree, return all root-to-leaf paths.
 ```
@@ -387,4 +389,51 @@ class Solution(object):
         if root.right != None:
             if self.traverse(root.right) == 'Leaves':
                 root.right = None
+```
+
+# Medium level
+
+## Q2: [Leetcode#156]Binary Tree Upside Down
+
+### Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.
+```Python
+class Solution(object):
+    def upsideDownBinaryTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        if root == None: return root
+        self.traverse(root)
+        root.left = None
+        root.right = None
+        return self.root
+        
+    def traverse(self, root):
+        '''self.root is the upside down root'''
+        if root.left == None: 
+            self.root = root
+            return
+        
+        if root.left != None:
+            self.traverse(root.left)
+            
+        if root.right != None:
+            (root.left).left = root.right
+        else:
+            (root.left).left = None
+
+        (root.left).right = root
+```
+`self.root` is the new root after upside down (the left leaf of the bottom layer). One can define another traverse function and call the function `self.traverse2(self.root)` in the main function to check:
+```Python
+    def traverse2(self, root):
+        print root.val
+        if root.left == None and root.right == None: return
+        
+        if root.left != None:
+            self.traverse2(root.left)
+            
+        if root.right != None:
+            self.traverse2(root.right)
 ```
