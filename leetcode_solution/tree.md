@@ -357,7 +357,7 @@ class Solution(object):
             self.traverse(node.right, target)
 ```
 
-## Q11: Leetcode#366, Find Leaves of Binary Tree
+## Q11: [Leetcode#366] Find Leaves of Binary Tree
 ### Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
 ```Python
 class Solution(object):
@@ -393,7 +393,7 @@ class Solution(object):
 
 # Medium level
 
-## Q2: [Leetcode#156]Binary Tree Upside Down
+## Q2: [Leetcode#156] Binary Tree Upside Down
 
 ### Given a binary tree where all the right nodes are either leaf nodes with a sibling (a left node that shares the same parent node) or empty, flip it upside down and turn it into a tree where the original right nodes turned into left leaf nodes. Return the new root.
 ```Python
@@ -437,3 +437,4 @@ class Solution(object):
         if root.right != None:
             self.traverse2(root.right)
 ```
+Input `[1,2,null, 3]` returns `[3,null,2,null,1]`. Input `[1,2, 3,4,5,null,null,6,7]` returns `[6,7,4,null,null,5,2,null,null,3,1]`.
