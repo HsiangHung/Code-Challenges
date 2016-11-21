@@ -261,11 +261,9 @@ class Solution(object):
             self.min = min(self.min, depth)
             return
     
-        if root.left != None:
-            self.traverse(root.left, depth+1)
+        if root.left != None: self.traverse(root.left, depth+1)
         
-        if root.right != None:
-            self.traverse(root.right, depth+1)
+        if root.right != None: self.traverse(root.right, depth+1)
 ```
 
 ## Q8: Balanced Binary Tree
@@ -287,11 +285,9 @@ class Solution(object):
         Ldepth = 0
         Rdepth = 0
         
-        if root.left != None:
-            Ldepth = self.traverse(root.left)+1
+        if root.left != None: Ldepth = self.traverse(root.left)+1
             
-        if root.right != None:
-            Rdepth = self.traverse(root.right)+1
+        if root.right != None: Rdepth = self.traverse(root.right)+1
             
         if abs(Ldepth-Rdepth) >1: self.isBalanced = False
  
@@ -316,11 +312,9 @@ class Solution(object):
         if root.left == None and root.right == None: return True
     
         if root.left != None:
-            if self.isLeaf(root.left) == True: 
-                self.leftSum += root.left.val
+            if self.isLeaf(root.left) == True: self.leftSum += root.left.val
             
-        if root.right != None:
-            self.isLeaf(root.right)
+        if root.right != None: self.isLeaf(root.right)
             
         return False
 ```
@@ -350,11 +344,9 @@ class Solution(object):
         
         if node.left == None and node.right == None: return
     
-        if node.val > target and node.left != None:
-            self.traverse(node.left, target)
+        if node.val > target and node.left != None: self.traverse(node.left, target)
         
-        if node.val < target and node.right != None:
-            self.traverse(node.right, target)
+        if node.val < target and node.right != None: self.traverse(node.right, target)
 ```
 
 ## Q11: [Leetcode#366] Find Leaves of Binary Tree
@@ -383,12 +375,10 @@ class Solution(object):
             return 'Leaves'
         
         if root.left != None:
-            if self.traverse(root.left) == 'Leaves':
-                root.left = None
+            if self.traverse(root.left) == 'Leaves': root.left = None
             
         if root.right != None:
-            if self.traverse(root.right) == 'Leaves':
-                root.right = None
+            if self.traverse(root.right) == 'Leaves': root.right = None
 ```
 
 # Medium level
@@ -415,8 +405,7 @@ class Solution(object):
             self.root = root
             return
         
-        if root.left != None:
-            self.traverse(root.left)
+        if root.left != None: self.traverse(root.left)
             
         if root.right != None:
             (root.left).left = root.right
@@ -431,10 +420,30 @@ class Solution(object):
         print root.val
         if root.left == None and root.right == None: return
         
-        if root.left != None:
-            self.traverse2(root.left)
-            
-        if root.right != None:
-            self.traverse2(root.right)
+        if root.left != None: self.traverse2(root.left)        
+        if root.right != None: self.traverse2(root.right)
 ```
 Input `[1,2,null, 3]` returns `[3,null,2,null,1]`. Input `[1,2, 3,4,5,null,null,6,7]` returns `[6,7,4,null,null,5,2,null,null,3,1]`.
+
+## Q3: [Leetcode#199] Binary Tree Right Side View
+### Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+```Python
+class Solution(object):
+    def rightSideView(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        self.sideView = []
+        if root == None: return []
+        
+        self.traverse(root,1)
+        return self.sideView
+        
+    def traverse(self, root, depth):
+        if len(self.sideView) < depth: self.sideView.append(root.val)
+        if root.right == None and root.left == None: return
+    
+        if root.right != None: self.traverse(root.right, depth+1)
+        if root.left != None: self.traverse(root.left, depth+1)
+```
