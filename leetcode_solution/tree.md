@@ -10,6 +10,7 @@ class TreeNode(object):
          self.right = None
 ```
 # Pre-order
+input `[10,5,15,1,6,12,20,null,2,null,8,11,13,18]`
 ```Python
     def preOrder(self, root):
         print root.val
@@ -37,7 +38,8 @@ gives
 18
 ```
 
-# in-order
+# in-order (Making Bindary seach tree)
+input `[10,5,15,1,6,12,20,null,2,null,8,11,13,18]`
 ```Python
     def inOrder(self, root):
         if root.left == None and root.right == None: 
