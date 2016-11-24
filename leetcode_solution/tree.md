@@ -80,7 +80,7 @@ gives
         print root.val
 ```
 gives 
-```Python
+```
 2
 1
 8
