@@ -16,11 +16,9 @@ input `[10,5,15,1,6,12,20,null,2,null,8,11,13,18]`
         print root.val
         if root.left == None and root.right == None: return
         
-        if root.left != None:
-            self.preOrder(root.left)
+        if root.left != None: self.preOrder(root.left)
         
-        if root.right != None:
-            self.preOrder(root.right)
+        if root.right != None: self.preOrder(root.right)
 ```
 gives
 ```
@@ -46,13 +44,11 @@ input `[10,5,15,1,6,12,20,null,2,null,8,11,13,18]`
             print root.val
             return
         
-        if root.left != None:
-            self.inOrder(root.left)
+        if root.left != None: self.inOrder(root.left)
             
         print root.val
         
-        if root.right != None:
-            self.inOrder(root.right)
+        if root.right != None: self.inOrder(root.right)
 ```
 gives 
 ```
@@ -68,6 +64,35 @@ gives
 15
 18
 20
+```
+
+# Post-order 
+```Python
+    def postOrder(self, root):
+        if root.left == None and root.right == None: 
+            print root.val
+            return
+        
+        if root.left != None: self.postOrder(root.left)
+        
+        if root.right != None: self.postOrder(root.right)
+
+        print root.val
+```
+gives 
+```Python
+2
+1
+8
+6
+5
+11
+13
+12
+18
+20
+15
+10
 ```
 
 # Easy level
