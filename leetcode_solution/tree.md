@@ -9,6 +9,64 @@ class TreeNode(object):
          self.left = None
          self.right = None
 ```
+# Pre-order
+```Python
+    def preOrder(self, root):
+        print root.val
+        if root.left == None and root.right == None: return
+        
+        if root.left != None:
+            self.preOrder(root.left)
+        
+        if root.right != None:
+            self.preOrder(root.right)
+```
+gives
+```
+10
+5
+1
+2
+6
+8
+15
+12
+11
+13
+20
+18
+```
+
+# in-order
+```Python
+    def inOrder(self, root):
+        if root.left == None and root.right == None: 
+            print root.val
+            return
+        
+        if root.left != None:
+            self.inOrder(root.left)
+            
+        print root.val
+        
+        if root.right != None:
+            self.inOrder(root.right)
+```
+gives 
+```
+1
+2
+5
+6
+8
+10
+11
+12
+13
+15
+18
+20
+```
 
 # Easy level
 
