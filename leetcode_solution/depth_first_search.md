@@ -2,7 +2,7 @@
 # Depth-First-Search and Breadth-First-Search 
 
 
-## Q1: Leetcode#364, Nested List Weight Sum II
+## Q1: [Leetcode#364] Nested List Weight Sum II
 ### Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
 
 ```Python
@@ -35,7 +35,7 @@ class Solution(object):
                 self.recursion(ch.getList(), depth+1)
 ```
 
-## Q2: Leetcode#200, Number of Islands
+## Q2: [Leetcode#200] Number of Islands
 ### 
 ```Python
 class Solution(object):
@@ -77,7 +77,7 @@ class Solution(object):
             self.DFS(grid,x,y-1)
 ```
 
-## Q3: Leetcode#108, Convert Sorted Array to Binary Search Tree
+## Q3: [Leetcode#108] Convert Sorted Array to Binary Search Tree
 ### Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 ```Python
 class Solution(object):
