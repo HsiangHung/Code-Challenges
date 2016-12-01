@@ -19,7 +19,7 @@ print (numWays(10)) ## 15-1-1...: 14 times 15/3 =5, 5-1=4, 4/2 = 2, 2/2 or 2-1 =
 ```
 
 ## Q2: Mininum number of coins.
-### In a country, there are three type of coins: `{1,7,10}`. Given an amount of $`n`, find the minimum number of coins. e.g. n=16, the minum number of coins is `4` since `{7,7,1,1}`, not `{10,1,1,1,1,1,1}`.
+### In a strange country, there are only three type of coins: `{1,7,10}`. Given an amount of $`n`, find the minimum number of coins to make `n`. e.g. n=16, the minimum number of coins is `4` since `{7,7,1,1}`, not `{10,1,1,1,1,1,1}`.
 ```Python
 def numWays(n):
     ## 1, 7, 10
