@@ -564,3 +564,102 @@ class Solution(object):
         if root.right != None: self.traverse(root.right, depth+1)
         if root.left != None: self.traverse(root.left, depth+1)
 ```
+
+
+## Q4: [Leetcode#98] Validate Binary Search Tree
+### Given a binary tree, determine if it is a valid binary search tree (BST).
+
+solution 1: perform in-order traversal, and if the current root < previous, it is False
+```Python
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if root == None: return True
+        
+        self.stack = []
+        self.isValidBST = True
+        self.traverse(root)
+        return self.isValidBST
+        
+        
+    def traverse(self, root):
+        if root.left == None and root.right == None: 
+            #print root.val
+            if len(self.stack) != 0: 
+                if root.val <= self.stack[len(self.stack)-1]: 
+                    self.isValidBST = False
+                else:
+                    self.stack.pop()
+                    self.stack.append(root.val)
+                return
+            else:
+                self.stack.append(root.val)
+                return
+        
+        if root.left != None:
+            self.traverse(root.left)
+            
+        #print root.val
+        
+        if len(self.stack) != 0:
+            if root.val <= self.stack[len(self.stack)-1]:
+                self.isValidBST = False
+                return
+            else:
+                self.stack.pop()
+                self.stack.append(root.val)
+        else:
+            self.stack.append(root.val)
+
+        if root.right != None:
+            self.traverse(root.right)
+```
+solution 2: check if always max(left subtree) < root < min(right subtree)
+```Python
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if root == None: return True
+        
+        if root.left == None and root.right == None: return True
+        
+        max_node, min_node = self.getVal(root)
+        
+        if max_node == 'False' and 'min_node' == False: return False
+        
+        if max_node!= None and min_node!=None: return min_node <= root.val <= max_node
+        if max_node!='False' and min_node =='False': return root.val <= max_node
+        if max_node== 'False' and min_node!='False': return min_node <= root.val
+        
+        return False
+
+    
+    def getVal(self, root):
+        
+        if root.left == None and root.right == None: return root.val, root.val
+        
+        max_L = None
+        if root.left != None:
+            max_L, min_L = self.getVal(root.left)
+            if max_L == 'False' or min_L=='False': return 'False', 'False'
+            
+        min_R = None
+        if root.right != None:
+            max_R, min_R = self.getVal(root.right)
+            if max_R=='False' or min_R=='False': return 'False', 'False'
+    
+        if max_L != None and min_R != None:
+            if max_L < root.val < min_R: return max_R, min_L
+        elif max_L != None and min_R == None:
+            if max_L < root.val: return root.val, min_L
+        elif max_L == None and min_R != None:
+            if root.val < min_R: return max_R, root.val
+        
+        return 'False', 'False'
+```
