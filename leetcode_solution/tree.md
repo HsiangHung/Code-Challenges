@@ -378,47 +378,37 @@ class Solution(object):
  
         return max(Ldepth, Rdepth)
 ```
-Better solution format:( thank to Emmanuel)
+other solution format (thank to Emmanuel)
 ```Python
-class Solution(object):
-    def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        if not root: return True
-        return abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 
-        
+        h = self.getHeight(root)+1
+        if h == -1: return False
+        return True
+        #return abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 
+
     def getHeight(self, root):
         '''
         :type root: TreeNode
         :rtype: int
         '''
-            
+        if root.left == None and root.right == None: return 0
+
         if root.left != None and root.right != None:
-            return max(self.getHeight(root.left), self.getHeight(root.right))+1
+            h_L = self.getHeight(root.left)+1
+            h_R = self.getHeight(root.right)+1
         elif root.left != None and root.right == None: 
-            return self.getHeight(root.left)+1
+            h_L = self.getHeight(root.left)+1
+            h_R = 0
         elif root.left == None and root.right != None:
-            return self.getHeight(root.right)+1
-        else:
-            return 0
+            h_L = 0
+            h_R = self.getHeight(root.right)+1
+        
+        if h_L == -1 or h_R == -1: return -2
             
-        ## print out all subtree height:
-        #if root.left != None and root.right != None:
-        #    h_L = self.getHeight(root.left)+1
-        #    h_R = self.getHeight(root.right)+1
-        #    print root.val, h_L, h_R
-        #    return max(h_L, h_R)
-        #elif root.left != None and root.right == None: 
-        #    h_L = self.getHeight(root.left)+1
-        #    print root.val, h_L, 0
-        #    return h_L
-        #elif root.left == None and root.right != None:
-        #    h_R = self.getHeight(root.right)+1
-        #    return root.val, 0, h_R
-        #else:
-        #    return 0
+        diff = abs(h_L-h_R)
+        if diff <= 1: 
+            return max(h_L, h_R)
+        else:
+            return -2
 ```
 
 ## Q9: Sum of Left Leaves
