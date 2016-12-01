@@ -97,7 +97,34 @@ gives
 
 # Easy level
 
-## Q1: Binary Tree Paths
+## Q1: [Leetcode#104] Maximum Depth of Binary Tree
+```Python
+class Solution(object):
+    def maxDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root == None: return 0
+        return self.getDepth(root)
+        
+    def getDepth(self, root):
+        """
+        : type root: TreeNode
+        : rtype: int
+        """
+        if root.left == None and root.right == None: return 1
+        
+        if root.left != None and root.right!=None:
+            return max(self.getDepth(root.left), self.getDepth(root.right))+1
+        elif root.left != None and root.right == None:
+            return self.getDepth(root.left)+1
+        elif root.left == None and root.right != None:
+            return self.getDepth(root.right)+1          
+```
+
+
+## Q2: Binary Tree Paths
 ### Given a binary tree, return all root-to-leaf paths.
 ```
 input: [5,4,8,11,null,13,6,7,2,null,null,null,1]
@@ -129,7 +156,7 @@ gives
 1->6->8->5
 ```
 
-## Q2: Lowest Common Ancestor of a Binary Search Tree
+## Q3: Lowest Common Ancestor of a Binary Search Tree
 ### Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 ```Python
 class Solution(object):
@@ -203,7 +230,7 @@ The second one is to append ```x``` before passing ```path``` in recursion. But 
 will append all nodes in the ```path``` list; won't generate each list for each path.
 
 
-## Q3: Path Sum
+## Q4: Path Sum
 ### Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 ```Python
 class Solution(object):
@@ -236,7 +263,7 @@ class Solution(object):
 ```
 
 
-## Q4: Invert Binary Tree
+## Q5: Invert Binary Tree
 ```Python
 class Solution(object):
     def invertTree(self, root):
@@ -268,7 +295,7 @@ class Solution(object):
             root.right = None
 ```
 
-## Q5: Same Tree
+## Q6: Same Tree
 ### Given two binary trees, write a function to check if they are equal or not.
 ```Python
 class Solution(object):
@@ -296,7 +323,7 @@ class Solution(object):
             return False
 ```
 
-## Q6: Symmetric Tree
+## Q7: Symmetric Tree
 ### Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, the binary tree ```[1,2,2,3,4,4,3]``` is symmetric, but ```[1,2,2,null,3,null,3]``` is not.
 ```Python
 class Solution(object):
@@ -327,7 +354,7 @@ class Solution(object):
         return False
 ```
 
-## Q7: Minimum Depth of Binary Tree
+## Q8: Minimum Depth of Binary Tree
 ### Given a binary tree, find its minimum depth.
 ```Python
 class Solution(object):
@@ -351,7 +378,7 @@ class Solution(object):
         if root.right != None: self.traverse(root.right, depth+1)
 ```
 
-## Q8: Balanced Binary Tree
+## Q9: Balanced Binary Tree
 ### Given a binary tree, determine if it is height-balanced.
 ```Python
 class Solution(object):
@@ -411,7 +438,7 @@ other solution format (thank to Emmanuel)
             return -2
 ```
 
-## Q9: Sum of Left Leaves
+## Q10: Sum of Left Leaves
 ### Find the sum of all left leaves in a given binary tree.
 ```Python
 class Solution(object):
@@ -436,7 +463,7 @@ class Solution(object):
         return False
 ```
 
-## Q10: Closest Binary Search Tree Value
+## Q11: Closest Binary Search Tree Value
 ### Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
 ```Python
 class Solution(object):
@@ -466,7 +493,7 @@ class Solution(object):
         if node.val < target and node.right != None: self.traverse(node.right, target)
 ```
 
-## Q11: [Leetcode#366] Find Leaves of Binary Tree
+## Q12: [Leetcode#366] Find Leaves of Binary Tree
 ### Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
 ```Python
 class Solution(object):
