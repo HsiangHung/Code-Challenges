@@ -1,8 +1,8 @@
 
 # Dynamic Programming
 
-## Q1: Coin Problems
-### For an integer number `n >1`, we can have the following operations: (1) `n-1`  or (2) if `n` can be divided by `2`, then we have `n/2` (3) if `n` can be divided by `3`, then we have 'n/3'. Fin the minimum number of operations to `n` until `n=1`.
+## Q1: Cut `n` to `1`.
+### For an integer number `n >1`, we can have the following operations to update the number until `n=1`: (1) `n-1`  or (2) if `n` can be divided by `2`, then we have `n/2` (3) if `n` can be divided by `3`, then we have `n/3`. Find the minimum number of operations to `n` needed.
 ```Python
 def numWays(n):
     if n == 1: return 0
