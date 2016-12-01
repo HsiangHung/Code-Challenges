@@ -2,7 +2,7 @@
 # Dynamic Programming
 
 ## Q1: Cut `n` to `1`.
-### For an integer number `n >1`, we can have the following operations to update the number until `n=1`: (1) `n-1`  or (2) if `n` can be divided by `2`, then we have `n/2` (3) if `n` can be divided by `3`, then we have `n/3`. Find the minimum number of operations to `n` needed.
+### For an integer number `n >1`, we can have the following operations to update the number until `n=1`: (1) `n-1`  or (2) if `n` can be divided by `2`, then we have `n/2` (3) if `n` can be divided by `3`, then we have `n/3`. Find the minimum number of operations to `n` needed. e.g. 3 times for `n=10`: `10-1=9`, `9/3=3`, `3/3=1`.
 ```Python
 def numWays(n):
     if n == 1: return 0
@@ -18,8 +18,27 @@ def numWays(n):
 print (numWays(10)) ## 15-1-1...: 14 times 15/3 =5, 5-1=4, 4/2 = 2, 2/2 or 2-1 =1 
 ```
 
+## Q2: Mininum number of coins.
+### In a country, there are three type of coins: `{1,7,10}`. Given an amount of $`n`, find the minimum number of coins. e.g. n=16, the minum number of coins is `4` since `{7,7,1,1}`, not `{10,1,1,1,1,1,1}`.
+```Python
+def numWays(n):
+    ## 1, 7, 10
+    if n == 1: return 1
+    dp = {0:0, 1:1}
+    i=2
+    while i <= n:
+        dp[i] = dp[i-1]+1
+        if i >= 7: dp[i] = min(dp[i-7]+1, dp[i])
+        if i >= 10: dp[i] = min(dp[i-10]+1, dp[i])
+        i += 1
+    
+    return dp[n]
+    
+print (numWays(16))
+```
 
-### [Leetcide#139] Word Break
+
+### Q3: [Leetcide#139] Word Break
 ```Python
 class Solution(object):
     def wordBreak(self, s, wordDict):
