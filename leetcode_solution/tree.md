@@ -378,6 +378,48 @@ class Solution(object):
  
         return max(Ldepth, Rdepth)
 ```
+Better solution format:( thank to Emmanuel)
+```Python
+class Solution(object):
+    def isBalanced(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if not root: return True
+        return abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 
+        
+    def getHeight(self, root):
+        '''
+        :type root: TreeNode
+        :rtype: int
+        '''
+            
+        if root.left != None and root.right != None:
+            return max(self.getHeight(root.left), self.getHeight(root.right))+1
+        elif root.left != None and root.right == None: 
+            return self.getHeight(root.left)+1
+        elif root.left == None and root.right != None:
+            return self.getHeight(root.right)+1
+        else:
+            return 0
+            
+        ## print out all subtree height:
+        #if root.left != None and root.right != None:
+        #    h_L = self.getHeight(root.left)+1
+        #    h_R = self.getHeight(root.right)+1
+        #    print root.val, h_L, h_R
+        #    return max(h_L, h_R)
+        #elif root.left != None and root.right == None: 
+        #    h_L = self.getHeight(root.left)+1
+        #    print root.val, h_L, 0
+        #    return h_L
+        #elif root.left == None and root.right != None:
+        #    h_R = self.getHeight(root.right)+1
+        #    return root.val, 0, h_R
+        #else:
+        #    return 0
+```
 
 ## Q9: Sum of Left Leaves
 ### Find the sum of all left leaves in a given binary tree.
