@@ -38,7 +38,7 @@ print (numWays(16))
 ```
 
 
-### Q3: [Leetcide#139] Word Break
+## Q3: [Leetcide#139] Word Break
 ```Python
 class Solution(object):
     def wordBreak(self, s, wordDict):
