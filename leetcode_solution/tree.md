@@ -167,6 +167,35 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
+        if root == None: return None
+        if p.val > q.val:
+            return self.getNode(root, q, p)
+        else:
+            return self.getNode(root, p, q)
+        
+    def getNode(self, root, p, q):
+        """
+        : type root, p, q: TreeNode (q > p)
+        " rtype: int
+        """
+        if p.val <= root.val <= q.val: return root.val
+        
+        if p.val <= root.val and q.val <= root.val:
+            return self.getNode(root.left, p, q)
+            
+        if p.val >= root.val and q.val >= root.val:
+            return self.getNode(root.right, p, q)
+```
+The following considers even not a BST, it still wors since it stores all path and it's ancestors.
+```Python
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
         self.path = {}
         self.traverse(root, str(root.val))
         a1 = self.path[p.val]
