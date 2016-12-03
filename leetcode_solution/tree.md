@@ -1,5 +1,5 @@
 
-# Datastructure: Tree 
+# Data structure: Tree 
 
 ### The tree class in Leetcode is defined as
 ```Python
@@ -204,33 +204,6 @@ will append all nodes in the ```path``` list; won't generate each list for each 
 
 
 
-## Q6: Same Tree
-### Given two binary trees, write a function to check if they are equal or not.
-```Python
-class Solution(object):
-    def isSameTree(self, p, q):
-        """
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: bool
-        """
-        if p == None and q == None: return True
-        if p == None or q == None: return False
-        return self.traverse(p,q)
-        
-    def traverse(self, p, q):
-        if p.val != q.val: return False
-        if p.left == None and p.right == None and q.left == None and q.right == None: return True
-
-        if p.left != None and q.left != None and p.right != None and q.right != None:
-            return self.traverse(p.left, q.left) and self.traverse(p.right, q.right)
-        elif p.left != None and q.left != None and p.right == None and q.right == None:
-            return self.traverse(p.left, q.left)
-        elif p.left == None and q.left == None and  p.right != None and q.right != None:
-            return self.traverse(p.right, q.right)
-        else:    
-            return False
-```
 
 ## Q7: Symmetric Tree
 ### Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, the binary tree ```[1,2,2,3,4,4,3]``` is symmetric, but ```[1,2,2,null,3,null,3]``` is not.
@@ -395,28 +368,6 @@ class Solution(object):
 ```
 Input `[1,2,null, 3]` returns `[3,null,2,null,1]`. Input `[1,2, 3,4,5,null,null,6,7]` returns `[6,7,4,null,null,5,2,null,null,3,1]`.
 
-## Q3: [Leetcode#199] Binary Tree Right Side View
-### Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
-```Python
-class Solution(object):
-    def rightSideView(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        self.sideView = []
-        if root == None: return []
-        
-        self.traverse(root,1)
-        return self.sideView
-        
-    def traverse(self, root, depth):
-        if len(self.sideView) < depth: self.sideView.append(root.val)
-        if root.right == None and root.left == None: return
-    
-        if root.right != None: self.traverse(root.right, depth+1)
-        if root.left != None: self.traverse(root.left, depth+1)
-```
 
 
 ## Q4: [Leetcode#98] Validate Binary Search Tree
