@@ -14,7 +14,6 @@ class Solution(object):
         :rtype: int
         """
         if not root: return 0
-        
         return self.sumLeftLeaves(root, 'N')
 
     def sumLeftLeaves(self, root, D):
@@ -23,7 +22,6 @@ class Solution(object):
             return 0
             
         sum =0
-        
         if root.left != None:
             sum += self.sumLeftLeaves(root.left, 'L')
             
