@@ -97,64 +97,8 @@ gives
 
 # Easy level
 
-## Q1: [Leetcode#104] Maximum Depth of Binary Tree
-```Python
-class Solution(object):
-    def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if root == None: return 0
-        return self.getDepth(root)
-        
-    def getDepth(self, root):
-        """
-        : type root: TreeNode
-        : rtype: int
-        """
-        if root.left == None and root.right == None: return 1
-        
-        if root.left != None and root.right!=None:
-            return max(self.getDepth(root.left), self.getDepth(root.right))+1
-        elif root.left != None and root.right == None:
-            return self.getDepth(root.left)+1
-        elif root.left == None and root.right != None:
-            return self.getDepth(root.right)+1          
-```
 
 
-## Q2: Binary Tree Paths
-### Given a binary tree, return all root-to-leaf paths.
-```
-input: [5,4,8,11,null,13,6,7,2,null,null,null,1]
-```
-```Python
-class Solution(object):
-    def findAllPath(self, root):
-        """
-        :type root: TreeNode
-        """ 
-        self.traverse(root, str(root.val))
-
-    def traverse(self, node, path):
-        if node.left == None and node.right == None:
-            print (path)
-            return
-
-        if node.left != None:
-            self.traverse(node.left, str(node.left.val)+'->'+path)
-                
-        if node.right != None:
-            self.traverse(node.right, str(node.right.val)+'->'+path)
-```
-gives
-```
-7->11->4->5
-2->11->4->5
-13->8->5
-1->6->8->5
-```
 
 ## Q3: Lowest Common Ancestor of a Binary Search Tree
 ### Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
@@ -257,39 +201,6 @@ don't work. The first one, passing ```list.append(x)``` will give ```None```, so
 it won't give anything. (One can check ```print [5].append(6)``` gives ```None```).
 The second one is to append ```x``` before passing ```path``` in recursion. But doing this
 will append all nodes in the ```path``` list; won't generate each list for each path.
-
-
-## Q4: Path Sum
-### Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
-```Python
-class Solution(object):
-    def hasPathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: bool
-        """
-        if root == None: return False
-        
-        self.sum = {}
-        self.traverse(root, str(root.val), root.val)
-        
-        if sum in self.sum: return True
-        return False
-
-        
-    def traverse(self, node, path, pathSum):
-        if node.left == None and node.right == None:
-            #print (path):
-            self.sum[pathSum] = path
-            return
-
-        if node.left != None:
-            self.traverse(node.left, str(node.left.val)+'->'+path, pathSum+node.left.val)
-                
-        if node.right != None:
-            self.traverse(node.right, str(node.right.val)+'->'+path, pathSum+node.right.val)
-```
 
 
 ## Q5: Invert Binary Tree
