@@ -318,65 +318,6 @@ class Solution(object):
         if root.right != None: self.traverse(root.right, depth+1)
 ```
 
-## Q9: Balanced Binary Tree
-### Given a binary tree, determine if it is height-balanced.
-```Python
-class Solution(object):
-    def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        if root == None: return True
-        self.isBalanced = True
-        self.traverse(root)
-        return self.isBalanced
-        
-    def traverse(self, root):
-        if root.left == None and root.right == None: return 0
-        Ldepth = 0
-        Rdepth = 0
-        
-        if root.left != None: Ldepth = self.traverse(root.left)+1
-            
-        if root.right != None: Rdepth = self.traverse(root.right)+1
-            
-        if abs(Ldepth-Rdepth) >1: self.isBalanced = False
- 
-        return max(Ldepth, Rdepth)
-```
-other solution format (thank to Emmanuel)
-```Python
-        h = self.getHeight(root)+1
-        if h == -1: return False
-        return True
-        #return abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 
-
-    def getHeight(self, root):
-        '''
-        :type root: TreeNode
-        :rtype: int
-        '''
-        if root.left == None and root.right == None: return 0
-
-        if root.left != None and root.right != None:
-            h_L = self.getHeight(root.left)+1
-            h_R = self.getHeight(root.right)+1
-        elif root.left != None and root.right == None: 
-            h_L = self.getHeight(root.left)+1
-            h_R = 0
-        elif root.left == None and root.right != None:
-            h_L = 0
-            h_R = self.getHeight(root.right)+1
-        
-        if h_L == -1 or h_R == -1: return -2
-            
-        diff = abs(h_L-h_R)
-        if diff <= 1: 
-            return max(h_L, h_R)
-        else:
-            return -2
-```
 
 ## Q10: Sum of Left Leaves
 ### Find the sum of all left leaves in a given binary tree.
