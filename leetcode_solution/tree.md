@@ -203,37 +203,6 @@ The second one is to append ```x``` before passing ```path``` in recursion. But 
 will append all nodes in the ```path``` list; won't generate each list for each path.
 
 
-## Q5: Invert Binary Tree
-```Python
-class Solution(object):
-    def invertTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
-        if root == None: return root
-        self.traverse(root)
-        return root
-        
-    def traverse(self, root):
-        if root.left == None and root.right == None: return
-    
-        if root.left != None and root.right != None:
-            Left = root.left
-            self.traverse(Left)
-            Right = root.right
-            self.traverse(Right)
-            root.right = Left
-            root.left = Right
-        elif root.left != None and root.right == None:
-            self.traverse(root.left)
-            root.right = root.left
-            root.left = None
-        elif root.left == None and root.right != None:
-            self.traverse(root.right)
-            root.left = root.right
-            root.right = None
-```
 
 ## Q6: Same Tree
 ### Given two binary trees, write a function to check if they are equal or not.
@@ -319,30 +288,6 @@ class Solution(object):
 ```
 
 
-## Q10: Sum of Left Leaves
-### Find the sum of all left leaves in a given binary tree.
-```Python
-class Solution(object):
-    def sumOfLeftLeaves(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if root == None: return 0
-        self.leftSum = 0
-        self.isLeaf(root)
-        return self.leftSum
-        
-    def isLeaf(self, root):
-        if root.left == None and root.right == None: return True
-    
-        if root.left != None:
-            if self.isLeaf(root.left) == True: self.leftSum += root.left.val
-            
-        if root.right != None: self.isLeaf(root.right)
-            
-        return False
-```
 
 ## Q11: Closest Binary Search Tree Value
 ### Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
