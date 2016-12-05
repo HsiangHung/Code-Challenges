@@ -1,4 +1,5 @@
-### Q9.4: generate all possible subsets from a set
+## Q9.4: generate all possible subsets from a set
+## e.g. {1,2,3} -> {{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}}
 #
 def getSubsets(a):
     import copy
