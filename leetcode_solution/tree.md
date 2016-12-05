@@ -205,36 +205,6 @@ will append all nodes in the ```path``` list; won't generate each list for each 
 
 
 
-## Q7: Symmetric Tree
-### Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, the binary tree ```[1,2,2,3,4,4,3]``` is symmetric, but ```[1,2,2,null,3,null,3]``` is not.
-```Python
-class Solution(object):
-    def isSymmetric(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        if root == None: return True
-        if root.left == None and root.right == None: return True
-        if root.left != None and root.right != None:
-            return self.traverse(root.left, root.right)
-        else:
-            return False
-        
-    def traverse(self, left, right):
-        if left.val != right.val: return False
-        
-        if left.left == None and left.right == None and right.left == None and right.right == None: return True
-        
-        if left.left != None and right.right != None and left.right != None and right.left != None:
-            return self.traverse(left.left, right.right) and self.traverse(left.right, right.left)
-        elif left.left != None and right.right != None and left.right == None and right.left == None:
-            return self.traverse(left.left, right.right)
-        elif left.left == None and right.right == None and left.right != None and right.left != None:
-            return self.traverse(left.right, right.left)
-            
-        return False
-```
 
 ## Q8: Minimum Depth of Binary Tree
 ### Given a binary tree, find its minimum depth.

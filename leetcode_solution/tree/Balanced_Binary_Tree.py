@@ -30,7 +30,7 @@ class Solution(object):
 		h_L, h_R = 0, 0 
         if root.left != None:
             h_L = self.getHeight(root.left)+1
-
+            
         if root.right != None:
             h_R = self.getHeight(root.right)+1
         
