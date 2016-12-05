@@ -1,4 +1,6 @@
-## Q9.6: generating potential combined parentheses
+## Q9.6: generating a set of combined parentheses
+## e.g. n=2, {'(())', '()()'}
+## e.g. n=3, {'((()))', '(())()', '()(())', '(()())', '()()()'}
 def generate_parenthese(n):
     import copy
     pare_sets = {1: set({"()"})}
