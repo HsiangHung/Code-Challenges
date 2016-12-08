@@ -20,7 +20,19 @@ class stack():
         if self.items == []: return None
         return self.items[len(self.items)-1]
 ```
+test:
+```Python
+A = stack()
+print (A.isEmpty())
+A.push(10)
+A.push(5)
+print (A.get())
 
+A.pop()
+A.push(100)
+print (A.get())
+print (A.isEmpty())
+```
 
 
 
@@ -43,3 +55,17 @@ class queue():
         if self.items == []: return None
         return self.items[len(self.items)-1]
 ```
+test
+```Python
+A = queue()
+print (A.isEmpty())
+A.push(10)
+A.push(5)
+print (A.get())
+
+A.pop()
+A.push(100)
+print (A.get())
+print (A.isEmpty())
+```
+
