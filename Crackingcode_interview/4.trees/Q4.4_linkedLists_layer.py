@@ -1,6 +1,7 @@
 ## Q4.4 generate linked lists for each layer
 ## idea: using preorder traverse.
-##       We always fit the head of each layer linked list, and later to it next node
+##       We always fit the head of a linked list on each layer first, and 
+##       later traversal to next node
 ##
 class treeNode():
     def __init__(self, x):
