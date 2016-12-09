@@ -7,7 +7,7 @@ class treeNode():
         self.right = None
         self.next = None
 
-def nextGeneration(left, right):
+def nextMethod(left, right):
     
     print (left.val, right.val)
     left.next = right
@@ -15,13 +15,13 @@ def nextGeneration(left, right):
     if left.left == None and left.right == None and right.left == None and right.right == None: return
         
     if left.left != None and left.right != None:
-        nextGeneration(left.left, left.right)
+        nextMethod(left.left, left.right)
             
     if right.left != None and right.right != None:
-        nextGeneration(right.left, right.right)
+        nextMethod(right.left, right.right)
         
     if left.right != None and right.left != None:
-        nextGeneration(left.right, right.left)
+        nextMethod(left.right, right.left)
         
         
         

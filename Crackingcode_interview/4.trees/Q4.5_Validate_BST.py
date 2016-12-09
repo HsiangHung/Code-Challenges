@@ -1,5 +1,8 @@
 ## [Leetcode#98] Validate Binary Search Tree
 #
+# idea: go over in-order traversal, if BST, the current node always is 
+#       larger than the previous node.
+#
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
