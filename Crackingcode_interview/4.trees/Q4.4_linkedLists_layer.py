@@ -1,4 +1,6 @@
 ## Q4.4 generate linked lists for each layer
+## idea: using preorder traverse.
+##       We always fit the head of each layer linked list, and later to it next node
 ##
 class treeNode():
     def __init__(self, x):
@@ -12,14 +14,13 @@ class Node():
         self.next = None
         self.prev = None
 
-def find_depth(tree, heads, linkList, depth):
+def create_linkedLists(tree, heads, linkList, depth):
     if tree != None:
         print(tree.val, depth)
         if depth not in heads:
             linkList[depth] = Node(tree.val)
             heads[depth] = linkList[depth]
         else:
-            #print (heads[depth].val)
             linkList[depth].next = Node(tree.val)
             linkList[depth] = linkList[depth].next
             
@@ -58,7 +59,7 @@ G.left = K
 
 heads = {}
 linkList ={}
-find_depth(A, heads, linkList, 0)
+create_linkedLists(A, heads, linkList, 0)
 
 
 print ('linked lists:')
