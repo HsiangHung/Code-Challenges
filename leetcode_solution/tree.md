@@ -36,7 +36,7 @@ gives
 18
 ```
 
-# in-order (Making Bindary seach tree)
+# in-order (judging binary search tree)
 input `[10,5,15,1,6,12,20,null,2,null,8,11,13,18]`
 ```Python
     def inOrder(self, root):
@@ -74,7 +74,6 @@ gives
             return
         
         if root.left != None: self.postOrder(root.left)
-        
         if root.right != None: self.postOrder(root.right)
 
         print root.val
@@ -94,8 +93,30 @@ gives
 15
 10
 ```
+Another ways to represent preorder, inorder and postorder:
+```Python
+def preorder(root):
+    if root != None:
+        print(root.val)
+        preorder(root.left)
+        preorder(root.right)
 
-# Easy level
+def inorder(root):
+    if root != None:
+        inorder(root.left)
+        print(root.val)
+        inorder(root.right)
+
+def postorder(root):
+    if root != None:
+        postorder(root.left)
+        postorder(root.right)
+        print(root.val)
+```
+
+
+
+
 
 
 
