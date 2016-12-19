@@ -35,49 +35,6 @@ class Solution(object):
                 self.recursion(ch.getList(), depth+1)
 ```
 
-## Q2: [Leetcode#200] Number of Islands
-### 
-```Python
-class Solution(object):
-    def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
-        if grid == []: return 0
-        
-        m = len(grid[0])
-        n = len(grid)
-        
-        num_island = 0
-        for y in range(n):
-            for x in range(m):
-                #print grid
-                if grid[y][x] == u'1':
-                    num_island +=1
-                    self.DFS(grid, x, y)
-                    
-        return num_island
-                    
-                    
-    def DFS(self, grid, x, y):
-        if x<0 or x >= len(grid[0]) or y <0 or y>=len(grid): return
-        grid[y][x] =u'0'
-        
-        if x+1 < len(grid[0]) and grid[y][x+1] ==u'1':
-            self.DFS(grid, x+1, y)
-            
-        if x-1 >= 0 and grid[y][x-1] ==u'1':
-            self.DFS(grid, x-1, y)
-            
-        if y+1 < len(grid) and grid[y+1][x] ==u'1':
-            self.DFS(grid, x, y+1)
-            
-        if y-1 >= 0 and grid[y-1][x] ==u'1':
-            self.DFS(grid, x, y-1)
-            
-        return
-```
 
 ## Q3: [Leetcode#108] Convert Sorted Array to Binary Search Tree
 ### Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
