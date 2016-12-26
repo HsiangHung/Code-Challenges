@@ -31,3 +31,21 @@ class Solution(object):
         else:
             return False
             
+            
+##### ----------------------------------------------------------
+## more concise code:
+class Solution(object):
+    def isSymmetric(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if not root: return True
+        return self.checking(root.left, root.right)
+        
+        
+    def checking(self, left, right):
+        if not left and not right: return True
+        if not left or not right: return False
+        if left.val != right.val: return False
+        return self.checking(left.left, right.right) and self.checking(left.right, right.left)
