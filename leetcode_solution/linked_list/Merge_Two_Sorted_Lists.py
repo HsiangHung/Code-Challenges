@@ -1,7 +1,6 @@
-## [Leetcode#21] Merge Two Sorted Lists
-## Merge two sorted linked lists and return it as a new list. The new list should be made by splicing 
-##together the nodes of the first two lists.
-#
+## [leetcode#21] Merge Two Sorted Lists
+##
+# Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
 #         self.val = x
@@ -14,31 +13,29 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        if l1 == None and l2 == None: return None
         if l1 == None: return l2
         if l2 == None: return l1
         
         if l1.val < l2.val:
-            head = l1
-            node = head
+            current = l1
             other = l2
+            head = l1
         else:
-            head = l2
-            node = head
+            current = l2
             other = l1
+            head = l2
             
-        while node.next != None:
-            nextNode = node.next
-            nextval = nextNode.val
-            otherval = other.val
-            if nextval <= otherval:
-                node = node.next
-            else:
-                node.next = other
+        while current.next != None:
+            nextNode = current.next
+            if other.val < current.next.val:
+                current.next = other
+                current = other
                 other = nextNode
-                node = node.next
-            
-        node.next = other
+            else:
+                current = nextNode
+        
+        if other != None: current.next = other
         
         return head
-
+                
+                
