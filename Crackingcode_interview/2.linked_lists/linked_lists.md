@@ -6,6 +6,13 @@ class LinkNode():
     def __init__(self, x):
         self.val = x
         self.next = None
+        
+def printList(head):
+    node = head
+    while node.next != None:
+        print(node.val)
+        node = node.next
+    print(node.val)        
 ```
 test
 ```Python
@@ -26,11 +33,7 @@ E.next = F
 F.next = G
 G.next = H
 
-
-node = A
-while node.next != None:
-    print(node.val)
-    node = node.next
-print(node.val)
+## check the list
+printList(A)
 ```
 

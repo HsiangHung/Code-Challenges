@@ -5,18 +5,21 @@
 #
 # (a) -----------------------------------------------
 def remove_dupNode_a(head):
-    link_set = set({})
-    node = head.next
-    prev = head
-    while node != None:
-        if node.val in link_set:
-            nextNode =node.next
-            prev.next = nextNode
-            node = nextNode
-        else:
-            link_set.add(node.val)
+    nodes_set = set({})
+    node = head
+    prev= None
+    while node.next != None:
+        if node.val not in nodes_set:
+            nodes_set.add(node.val)
             prev = node
             node = node.next
+        else:
+            nextNode = node.next
+            prev.next = nextNode
+            node = nextNode
+    if node.val in nodes_set: prev.next = None
+        
+    return head
 
 
 # (b) -----------------------------------------------
@@ -37,19 +40,14 @@ def remove_dupNode_b(head):
             else:
                 prev= nodeB
                 nodeB = nodeB.next
-                
+        if nodeB.val == nodeA.val: prev.next = None        
             
         nodeA = nodeA.next
     
     
 
     
-remove_dupNode_b(A)
+new_head = remove_dupNode_b(A)
 
 ## print test function: -----
-
-node = A
-while node.next != None:
-    print(node.val)
-    node = node.next
-print(node.val)
+printList(new_head)
