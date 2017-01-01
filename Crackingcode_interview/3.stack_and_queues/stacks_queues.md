@@ -16,7 +16,7 @@ class stack():
     def pop(self):
         self.items.pop()
         
-    def get(self):
+    def peek(self):
         if self.items == []: return None
         return self.items[len(self.items)-1]
 ```
@@ -26,11 +26,11 @@ A = stack()
 print (A.isEmpty())
 A.push(10)
 A.push(5)
-print (A.get())
+print (A.peek())
 
 A.pop()
 A.push(100)
-print (A.get())
+print (A.peek())
 print (A.isEmpty())
 ```
 
