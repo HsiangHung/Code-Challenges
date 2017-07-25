@@ -17,16 +17,17 @@ class Solution(object):
         return self.sumLeftLeaves(root, 'N')
 
 
-    def sumLeftLeaves(self, root, D):
+    def sumLeftLeaves(self, root, branch):	
+    
+        sum = 0
         if not root.left and not root.right: 
-            if D == 'L': return root.val
-            return 0
-            
-        sum =0
-        if root.left != None:
+            if branch == 'L': sum += root.val
+            return sum
+
+        if root.left:
             sum += self.sumLeftLeaves(root.left, 'L')
             
-        if root.right != None:
+        if root.right:
             sum += self.sumLeftLeaves(root.right, 'R')
         
         return sum
