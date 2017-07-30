@@ -11,15 +11,16 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if head == None or head.next == None: return head
-            
-        node = head
+        if not head or not head.next: return head
+        
         prev = None
-        while node.next != None:
-            nextNode = node.next
+        node = head
+        nextNode = node.next
+        while node.next:
             node.next = prev
             prev = node
             node = nextNode
+            nextNode = node.next
             
         node.next = prev
         return node
