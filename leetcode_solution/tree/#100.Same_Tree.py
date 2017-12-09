@@ -13,23 +13,26 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        if p == None and q== None: return True
-        if p == None or q== None: return False
-        return self.traverse(p,q)
+        if not p and not q: return True
+        if not p or not q: return False
         
-    def traverse(self, p, q):
         if p.val != q.val: return False
         
-        if not p.left and not p.right and not q.right and not q.left: return True
+        if not p.left and not p.right and not q.left and not q.right: return True
         
-        if p.left != None and q.left != None and p.right != None and q.right != None:
-            return self.traverse(p.left, q.left) and self.traverse(p.right, q.right)
-        elif p.left != None and q.left != None and p.right == None and q.right == None:
-            return self.traverse(p.left, q.left)
-        elif p.left == None and q.left == None and p.right != None and q.right != None:
-            return self.traverse(p.right, q.right)
-        else:
+        isSame = True
+        
+        if p.left and q.left:
+            isSame = isSame and self.isSameTree(p.left, q.left)
+        elif p.left or q.left:
             return False
+        
+        if p.right and q.right:
+            isSame = isSame and self.isSameTree(p.right, q.right)
+        elif p.right or q.right:
+            return False
+            
+        return isSame
             
             
 ##### ----------------------------------------------------------
