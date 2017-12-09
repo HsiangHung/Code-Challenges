@@ -15,18 +15,17 @@ class Solution(object):
         :type sum: int
         :rtype: bool
         """
-        if not root: return False    
-        return self.pathSum(sum, root, root.val)
-    
-    def pathSum(self, sum, root, pathsum):
-        if not root.left and not root.right: 
-            return sum == pathsum
+        if not root: return False
+        return sum in set(self.pathSum(root))
         
-        isSumExist = False
+    def PathSum(self, root):
+        if not root.left and not root.right: return [root.val]
+        
+        path_sum = []
         if root.left:
-            isSumExist = isSumExist or self.pathSum(sum, root.left, pathsum+root.left.val)
+            path_sum += [root.val+x for x in self.pathSum(root.left)]
             
         if root.right:
-            isSumExist = isSumExist or self.pathSum(sum, root.right, pathsum+root.right.val)
-            
-        return isSumExist
+            path_sum += [root.val+x for x in self.pathSum(root.right)]
+        
+        return path_sum
