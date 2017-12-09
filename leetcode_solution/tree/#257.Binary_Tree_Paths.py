@@ -15,21 +15,18 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[str]
         """
-        self.paths = []
-        if root: self.treePath(root, str(root.val))
-        return self.paths
+        paths = []
+        if not root: return paths
     
-    def treePath(self, root, path):
-        if not root.left and not root.right:
-            self.paths.append(path)
-            return 
+        if not root.left and not root.right: return [str(root.val)]
         
         if root.left:
-            self.treePath(root.left, path+'->'+str(root.left.val))
+            paths = paths + [str(root.val)+'->'+x for x in self.binaryTreePaths(root.left)] 
             
         if root.right:
-            self.treePath(root.right, path+'->'+str(root.right.val))
-        
+            paths = paths + [str(root.val)+'->'+x for x in self.binaryTreePaths(root.right)]
+            
+        return paths
 
 
 

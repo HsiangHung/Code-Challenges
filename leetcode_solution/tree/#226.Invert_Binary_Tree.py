@@ -13,20 +13,16 @@ class Solution(object):
         :rtype: TreeNode
         """
         if not root: return root
+        if not root.left and not root.right: return root
         
-        L = root.left
-        R = root.right
-        if L and R:
+        if root.left and root.right:
             self.invertTree(root.left)
             self.invertTree(root.right)
-        elif L and not R:
+        elif root.left:
             self.invertTree(root.left)
-        elif not L and R:
-            self.invertTree(root.right)
         else:
-            return root
-        
-        root.left = R
-        root.right = L
+            self.invertTree(root.right)
+            
+        root.left, root.right = root.right, root.left
         
         return root
