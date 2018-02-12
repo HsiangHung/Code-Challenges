@@ -13,27 +13,25 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
-        if not p and not q: return True
-        if not p or not q: return False
-        
-        if p.val != q.val: return False
-        
-        if not p.left and not p.right and not q.left and not q.right: return True
-        
-        isSame = True
-        
-        if p.left and q.left:
-            isSame = isSame and self.isSameTree(p.left, q.left)
-        elif p.left or q.left:
-            return False
-        
-        if p.right and q.right:
-            isSame = isSame and self.isSameTree(p.right, q.right)
-        elif p.right or q.right:
-            return False
+        if p and q:
             
-        return isSame
+            if p.val != q.val: return False
             
+            if p.left and q.left and p.right and q.right:
+                return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+            elif p.left and q.left and not p.right and not q.right:
+                return self.isSameTree(p.left, q.left)
+            elif not p.left and not q.left and p.right and q.right:
+                return self.isSameTree(p.right, q.right)
+            elif not p.left and not q.left and not p.right and not q.right:
+                return True
+            else:
+                return False
+            
+        elif not p and not q: 
+            return True
+        else:
+            return False
             
 ##### ----------------------------------------------------------
 ## more concise code:
