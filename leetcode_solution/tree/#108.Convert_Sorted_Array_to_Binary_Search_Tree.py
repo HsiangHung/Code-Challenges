@@ -1,5 +1,6 @@
 ## [Leetcode#108] Convert Sorted Array to Binary Search Tree
 #
+#
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
@@ -14,15 +15,16 @@ class Solution(object):
         """
         if nums == []: return None
         
-        return self.root(nums)
+        middle = len(nums) // 2
         
-    def root(self, nums):
-        n = len(nums)
-        if n == 1: return TreeNode(nums[0])
+        root = TreeNode(nums[middle])
         
-        half = nums[int(n/2)]
-        node = TreeNode(half)
-        node.left = self.root(nums[:int(n/2)])
-        if  int(n/2)+1 < n:
-            node.right = self.root(nums[int(n/2)+1:])
-        return node
+        if len(nums) == 1: return root
+        
+        left = nums[:middle]
+        right = nums[middle+1:]
+        
+        root.left  = self.sortedArrayToBST(left)
+        root.right = self.sortedArrayToBST(right)
+        
+        return root
