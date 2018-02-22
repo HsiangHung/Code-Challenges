@@ -6,22 +6,28 @@ class treeNode():
         self.left = None
         self.right = None
         self.next = None
+        
+    def nextMethod(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
 
-def nextMethod(left, right):
-    
-    print (left.val, right.val)
-    left.next = right
-            
-    if left.left == None and left.right == None and right.left == None and right.right == None: return
+		if not root: return root
+        self.helper(root.left, root.right)
         
-    if left.left != None and left.right != None:
-        nextMethod(left.left, left.right)
-            
-    if right.left != None and right.right != None:
-        nextMethod(right.left, right.right)
+        print root.left.left.right.next.val
         
-    if left.right != None and right.left != None:
-        nextMethod(left.right, right.left)
+        
+    def helper(self, left, right):
+        if not left and not right:
+            return
+        
+        if left and right:
+            left.next = right
+            self.helper(left.left, left.right)
+            self.helper(right.left, right.right)
+            self.helper(left.right, right.left)
         
         
         
