@@ -1,4 +1,4 @@
-Q5.2 binarize float number
+# Q5.2 binarize float number
 #
 def float_binarize(x):
     bit, decimal = 1, float(1/2)
