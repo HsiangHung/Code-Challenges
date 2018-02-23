@@ -4,29 +4,21 @@
 ## find all permutation
 ##
 def permutation(s):
-    import copy
-    if len(s) == 1: return [s]
+	dp = {1: [[1]]}
+    sub_len = 2
+    while sub_len <= m:
+        dp[sub_len] = []
+        for sub in dp[sub_len-1]:
+            for y in range(sub_len+1):
+                new_list = [x for x in sub]
+                new_list.insert(y, sub_len)
+                if new_list not in dp[sub_len]:
+                    dp[sub_len].append(new_list)
+                
+        sub_len += 1
     
-    pert_sets = {}
-    
-    #pert_sets[1] = [[s[0]]]
-    pert_sets[1] = [[1]]
-    
-    n = len(s)
-    i =2
-    while i <= n:
-        pert_sets[i] = []
-        for lst in pert_sets[i-1]:
-            #print (lst)
-            for j in range(len(lst)+1):
-                new_lst = copy.deepcopy(lst)
-                new_lst.insert(j, s[i-1])
-                # new_lst.insert(j, i)
-                pert_sets[i].append(new_lst)
-        i +=1
-    
-    return [''.join(x) for x in pert_sets[n]]
+    return len(dp[m])
     
     
     
-print (permutation('abcd'))
+print (permutation(4))
