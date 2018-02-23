@@ -1,30 +1,23 @@
 ## Q9.6: generating a set of combined parentheses
 ## e.g. n=2, {'(())', '()()'}
 ## e.g. n=3, {'((()))', '(())()', '()(())', '(()())', '()()()'}
-def generate_parenthese(n):
-    import copy
-    pare_sets = {1: set({"()"})}
-    
-    i=2
-    while i <= n: 
-        pare_sets[i] = set({})
-        print (i)
+def parathese(n):
+    dp = {1: ["()"]}
+    pa = 2
+    while pa <= n:
+        subset = set({})
+        for x in dp[pa-1]:
+            print (x)
+            left_par_index = [i for i in range(len(x)) if x[i] == "("]
+            subset.add("()"+x)
+            for i in left_par_index:
+                new_string = x[:i+1]+"()"+x[i+1:]
+                subset.add(new_string)
+            
+        print (subset)
+        dp[pa] = subset
+        pa += 1
         
-        for pare in pare_sets[i-1]:
-            print ('pare',pare)
-            for m in range(len(pare)):
-                if m ==0:
-                    new_pare = pare[0]+'('+pare[1:]+')'
-                else:
-                    new_pare = pare[:m+1]+'('+pare[m+1:]+')'
-                #new_pare.insert(m+1,"(")
-                #new_pare.append(")")
-                print (m, new_pare)
-                pare_sets[i].add(new_pare)
-        i +=1
+    return dp[n]
     
-    print (pare_sets)
-    
-    return pare_sets[n]
-
-print (generate_parenthese(4))
+print (parathese(3))
