@@ -3,7 +3,6 @@
 #
 def get_subset(s):
     dp = {1: [set({x}) for x in s]}
-    print (dp)
     
     subset_len = 2
     while subset_len <= len(s):
