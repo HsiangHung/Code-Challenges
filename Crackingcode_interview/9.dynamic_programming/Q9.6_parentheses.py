@@ -1,6 +1,10 @@
 ## Q9.6: generating a set of combined parentheses
 ## e.g. n=2, {'(())', '()()'}
 ## e.g. n=3, {'((()))', '(())()', '()(())', '(()())', '()()()'}
+##
+## idea: to look for left parentheses: "(" and inert an "()" at the
+##       beginning and behind the left parentheses
+##
 def parathese(n):
     dp = {1: ["()"]}
     pa = 2
