@@ -11,14 +11,13 @@ def parathese(n):
     while pa <= n:
         subset = set({})
         for x in dp[pa-1]:
-            print (x)
-            left_par_index = [i for i in range(len(x)) if x[i] == "("]
-            subset.add("()"+x)
+            left_par_index = [i for i in range(len(x)) if x[i] == "("] ## look for index "("
+            
+            subset.add("()"+x)   ## insert at the beginning
             for i in left_par_index:
-                new_string = x[:i+1]+"()"+x[i+1:]
+                new_string = x[:i+1]+"()"+x[i+1:]  ## inert behind every "("
                 subset.add(new_string)
             
-        print (subset)
         dp[pa] = subset
         pa += 1
         
