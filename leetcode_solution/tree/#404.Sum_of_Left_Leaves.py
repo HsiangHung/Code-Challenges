@@ -31,3 +31,30 @@ class Solution(object):
             sum += self.sumLeftLeaves(root.right, 'R')
         
         return sum
+        
+        
+## solution II:
+class Solution(object):
+    def sumOfLeftLeaves(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if not root: return 0
+        return self.traverse(root.left, root.right)
+    
+    def traverse(self, left, right):
+        if not left and not right:
+            return 0
+        
+        sum = 0
+        if left:
+            if not left.left and not left.right:
+                sum += left.val
+            else:
+                sum += self.traverse(left.left, left.right)
+            
+        if right:
+            sum += self.traverse(right.left, right.right)
+            
+        return sum
