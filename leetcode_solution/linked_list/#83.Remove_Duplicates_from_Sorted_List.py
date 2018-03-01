@@ -11,19 +11,21 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if head == None: return 
-    
+        if not head: return head
+        
+        prev = None
         node = head
         while node.next != None:
             nextNode = node.next
             if nextNode.val == node.val:
-                if nextNode.next != None:
-                    nextNextNode = nextNode.next
-                    node.next = nextNextNode
+                if prev != None:
+                    prev.next = nextNode
                 else:
-                    node.next = None
+                    head = nextNode
             else:
-                node = nextNode
+                prev = node
                 
+            node = nextNode
+            
         return head
 
