@@ -10,7 +10,8 @@ class Solution(object):
         return self.traverse(root)[1]
     
     def traverse(self, root):
-        if not root.left and not root.right: return root.val, 0
+        if not root.left and not root.right:
+            return root.val, 0
 
         left_sum, left_tilt = 0, 0
         if root.left:
