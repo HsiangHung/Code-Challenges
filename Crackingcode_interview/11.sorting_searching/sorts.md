@@ -44,28 +44,28 @@ print (selection_sort([32, 13, 17, 2, 8, 19, 100, 1]))
 ## Insertion Sort
 ```Python
 ## Insertion sort: O(n^2)
-def insertionSort(arr):
-    arr_len = len(arr)
-    subArr = [arr[0]]
-    arr.pop(0)
-    for i in range(arr_len-1):
-        #print (i, len(subArr))
-        isInsert = False
-        for j in range(len(subArr)):
-            if subArr[j] > arr[0]:
-                #print (j, subArr[j], arr[0])
-                subArr.insert(j, arr[0])
-                arr.pop(0)
-                isInsert = True
-                break  ## Note!! this break is super important !!!!
-        if isInsert == False: 
-            subArr.append(arr[0])
-            arr.pop(0)
-        print (len(subArr), subArr, arr)
-    return subArr
-            
-arr = [4, 54, 26, 93, 17, 77, 31, 44, 1, 0]      
-print (insertionSort(arr))
+def insertion_sort(nums):
+    sorted_nums = [nums[0]]
+    nums.remove(nums[0])
+    while len(nums) > 0:
+        
+        target = nums[0]
+        if target < sorted_nums[0]:
+            i = 0
+        elif target > sorted_nums[-1]:
+            i = len(sorted_nums)
+        else:
+            for i in range(1, len(sorted_nums)):
+                if sorted_nums[i] > target > sorted_nums[i-1]:
+                    break
+        
+        sorted_nums.insert(i, target)
+        nums.remove(target)
+        
+    return sorted_nums
+                 
+print (insertion_sort([4, 54, 26, 93, 17, 77, 31, 44, 1, 0]))
+print (insertion_sort([32, 13, 17, 2, 8, 19, 100, 1]))
 ```
 
 ## Merge Sort
