@@ -4,17 +4,21 @@
 ## Bubble Sort
 ```Python
 # Bubble: O(n^2)
-def bubbleSort(arr):
-    arr_len = len(arr)
-    for i in range(arr_len-1):
-        jj = arr_len-1
-        for j in range(jj):
-            if arr[j] > arr[j+1]: arr[j], arr[j+1] = arr[j+1], arr[j]
-        jj -= 1
-    return arr
-    
-arr = [4, 54, 26, 93, 17, 77, 31, 44, 1, 0]      
-print (bubbleSort(arr))
+def bubble_sort(nums):
+    ordered = False
+    while not ordered:
+        for i in range(1, len(nums)):
+            
+            if i == 1: ordered = True
+            
+            ordered = ordered and nums[i] > nums[i-1]
+            if nums[i] < nums[i-1]:
+                nums[i], nums[i-1] = nums[i-1], nums[i]
+                         
+    return nums
+          
+print (bubble_sort([4, 54, 26, 93, 17, 77, 31, 44, 1, 0]))
+print (bubble_sort([32, 13, 17, 2, 8, 19, 100, 1]))
 ```
 
 ##  Selection Sort
