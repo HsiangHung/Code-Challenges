@@ -86,7 +86,7 @@ def mergeSort(arr):
 arr = [54, 26, 93, 17, 77, 31, 44, 1, 0]      
 print(mergeSort(arr))
 ````
-The merge sort can be written more concisely using helper function:
+The merge sort can be written more concisely using helper function 'merge_list':
 ```Python
 def merge_sort(nums):
     if len(nums) == 1: return nums
@@ -98,6 +98,7 @@ def merge_sort(nums):
 
 
 def merge_list(num1, num2):
+    '''This fucntion is used to merge two sorted arrays as one sorted array'''
     sorted_nums = []
     idx1, idx2 = 0, 0
     while idx1 < len(num1) or idx2 < len(num2):
