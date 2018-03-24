@@ -24,22 +24,21 @@ print (bubble_sort([32, 13, 17, 2, 8, 19, 100, 1]))
 ##  Selection Sort
 ```Python
 ## Selection sort: O(n^2)
-def selectionSort(arr):
-    arr_len = len(arr)
-    jj = arr_len
-    for i in range(arr_len):
-        max_arr = float('-infinity')
-        for j in range(jj):
-            if arr[j] > max_arr:
-                max_arr = arr[j]
-                max_site = j
-        print (max_arr, max_site)
-        arr[max_site], arr[jj-1] = arr[jj-1], arr[max_site]
-        jj -= 1
-    return arr
-    
-arr = [4, 54, 26, 93, 17, 77, 31, 44, 1, 0]      
-print (selectionSort(arr))
+def selection_sort(nums):
+    compare_len = len(nums)
+    while compare_len > 0:
+        max_val, max_idx = nums[0], 0
+        for i in range(1, compare_len):
+            if nums[i] > max_val:
+                max_val, max_idx = nums[i], i
+        
+        nums[compare_len-1], nums[max_idx] = nums[max_idx], nums[compare_len-1]
+        compare_len -= 1
+        
+    return nums
+     
+print (selection_sort([4, 54, 26, 93, 17, 77, 31, 44, 1, 0]))
+print (selection_sort([32, 13, 17, 2, 8, 19, 100, 1]))
 ```
 
 ## Insertion Sort
