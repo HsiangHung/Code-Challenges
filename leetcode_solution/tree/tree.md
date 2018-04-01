@@ -165,14 +165,11 @@ class Solution(object):
         :rtype: int
         """
         if not root: return 0
-        self.traversal(root, [], sum)
+        self.traversal(root, [str(root.val)], sum)
         
     def traversal(self, root, sumList, sum):
-        if len(sumList) == 0:
-            sumList.append(str(root.val))
-        else:
-            for i in range(len(sumList)-1):
-                sumList[i] += '->' + str(root.val)
+        for i in range(len(sumList)-1):
+            sumList[i] += '->' + str(root.val)
                 
         print sumList
         
