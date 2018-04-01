@@ -155,8 +155,35 @@ class Solution(object):
 ```
 
 
-
-
+# Show all possible paths, start from any node and end at any node. 
+```Python
+class Solution(object):
+    def pathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: int
+        """
+        if not root: return 0
+        self.traversal(root, [], sum)
+        
+    def traversal(self, root, sumList, sum):
+        if len(sumList) == 0:
+            sumList.append(str(root.val))
+        else:
+            for i in range(len(sumList)-1):
+                sumList[i] += '->' + str(root.val)
+                
+        print sumList
+        
+        if not root.left and not root.right: return
+        
+        if root.left:
+            self.traversal(root.left, sumList+[str(root.left.val)], sum)
+            
+        if root.right:       
+            self.traversal(root.right, sumList+[str(root.right.val)], sum)
+```
 
 
 
