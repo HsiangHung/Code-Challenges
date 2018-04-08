@@ -8,6 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        # http://bookshadow.com/weblog/2016/10/25/leetcode-find-all-duplicates-in-an-array/
         # through all nums, take the number as the index |n|, 
         # if nums[|n|-1] > 0 => first appear, nums[|n|-1] = -nums[|n|-1]
         # if nums[|n|-1] < 0 => second appear, store nums[|n|-1] 
