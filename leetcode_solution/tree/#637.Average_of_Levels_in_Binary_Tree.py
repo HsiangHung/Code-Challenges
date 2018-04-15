@@ -1,31 +1,25 @@
 #[Leetcode#637] Average of Levels in Binary Tree
 #
+#  Facebook
+#
 class Solution(object):
     def averageOfLevels(self, root):
         """
         :type root: TreeNode
         :rtype: List[float]
         """
-        if not root: return []
+        self.level_avg = {}
+        self.traversal(0, root)
+        return [sum(self.level_avg[depth])*1.0/len(self.level_avg[depth]) for depth in self.level_avg]
+    
+    
+    def traversal(self, depth, root):
+        self.level_avg[depth] = self.level_avg.get(depth, []) + [root.val]
         
-        avg_level = {}
-        self.traverse(avg_level, root, 0)
-        
-        avg_level = {x: float(sum(avg_level[x]))/len(avg_level[x]) for x in avg_level}
-        return [x[1] for x in sorted(avg_level.items())]
-        
-    def traverse(self, avg_level, root, depth):
-        
-        if depth not in avg_level:
-            avg_level[depth] = [root.val]
-        else:
-            avg_level[depth].append(root.val) 
-        
-        if not root.left and not root.right:
-            return 
-        
+        if not root.left and not root.right: return
+    
         if root.left:
-            self.traverse(avg_level, root.left, depth+1)
+            self.traversal(depth+1, root.left)
             
         if root.right:
-            self.traverse(avg_level, root.right, depth+1)
+            self.traversal(depth+1, root.right)
