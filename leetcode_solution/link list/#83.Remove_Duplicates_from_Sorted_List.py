@@ -13,19 +13,15 @@ class Solution(object):
         """
         if not head: return head
         
-        prev = None
         node = head
         while node.next != None:
             nextNode = node.next
             if nextNode.val == node.val:
-                if prev != None:
-                    prev.next = nextNode
+                if nextNode.next != None:
+                    node.next = nextNode.next
                 else:
-                    head = nextNode
+                    node.next = None
             else:
-                prev = node
+                node = nextNode
                 
-            node = nextNode
-            
         return head
-
