@@ -1,6 +1,6 @@
-## [#744] Find Smallest Letter Greater Than Target
+# [#744] Find Smallest Letter Greater Than Target
 #
-#  Google
+# Google
 #
 class Solution(object):
     def nextGreatestLetter(self, letters, target):
@@ -14,9 +14,12 @@ class Solution(object):
                       'm': 13, 'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18,
                       's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24,
                       'y': 25, 'z': 26}
+        
         return self.search(letters, target)
 
+        
     def search(self, letters, target):
+        
         if self.ch[target] >= self.ch[letters[-1]] or self.ch[target] < self.ch[letters[0]]: 
             return letters[0]
         
@@ -31,4 +34,3 @@ class Solution(object):
         elif self.ch[target] <= self.ch[letters[mid]]:
             return self.search(letters[:mid+1], target)
         
-                
