@@ -16,24 +16,12 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        if root == None: return None
-        if p.val > q.val:
-            return self.getNode(root, q, p)
+        if min(p.val, q.val) <= root.val <= max(p.val, q.val):
+            return root
+        
+        if root.val > max(p.val, q.val):
+            return self.lowestCommonAncestor(root.left, p, q)
         else:
-            return self.getNode(root, p, q)
-        
-    def getNode(self, root, p, q):
-        """
-        : type root, p, q: TreeNode (q > p)
-        : rtype: int
-        """
-        if p.val <= root.val <= q.val: return root.val
-        
-        if p.val <= root.val and q.val <= root.val:
-            return self.getNode(root.left, p, q)
-            
-        if p.val >= root.val and q.val >= root.val:
-            return self.getNode(root.right, p, q)
-
+            return self.lowestCommonAncestor(root.right, p, q)
 
 
