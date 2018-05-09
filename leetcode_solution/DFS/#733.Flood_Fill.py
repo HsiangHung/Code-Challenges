@@ -1,7 +1,7 @@
 ## [Leetcode#733] Flood Fill
 ##
 ##
-cclass Solution(object):
+class Solution(object):
     def floodFill(self, image, sr, sc, newColor):
         """
         :type image: List[List[int]]
