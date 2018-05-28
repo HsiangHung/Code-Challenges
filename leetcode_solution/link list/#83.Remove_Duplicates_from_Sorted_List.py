@@ -14,14 +14,11 @@ class Solution(object):
         if not head: return head
         
         node = head
-        while node.next != None:
+        while node != None and node.next != None:
             nextNode = node.next
-            if nextNode.val == node.val:
-                if nextNode.next != None:
-                    node.next = nextNode.next
-                else:
-                    node.next = None
-            else:
-                node = nextNode
+            while nextNode != None and nextNode.val == node.val:
+                nextNode = nextNode.next
+            node.next = nextNode
+            node = nextNode
                 
         return head
