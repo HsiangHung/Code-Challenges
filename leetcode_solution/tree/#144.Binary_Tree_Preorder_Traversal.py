@@ -18,20 +18,20 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        if root is None:
-            return
- 
-        nodeStack = [root]
-   
-        while(len(nodeStack) > 0):
-         
-            root = nodeStack.pop()
-            print root.val
-            if root.right is not None:
-                nodeStack.append(root.right)
-                
-            if root.left is not None:
-                nodeStack.append(root.left)
-                
-        print nodeStack
+        preorder = []
         
+        if not root: return preorder
+        
+        stack = [root]
+        while len(stack) != 0:
+            node = stack.pop(0)
+            
+            preorder.append(node.val)
+            #print node.val
+            if node.right:
+                stack.insert(0, node.right)
+                
+            if node.left:
+                stack.insert(0, node.left)
+                
+        return preorder
