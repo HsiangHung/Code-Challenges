@@ -14,17 +14,12 @@ class Solution(object):
         :rtype: TreeNode
         """
         if nums == []: return None
+        if len(nums) == 1: return TreeNode(nums[0])
         
         middle = len(nums) // 2
         
         root = TreeNode(nums[middle])
-        
-        if len(nums) == 1: return root
-        
-        left = nums[:middle]
-        right = nums[middle+1:]
-        
-        root.left  = self.sortedArrayToBST(left)
-        root.right = self.sortedArrayToBST(right)
+        root.left  = self.sortedArrayToBST(nums[:middle])
+        root.right = self.sortedArrayToBST(nums[middle+1:])
         
         return root
