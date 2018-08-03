@@ -29,3 +29,31 @@ class Solution(object):
             path_sum += [root.val+x for x in self.pathSum(root.right)]
         
         return path_sum
+
+
+## solution-2
+
+class Solution(object):
+    def hasPathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: bool
+        """
+        if not root: return False
+        return self.traversal(root, sum, root.val)
+    
+    def traversal(self, root, sum, pathsum):
+        if not root.left and not root.right:
+            if pathsum == sum: return True
+            return False
+        
+        hasPathSum = False
+        if root.left:
+            hasPathSum = hasPathSum or self.traversal(root.left, sum, pathsum+root.left.val)
+            
+        if root.right:
+            hasPathSum = hasPathSum or self.traversal(root.right, sum, pathsum+root.right.val)
+            
+        return hasPathSum
+        
