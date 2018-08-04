@@ -14,20 +14,15 @@ class Solution(object):
         :rtype: bool
         """
 		if not root: return True
+        return self.get_subtree_depth(root) != - 1
+
         
-        if self.traverse(root) < 0: return False
-        return True
+    def get_subtree_depth(self, root):
+        if not root: return 0
         
-    def traverse(self, root):
-        if not root.left and not root.right: return 0
+        left_depth, right_depth = self.get_subtree_depth(root.left), self.get_subtree_depth(root.right)
         
-        L_depth, R_depth = 0, 0
-        if root.left:
-            L_depth += self.traverse(root.left) + 1
-        
-        if root.right:
-            R_depth += self.traverse(root.right) + 1
-        
-        if min(L_depth, R_depth) < 0 or abs(L_depth-R_depth) > 1: return -2
-                
-        return max(L_depth, R_depth)
+        if left_depth == -1 or right_depth == -1 or abs(left_depth-right_depth) > 1:
+            return -1
+        else:
+            return max(left_depth + 1, right_depth + 1)
