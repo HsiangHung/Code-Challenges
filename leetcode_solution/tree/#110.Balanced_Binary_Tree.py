@@ -1,5 +1,5 @@
-## [Leetcode#110] Balanced Binary Tree
-## Given a binary tree, determine if it is height-balanced.
+## [Leetcode#700] Search in a Binary Search Tree
+#
 #
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -8,12 +8,13 @@
 #         self.right = None
 
 class Solution(object):
-    def isBalanced(self, root):
+    def searchBST(self, root, val):
         """
         :type root: TreeNode
-        :rtype: bool
+        :type val: int
+        :rtype: TreeNode
         """
-		if not root: return True
+        if not root: return True
         return self.get_subtree_depth(root) != - 1
 
         
@@ -26,3 +27,4 @@ class Solution(object):
             return -1
         else:
             return max(left_depth + 1, right_depth + 1)
+
