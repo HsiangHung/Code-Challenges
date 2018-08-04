@@ -10,17 +10,16 @@ class Solution(object):
         """
         :type head: ListNode
         :rtype: ListNode
-        """
-        if not head or not head.next: return head
+        """        
+        if not head: return head
         
-        prev = None
-        node = head
-        nextNode = node.next
-        while node.next:
+        prev, node = None, head
+        while node.next != None:
+            nextNode = node.next
+            
             node.next = prev
             prev = node
             node = nextNode
-            nextNode = node.next
             
         node.next = prev
         return node
