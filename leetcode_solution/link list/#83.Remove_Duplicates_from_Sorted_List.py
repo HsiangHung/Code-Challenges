@@ -22,3 +22,29 @@ class Solution(object):
             node = nextNode
                 
         return head
+
+
+## solution 2: if duplication, skip the current node and let prev.next = next node
+class Solution2(object):
+    def deleteDuplicates(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head or head.next == None: return head
+        
+        prev, node = None, head
+        while node.next != None:
+            nextNode = node.next
+            if nextNode.val == node.val:
+                if node != head:
+                    node = nextNode
+                    prev.next = node
+                else:
+                    node = nextNode
+                    head = node
+            else:
+                prev= node
+                node = nextNode
+                
+        return head
