@@ -15,55 +15,39 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        if headA == None or headB == None: return None
+        if not headA or not headB: return None
         
-        if headA.val == headB.val: return headA
-        
-        len_A = self.getLength(headA)
-        len_B = self.getLength(headB)
-        diff_len = abs(len_A - len_B)
-        if len_A == len_B:
-            nodeA = headA
-            nodeB = headB
-            while nodeA != None and nodeB != None:
-                if nodeA.val == nodeB.val: return nodeA
-                nodeA = nodeA.next
-                nodeB = nodeB.next
-            return None
-        elif len_A != len_B:
-            if len_A > len_B:
-                long_  = headA
-                short_ = headB
-            else:
-                long_  = headB
-                short_ = headA
-                
-            #print long_.val, short_.val, diff_len
-            length = 0
-            while long_.next != None:
-                length += 1
-                long_ = long_.next
-                if length == diff_len: break
-            #print long_.val
-            while long_.next != None and short_.next != None:
-                if long_.val == short_.val: return short_
-                long_ = long_.next
-                short_ = short_.next
-            if long_.val == short_.val: return short_
+        if self.get_length(headA) >= self.get_length(headB):
+            long, long_head, short, short_head = headA, headA, headB, headB
+        else:
+            long, long_head, short, short_head = headB, headB, headA, headA
+            
+        while short != None:
+            if long.val == short.val: return long
+            long = long.next
+            short = short.next
 
-            return None
+        if long == None: return None
+        short = long_head
+        while long != None:
+            if long.val == short.val: return long
+            long = long.next
+            short = short.next
+            
+        if short == None: return None
+        long = short_head
+        while short != None:
+            if long.val == short.val: return long
+            long = long.next
+            short = short.next
+            
+        return None
         
-        
-    def getLength(self, head):
-        """
-        get length of a linked list
-        : type head: ListNode
-        : rtype: int
-        """
-        if head == None: return 0
-        length = 0
-        node = head
+    
+    def get_length(self, head):
+        if not head: return 0
+        length, node = 1, head
         while node.next != None:
             length += 1
             node = node.next
-        return length +1
+        return length
