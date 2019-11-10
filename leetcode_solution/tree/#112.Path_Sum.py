@@ -25,6 +25,8 @@ class Solution:
         else:
             return sum == 0
 
+## solution-2
+
 class Solution2(object):
     def hasPathSum(self, root, sum):
         """
@@ -47,8 +49,7 @@ class Solution2(object):
         
         return path_sum
 
-
-## solution-2
+## solution-3
 
 class Solution3(object):
     def hasPathSum(self, root, sum):
