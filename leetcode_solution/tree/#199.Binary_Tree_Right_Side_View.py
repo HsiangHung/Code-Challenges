@@ -7,53 +7,19 @@
 #         self.right = None
 #
 class Solution(object):
-    def rightSideView(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        if not root: return []
+    def rightSideView(self, root: TreeNode) -> List[int]:
         self.view = []
-        self.traversal(1, root)
+        self.DFS(root, 0)
         return self.view
-    
-    
-    def traversal(self, depth, root):
+        
+    def DFS(self, root, depth):
+        if not root: return 
+        depth += 1
+        
         if len(self.view) < depth:
             self.view.append(root.val)
         else:
             self.view[depth-1] = root.val
         
-        if not root.left and not root.right:
-            return
-        
-        if root.left:
-            self.traversal(depth+1, root.left)
-            
-        if root.right:
-            self.traversal(depth+1, root.right)
-        
-        
-# ----------------------------------------------------------------------------        
-### method two:
-    def rightSideView2(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        if not root: return []
-        
-        self.levels = []
-        self.traverse(root, 1)
-        return [x[0] for x in self.levels]
-        
-    def traverse(self, root, depth):
-        if len(self.levels) < depth:
-            self.levels.append([root.val])
-        else:
-            self.levels[depth-1].insert(0, root.val)
-            
-        if not root.left and not root.right: return
-    
-        if root.left != None: self.traverse(root.left, depth+1)
-        if root.right != None: self.traverse(root.right, depth+1)
+        self.DFS(root.left, depth)
+        self.DFS(root.right, depth)
