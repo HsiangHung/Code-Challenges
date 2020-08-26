@@ -20,8 +20,6 @@ class Solution:
         
         for neighbor in neighbors:
             newNode.neighbors.append(self.cloneGraph(neighbor))
-                
-        print newNode.neighbors
         
         return newNode
         
