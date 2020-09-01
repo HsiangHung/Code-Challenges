@@ -10,6 +10,9 @@
 
 class Solution:
     def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+        '''
+        https://zhuanlan.zhihu.com/p/136165101
+        '''
         row, col = binaryMatrix.dimensions()
 
         x, y = col-1, 0
