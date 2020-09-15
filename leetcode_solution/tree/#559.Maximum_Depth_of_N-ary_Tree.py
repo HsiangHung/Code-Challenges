@@ -17,10 +17,9 @@ class Solution(object):
         """
         
         if not root: return 0
-        if root.children == []: return 1
         
-        max_depth = 1
+        max_depth = 0
         for child in root.children:
-            max_depth = max(max_depth, self.maxDepth(child)+1)
+            max_depth = max(max_depth, self.maxDepth(child))
         
-        return max_depth
+        return max_depth + 1
