@@ -26,27 +26,25 @@ class Solution:
 
         
     def DFS(self, graph, id):
-        
-        while len(graph) > 0:
-                        
-            if id in graph:
+                                
+        if id in graph:
             
-                connection = graph[id]
-                del graph[id]
+            connection = graph[id]
+            del graph[id]
 
-                for neighbor in connection:
-                    if neighbor in self.visited:
-                        if self.visited[neighbor] == self.visited[id]:
-                            return False
-                    else:
-                        self.visited[neighbor] = self.assign_color(id)
-                        if not self.DFS(graph, neighbor):
-                            return False
-            else:
-                return True  # important! once all nodes in the current graph visit, and
-                             # all signs correct, return True
+            for neighbor in connection:
+                if neighbor in self.visited:
+                    if self.visited[neighbor] == self.visited[id]:
+                        return False
+                else:
+                    self.visited[neighbor] = self.assign_color(id)
+                    if not self.DFS(graph, neighbor):
+                        return False
+            
+        return True     # important! once all nodes in the current graph visit, and
+                        # all signs correct, return True
 
-        return True
+        
             
         
     def assign_color(self, i):
