@@ -8,28 +8,14 @@ class Solution(object):
         :rtype: bool
         """
         i, j = 0, len(s)-1
-        isInvalid = False
         while i < j:
-            #print i, s[i], j, s[j]
             if s[i] == s[j]:
                 i += 1
                 j -= 1
-            else:         
-                substringValid = False
-                ## in the following we need to check two cases, either move i, or move j
-                ## ie. "lcupuu..... uupucul"
-                ##  both s[i] == s[j-1] and s[i+1] == s[j] satisfy
-                if s[i] == s[j-1]:
-                    substringValid = substringValid or self.validPalindrome2(s[i:j])
-                    
-                if s[i+1] == s[j]:
-                    substringValid = substringValid or self.validPalindrome2(s[i+1:j+1])
-                    
-                if substringValid: 
+            else:
+                if self.validPalindrome2(s[i:j]) or self.validPalindrome2(s[(i+1):(j+1)]):
                     return True
-                else:
-                    return False
-                
+                return False
         return True
         
         
