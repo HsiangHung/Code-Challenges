@@ -8,6 +8,9 @@
 #         self.right = right
 class Solution:
     def getAllElements(self, root1: TreeNode, root2: TreeNode) -> List[int]:
+        '''
+        find inorder list for each tree, respectively and merge the sorted lists.
+        '''
         if not root1 and not root2: return []
         
         if not root1: return self.DFS(root2)
