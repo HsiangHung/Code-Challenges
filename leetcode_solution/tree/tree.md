@@ -122,13 +122,6 @@ Both solutions use stack.
 First one is more concise.
 
 ```Python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution1(object):
     def BreadthFirstSearch(self, root):
         """
@@ -172,13 +165,6 @@ gives
 ```
 
 ```Python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution2(object):
     def BreadthFirstSearch(self, root):
         """
