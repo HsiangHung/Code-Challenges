@@ -155,6 +155,21 @@ class Solution1(object):
         if len(next_stack) > 0:       
             self.BFS(next_stack, depth+1)
 ```
+gives
+```
+10 0
+5 1
+15 1
+1 2
+6 2
+12 2
+20 2
+2 3
+8 3
+11 3
+13 3
+18 3
+```
 
 ```Python
 # Definition for a binary tree node.
