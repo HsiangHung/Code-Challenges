@@ -116,7 +116,11 @@ def postorder(root):
 
 
 
-# BFS on tree
+# BFS on tree 
+
+Both solutions use stack. 
+First one is more concise.
+
 ```Python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -125,7 +129,42 @@ def postorder(root):
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+class Solution1(object):
+    def BreadthFirstSearch(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        self.BFS([root], 0)
+        
+    def BFS(self, stack):
+        next_stack = []
+        while len(stack) > 0:
+            node = stack.pop(0)
+            
+            print (node.val, depth)
+
+            if node.left:
+                next_stack.append(node.left)
+                
+            if node.right:
+                next_stack.append(node.right)
+
+            # note, here we need to go through nodes in the same layer, then next recursion
+        
+        if len(next_stack) > 0:       
+            self.BFS(next_stack, depth+1)
+```
+
+```Python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution2(object):
     def BreadthFirstSearch(self, root):
         """
         :type root: TreeNode
