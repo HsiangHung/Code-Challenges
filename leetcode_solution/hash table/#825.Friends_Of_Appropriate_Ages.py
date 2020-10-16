@@ -15,7 +15,7 @@ class Solution:
         requests = 0
         
         for A in sorted(ages_dict.keys()):
-            for B in range(int(0.5*A) + 7 +1, A+1):
+            for B in range(int(0.5*A) + 7 +1, A+1): # do NOT loop ages, time exceed
                 if B in ages_dict:
                     requests += ages_dict[A]*(ages_dict[B] - int(A == B))
                 
