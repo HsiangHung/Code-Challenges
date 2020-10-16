@@ -130,7 +130,7 @@ class Solution1(object):
         """
         self.BFS([root], 0)
         
-    def BFS(self, stack):
+    def BFS(self, stack, depth):
         next_stack = []
         while len(stack) > 0:
             node = stack.pop(0)
