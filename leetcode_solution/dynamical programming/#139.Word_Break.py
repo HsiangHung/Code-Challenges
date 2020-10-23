@@ -3,6 +3,8 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         '''
+        http://bangbingsyb.blogspot.com/2014/11/leetcode-word-break-i-ii.html
+        https://baihuqian.github.io/2018-06-24-word-break/
         if s is breakable, s[k:] is in dictionary and s[j:k] is in dict .... and s[0:j] is in
         '''
         wordDict = set(wordDict)
