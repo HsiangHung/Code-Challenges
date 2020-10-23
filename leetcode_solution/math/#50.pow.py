@@ -47,17 +47,14 @@ class Solution2:
         https://zxi.mytechroad.com/blog/math/leetcode-50-powx-n/
         '''
                 
-        if n == 0: return 1
-
+        factor = 1 if n % 2 == 1 else 0
+        
         if n > 0:
-            if n % 2 == 1: 
-                n -= 1
-                return x*(self.myPow(x, n // 2))**2
-            else:
-                return self.myPow(x, n // 2)**2
+            if n == 1: return x
+        elif n < 0:
+            if n == -1: return 1/x
         else:
-            if abs(n) % 2 == 1: 
-                n += 1
-                return (self.myPow(x, n // 2))**2/x
-            else:
-                return self.myPow(x, n // 2)**2
+            return 1
+        
+        power = self.myPow(x, n // 2)
+        return power*power*(x**factor)
