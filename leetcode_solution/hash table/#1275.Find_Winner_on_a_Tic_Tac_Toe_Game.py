@@ -4,6 +4,7 @@ class Solution:
     def tictactoe(self, moves: List[List[int]]) -> str:
         '''
         https://blog.csdn.net/u013894776/article/details/104101776
+        if all 1 or -1 (1) in a row (2) in a col (3) all diagonal, someone wins
         '''
         
         rows, cols = {i: 0 for i in range(3)}, {i: 0 for i in range(3)}
