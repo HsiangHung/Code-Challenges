@@ -22,6 +22,7 @@ class TicTacToe:
                 1: Player 1 wins.
                 2: Player 2 wins.
         """
+        # https://yeqiuquan.blogspot.com/2017/04/348-design-tic-tac-toe.html
         
         point = {1: -1, 2: 1} # player=1, point=x; player=2, point=o
         
