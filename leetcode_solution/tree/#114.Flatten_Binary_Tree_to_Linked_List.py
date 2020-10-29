@@ -3,31 +3,29 @@
 #  Microsoft
 #
 class Solution(object):
-    def flatten(self, root):
+     def flatten(self, root: TreeNode) -> None:
         """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
+        Do not return anything, modify root in-place instead.
         """
         if not root: return
-        self.last_node = None
-        self.traversal(root)
         
-    def traversal(self, root):
-        if not root.left and not root.right:
-            self.last_node = root
-            return
-        
-        if root.left:
-            self.flatten(root.left)
-            
-        if root.right:
-            right = root.right
-            if self.last_node:
-                self.last_node.right = right
-                self.last_node.left = None
-            self.flatten(right)
-            
-        if root.left:
-            root.right = root.left
-            root.left = None
+        if not root.left and not root.right: return root
                 
+        left, right = root.left, root.right
+        
+        if left and right:
+            root.right = left
+            root.left = None
+            left = self.flatten(left)            
+            left.right = right
+            right = self.flatten(right)
+            return right
+        elif left and not right:
+            root.right = left
+            root.left = None
+            left = self.flatten(left)
+            return left
+        elif not left and right:  # note, this is necessary since we need to come back last node for later concat.
+            return self.flatten(right)
+        
+        return right               
