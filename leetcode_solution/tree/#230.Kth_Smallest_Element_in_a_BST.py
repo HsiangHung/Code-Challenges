@@ -9,21 +9,15 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        self.nodes = []
-        self.traversal(root, k)
-        return self.nodes[k-1]
-    
-    def traversal(self, root, k):
-        if not root.left and not root.right:
-            self.nodes.append(root.val)
-            return
+        if not root: return
+        self.element = []
+        self.DFS(root, k)
+        print (self.element)
+        return self.element[k-1]
         
-        if root.left:
-            self.traversal(root.left, k)
-            
-        self.nodes.append(root.val)
-        if len(self.nodes) >= k: return
-        
-        if root.right:
-            self.traversal(root.right, k)
+    def DFS(self, root, k):
+        if len(self.element) >= k: return 
+        if root.left: self.DFS(root.left, k)
+        self.element.append(root.val)
+        if root.right: self.DFS(root.right, k)
             
