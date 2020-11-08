@@ -53,3 +53,45 @@ class Solution:
         else:
             return 1
             
+
+
+class Solution2:
+    def isBipartite(self, graph: List[List[int]]) -> bool:
+        '''
+        This version looks a BFS, but still DFS. Two points:
+        1) after node is visited and it's neighbors, immediately visit it's neighbors
+        2) whne a node has not been visited, checked if this node was other visited nodes'
+           neighbors. Otherwise randomly assign it's label = 1
+        '''
+        graph = {node:graph[node] for node in range(len(graph))}
+    
+        nodes = list(graph.keys())
+        node = nodes.pop(0)
+
+        visited = {}
+        while nodes:
+            edges = graph[node]
+            
+            if node not in visited:
+                edgeVisited = False  # trick 1: check if node's neighbor has been visited.
+                for edge in edges:
+                    if edge in visited:
+                        visited[node] = self.op_label(visited[edge])
+                        edgeVisited = True
+                        
+                if not edgeVisited: visited[node] = 1
+            
+            for edge in edges:
+                if edge in visited:
+                    if visited[edge] != self.op_label(visited[node]):
+                        return False
+                else:
+                    visited[edge] = self.op_label(visited[node])
+                    nodes.remove(edge)
+                    nodes.insert(0, edge)  ## trick 2: insert edge in nodes, but do soon.
+            node = nodes.pop(0) 
+        
+        return True
+            
+    def op_label(self, label):
+        return 1 if label == -1 else -1
