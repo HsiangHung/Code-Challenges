@@ -12,35 +12,27 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        node = head
-        if node == None or node.next == None: return node
-        if node.next.next == None:
-            nextNode = node.next
-            nextNode.next = node
-            node.next = None
-            return nextNode
-
-        prev= None
+        if not head or not head.next: return head
+        
+        new_head = head.next 
+        
+        prev, node = head, head.next
         while node.next != None and node.next.next != None:
             nextNode = node.next
-            nextNextNode = nextNode.next
-            ## -- check head ---
-            if head == node: head = nextNode
-            ## -- flip--
-            if prev != None: prev.next = nextNode
-            nextNode.next = node
-            node.next =nextNextNode
-            prev = node
-            ## -- flip is done --
-            node = nextNextNode
-            
-        if node.next != None:
-            nextNode = node.next
-            prev.next = nextNode
-            nextNode.next = node
-            node.next = None
-        else:
-            prev.next = node
-            node.next = None
+            nn = nextNode.next
+            node.next = prev
+            prev.next = nn
+            prev, node = nextNode, nn
         
-        return head
+        # now the last prev, node pair doesn't swap. we need to swap them:
+
+        if node.next != None:
+            nextNode = node.next  # when odd link-list: [1,2,3,4,5] => [2,1,4,3,5]
+            node.next = prev
+            prev.next = nextNode
+        else:                     # when even link-list: [1,2,3,4]
+            node.next = prev
+            prev.next = None
+            
+            
+        return new_head
