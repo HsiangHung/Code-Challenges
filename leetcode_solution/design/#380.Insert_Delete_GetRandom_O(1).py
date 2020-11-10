@@ -38,6 +38,16 @@ class RandomizedSet:
         else:
             return False
 
+    def getRandom2(self) -> int:
+        """
+        Get a random element from the set.
+        """
+        import random
+        if len(self.set) >= 1:
+            return list(self.set)[random.randint(0, len(self.set)-1)]
+        else:
+            return False
+
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()
