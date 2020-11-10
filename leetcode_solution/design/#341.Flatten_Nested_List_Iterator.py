@@ -24,7 +24,11 @@
 
 class NestedIterator:
     def __init__(self, nestedList: [NestedInteger]):
-        
+        '''
+        We need to prepare the flat nest first but calls next() and hasNext().
+        Otherwsie while i.appen(next()), there are still [[1,5], [2,3,4], ...] structures
+        So the self.pointer is the pointer on the flatten array.
+        '''
         self.flat = []
         for x in nestedList:
             if x.isInteger():
