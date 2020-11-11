@@ -53,29 +53,22 @@ class Solution:
         trick: deep first search the maximum depth first.
         deeper, smaller depth, so use max_depth-current_depth
         '''
-        self.max_depth = self.get_max_depth(nestedList)
-        
-        _ = self.DFS(nestedList, 0)
-        return self.sum
-        
-    def DFS(self, nestedList, depth):
-
-        integers = []
-        
-        for x in nestedList:
-            if not x.isInteger():
-                self.DFS(x.getList(), depth+1)
+        def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
+        self.max_depth = self.get_depth(nestedList)
+        return self.DFS(nestedList, 0)
+    
+    def DFS(self, nestedList, depth):        
+        nestSum = 0
+        for x in nestedList:       
+            if x.isInteger():
+                nestSum += (self.max_depth-depth)*x.getInteger()
             else:
-                integers.append(x.getInteger())
-            
-        for x in integers:
-            self.sum += (self.max_depth-depth)*x
-        
-        return depth + 1
-        
-    def get_max_depth(self, nestedList):    
-        depth = 0
-        for x in nestedList:
+                nestSum += self.DFS(x.getList(), depth+1)
+        return nestSum
+
+    def get_depth(self, nestedList):
+        depth = 1
+        for x in nestedList:       
             if not x.isInteger():
-                depth = max(depth, self.get_max_depth(x.getList()))
-        return depth + 1        
+                depth = max(depth, self.get_depth(x.getList())+1)
+        return depth
