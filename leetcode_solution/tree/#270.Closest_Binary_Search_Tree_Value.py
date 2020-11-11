@@ -12,21 +12,17 @@ class Solution:
         need to go through entire tree. If use the criterion < min_diff to stop,
         then we will miss another closer node under the node.
         '''
-        return self.DFS(root, target)[1]
+        if not root.left and not root.right: return root.val
         
-        
-    def DFS(self, root, target):
-        
-        min_diff, min_node = abs(root.val-target), root.val
+        output = root.val
         
         if root.left:
-            min_diff2, min_node2 = self.DFS(root.left, target)
-            if min_diff2 < min_diff:
-                min_diff, min_node = min_diff2, min_node2
+            val = self.closestValue(root.left, target)
+            if abs(val-target) < abs(output-target): output = val                
         
         if root.right:
-            min_diff2, min_node2 = self.DFS(root.right, target)
-            if min_diff2 < min_diff:
-                min_diff, min_node = min_diff2, min_node2
+            val = self.closestValue(root.right, target)
+            if abs(val-target) < abs(output-target): output = val  
                 
-        return min_diff, min_node
+        
+        return output
