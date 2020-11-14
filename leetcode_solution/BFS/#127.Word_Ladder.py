@@ -3,6 +3,7 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         '''
+        http://bookshadow.com/weblog/2015/08/17/leetcode-word-ladder/
         BFS trick: always save as paths and number of steps BFS=[("hot", 2)], ....
         pop(0) always first and then append more possible combination
         always need a set to record visited nodes or paths etc
