@@ -14,6 +14,7 @@
 class Solution:
     def sortedListToBST(self, head: ListNode) -> TreeNode:
         '''
+        https://www.cnblogs.com/grandyang/p/4295618.html
         solution version to use linked-list
         tricl-1: using self.get_half to get middle node: fast moves x2 and slow moves x1
         trick-2: if mid_node = head, stop recursion
