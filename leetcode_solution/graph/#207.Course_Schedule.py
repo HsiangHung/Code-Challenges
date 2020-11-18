@@ -45,6 +45,5 @@ class Solution:
                 # NOTE, whatever, still need to try visit to get visited[i] 
                 self.DFS(x, numCourses, visited, courses)
                     
-        if visited[i] == 2:
-            visited[i] = 1
+        visited[i] = 1
         
