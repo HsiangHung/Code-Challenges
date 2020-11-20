@@ -1,6 +1,7 @@
 
 | LC# | Title | Level | Category | GitHub |
 | --- | --- | --- | --- | --- |
+| 83 | Remove Duplicates from Sorted List | easy | linked list| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2383.Remove_Duplicates_from_Sorted_List.py) |
 |92 | Reverse Linked List II | medium | linked list| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2392.Reverse_Linked_List_II.py) |
 | 126 | Word Ladder II | hard | BFS| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23126.Word_Ladder_II.py) |
 | 127 | Word Ladder | medium | BFS| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23127.Word_Ladder.py)|
