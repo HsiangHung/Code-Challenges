@@ -1,4 +1,5 @@
-## [Leetcode#83] Remove Duplicates from Sorted List
+# 83 Remove Duplicates from Sorted List (easy)
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 #
 #class ListNode(object):
 #     def __init__(self, x):
