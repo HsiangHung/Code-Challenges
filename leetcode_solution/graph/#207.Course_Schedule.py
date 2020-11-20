@@ -1,4 +1,5 @@
-# #207. Course Schedule
+# #207. Course Schedule (medium)
+# https://leetcode.com/problems/course-schedule/
 #
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
