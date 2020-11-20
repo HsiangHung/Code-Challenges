@@ -9,5 +9,5 @@
 | 301 | Remove Invalid Parentheses | hard | BFS| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 399 | Evaluate Division | medium | graph | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
 | 785 | Is Graph Bipartite? | medium | graph | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
-<!-- | 1091 | Shortest Path in Binary Matrix | medium | BFS | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
-| 1197 | Minimum Knight Moves | medium | BFS | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231197.Minimum_Knight_Moves.py) | -->
+| 1091 | Shortest Path in Binary Matrix | medium | BFS | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
+| 1197 | Minimum Knight Moves | medium | BFS | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231197.Minimum_Knight_Moves.py) |
