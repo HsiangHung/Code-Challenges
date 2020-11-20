@@ -1,4 +1,5 @@
-# #1197. Minimum Knight Moves
+# 1197. Minimum Knight Moves (medium)
+# https://leetcode.com/problems/minimum-knight-moves/
 #
 class Solution:        
     def minKnightMoves(self, x: int, y: int) -> int:
