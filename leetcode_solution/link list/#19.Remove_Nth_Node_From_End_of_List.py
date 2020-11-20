@@ -1,5 +1,5 @@
-## [Leetcode#19] Remove Nth Node From End of List
-#
+# 19 Remove Nth Node From End of List (medium)
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list/ 
 #
 class Solution(object):
     def removeNthFromEnd(self, head, n):
