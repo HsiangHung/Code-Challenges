@@ -1,4 +1,4 @@
-# #133 Clone Graph (medium)
+# 133 Clone Graph (medium)
 # https://leetcode.com/problems/clone-graph/
 # 
 # Uber
