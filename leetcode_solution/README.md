@@ -1,5 +1,6 @@
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| Number | Title | Level | Category |
+| --- | --- | --- | --- |
+| 133 | Clone Graph | medium | graph |
+| 399 | Evaluate Division | medium | graph |
+| 785 | Is Graph Bipartite? | medium | graph |
