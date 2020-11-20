@@ -1,4 +1,5 @@
-# [#21] Merge Two Sorted Lists
+#  21 Merge Two Sorted Lists (easy)
+#  https://leetcode.com/problems/merge-two-sorted-lists/
 #
 #  create a list, and moving double pointer
 #
