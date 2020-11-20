@@ -1,4 +1,4 @@
-# #207. Course Schedule (medium)
+# 207. Course Schedule (medium)
 # https://leetcode.com/problems/course-schedule/
 #
 class Solution:
