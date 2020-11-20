@@ -1,4 +1,5 @@
-# 210. Course Schedule II
+# 210. Course Schedule II (medium)
+# https://leetcode.com/problems/course-schedule-ii/
 #
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
