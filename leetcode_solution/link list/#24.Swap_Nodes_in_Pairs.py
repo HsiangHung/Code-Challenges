@@ -1,5 +1,6 @@
-## [Leetcode#24] Swap Nodes in Pairs
-## Given a linked list, swap every two adjacent nodes and return its head.
+# 24 Swap Nodes in Pairs (medium)
+# https://leetcode.com/problems/swap-nodes-in-pairs/
+# Given a linked list, swap every two adjacent nodes and return its head.
 #
 # class ListNode(object):
 #     def __init__(self, x):
