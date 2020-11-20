@@ -1,6 +1,6 @@
 
 | LC# | Title | Level | Category | GitHub |
-| --- | --- | --- | --- | --- |'
+| --- | --- | --- | --- | --- |
 <!-- | 126 | Word Ladder II | hard | BFS| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23126.Word_Ladder_II.py) |
 | 127 | Word Ladder | medium | BFS| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23127.Word_Ladder.py)| -->
 | 133 | Clone Graph | medium | graph | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23133.Clone_Graph.py) |
