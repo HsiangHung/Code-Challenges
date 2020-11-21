@@ -1,5 +1,5 @@
-## [Leetcode#53] Maximum Subarray
-#
+# 53 Maximum Subarray (easy)
+# https://leetcode.com/problems/maximum-subarray/
 #
 class Solution(object):
     def maxSubArray(self, nums):
