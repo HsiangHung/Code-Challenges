@@ -1,8 +1,9 @@
-## [Leetcode#121] Best Time to Buy and Sell Stock
-##
-##  maximum profit is given by, minimum price bought, and maximum price sold
-##  but maximum price needs to be behind minimum price
-##
+#  121 Best Time to Buy and Sell Stock (easy)
+#  https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+#
+#  maximum profit is given by, minimum price bought, and maximum price sold
+#  but maximum price needs to be behind minimum price
+#
 class Solution(object):
     def maxProfit(self, prices):
         """
