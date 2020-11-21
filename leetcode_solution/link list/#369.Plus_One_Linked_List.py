@@ -1,4 +1,5 @@
-# [#369] Plus One Linked List
+# 369 Plus One Linked List (medium)
+# https://leetcode.com/problems/plus-one-linked-list/
 #
 #  reverse first, and add one and reverse again
 #  need to consider extreme case 9->9->9 + 1 = 1->0->0->0
