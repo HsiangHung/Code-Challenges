@@ -1,4 +1,5 @@
-# #138. Copy List with Random Pointer
+# 138. Copy List with Random Pointer (medium)
+# https://leetcode.com/problems/copy-list-with-random-pointer/
 #
 """
 # Definition for a Node.
