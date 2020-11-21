@@ -1,5 +1,5 @@
-## [Leetcode#70] Climbing Stairs
-#
+#  70. Climbing Stairs (easy)
+#  https://leetcode.com/problems/climbing-stairs/
 #
 class Solution(object):
     def climbStairs(self, n):
