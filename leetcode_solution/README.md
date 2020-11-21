@@ -31,6 +31,7 @@
 | 141 | Linked List Cycle | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23141.Linked_List_Cycle.py)|
 | 142 | Linked List Cycle II | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23142.Linked_List_Cycle_II.py)|
 | 143 | Reorder List| linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23143.Reorder_List.py) |
+| 144 | Binary Tree Preorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23144.Binary_Tree_Preorder_Traversal.py) |
 | 152 |  Maximum Product Subarray| dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23152.Maximum_Product_Subarray.py) |
 | 160 | Intersection of Two Linked Lists | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23160.Intersection_of_Two_Linked_Lists.py) |
 | 198 | House Robber| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23198.House_Robber.py) |
