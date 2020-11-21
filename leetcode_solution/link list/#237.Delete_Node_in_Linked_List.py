@@ -1,5 +1,6 @@
-## [Leetcode#237] Delete Node in a Linked List
-##
+# 237 Delete Node in a Linked List (easy)
+# https://leetcode.com/problems/delete-node-in-a-linked-list/
+#
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
