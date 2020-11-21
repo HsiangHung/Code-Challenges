@@ -1,5 +1,5 @@
-# [#198] House Robber
-#
+#  198. House Robber (easy)
+#  https://leetcode.com/problems/house-robber/
 #
 class Solution(object):
     def rob(self, nums):
