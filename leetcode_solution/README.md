@@ -4,6 +4,7 @@
 | 19 | Remove Nth Node From End of List | medium | linked list | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
 | 21 | Merge Two Sorted Lists | easy | linked list | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2321.%20Merge_Two_Sorted_Lists.py) |
 | 24 | Swap Nodes in Pairs | medium | linked list | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2324.Swap_Nodes_in_Pairs.py) |
+| 61 | Rotate List | medium | linked list | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2361.Rotate_List.py) |
 | 83 | Remove Duplicates from Sorted List | easy | linked list| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2383.Remove_Duplicates_from_Sorted_List.py) |
 |92 | Reverse Linked List II | medium | linked list| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2392.Reverse_Linked_List_II.py) |
 | 126 | Word Ladder II | hard | BFS| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23126.Word_Ladder_II.py) |
