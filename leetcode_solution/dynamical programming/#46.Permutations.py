@@ -1,5 +1,5 @@
-## [#46] Permutations
-#   
+#  46. Permutations (medium)
+#  https://leetcode.com/problems/permutations/
 #  Microsoft, LinkedIn
 #
 class Solution(object):
