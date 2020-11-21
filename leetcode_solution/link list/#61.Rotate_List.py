@@ -1,4 +1,5 @@
-# [#61] Rotate List
+# 61 Rotate List (medium)
+# https://leetcode.com/problems/rotate-list/
 #
 class Solution(object):
     def rotateRight(self, head, k):
