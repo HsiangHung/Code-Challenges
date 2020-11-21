@@ -1,6 +1,6 @@
-## [Leetcode#152] Maximum Product Subarray
-#
-#
+#  152 Maximum Product Subarray (medium)
+#  https://leetcode.com/problems/maximum-product-subarray/
+#  
 class Solution(object):
     def maxProduct(self, nums):
         """
