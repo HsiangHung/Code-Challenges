@@ -1,5 +1,6 @@
-## [Leetcode#206] Reverse Linked List
-##
+# 206 Reverse Linked List (easy)
+# https://leetcode.com/problems/reverse-linked-list/
+#
 # class ListNode(object):
 #     def __init__(self, x):
 #         self.val = x
