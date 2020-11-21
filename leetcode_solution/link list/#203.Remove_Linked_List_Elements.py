@@ -1,6 +1,6 @@
-## [Leetcode#203
-] Remove Linked List Elements
-##
+# 203 Remove Linked List Elements (easy)
+# https://leetcode.com/problems/remove-linked-list-elements/ 
+#
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
