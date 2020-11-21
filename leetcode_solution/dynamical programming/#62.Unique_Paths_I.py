@@ -1,5 +1,5 @@
-# [#62] Unique Paths
-#
+#  62. Unique Paths (medium)
+#  https://leetcode.com/problems/unique-paths/
 #
 #
 class Solution(object):
