@@ -1,4 +1,5 @@
-## [Leetcode#160] Intersection of Two Linked Lists
+## 160 Intersection of Two Linked Lists (easy)
+## https://leetcode.com/problems/intersection-of-two-linked-lists/
 ##
 ##  doing short + long and long + short, there will be same node if merge
 ##  otherwise return None
