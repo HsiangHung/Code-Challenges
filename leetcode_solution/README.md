@@ -24,6 +24,7 @@
 | 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
 | 301 | Remove Invalid Parentheses | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
+| 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23369.Plus_One_Linked_List.py)|
 | 399 | Evaluate Division | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 1091 | Shortest Path in Binary Matrix | BFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
