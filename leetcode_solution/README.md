@@ -4,6 +4,7 @@
 | 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%232.Add_Two_Numbers.py) |
 | 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
 | 21 | Merge Two Sorted Lists | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2321.%20Merge_Two_Sorted_Lists.py) |
+| 23 | Merge k Sorted Lists | heap | hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%2323.Merge_k_Sorted_Lists.py)|
 | 24 | Swap Nodes in Pairs | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2324.Swap_Nodes_in_Pairs.py) |
 | 61 | Rotate List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2361.Rotate_List.py) |
 | 83 | Remove Duplicates from Sorted List | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2383.Remove_Duplicates_from_Sorted_List.py) |
