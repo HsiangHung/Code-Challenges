@@ -1,5 +1,5 @@
-## [Leetcode#707] Design Linked List
-# 
+# 707 Design Linked List (medium)
+# https://leetcode.com/problems/design-linked-list/
 #
 class MyLinkedList(object):
 
