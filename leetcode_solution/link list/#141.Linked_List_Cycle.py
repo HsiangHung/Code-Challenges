@@ -1,4 +1,5 @@
-## [Leetcode#141] Linked List Cycle
+## 141 Linked List Cycle (easy)
+## https://leetcode.com/problems/linked-list-cycle/
 ##
 ##  idea: if without additional storage, we can run the linked list in two 
 ##        different paces, fast = node.next.next and slow = node.next
