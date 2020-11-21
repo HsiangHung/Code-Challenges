@@ -1,5 +1,6 @@
-# [#5] Longest Palindromic Substring
-# 
+#  5. Longest Palindromic Substring (medium)
+#  https://leetcode.com/problems/longest-palindromic-substring/
+#
 #  Microsoft, Amazon, Bloomberg
 #
 #  use, if a Palindrome string is s[i:j], check if s[i-1] + s[i:j] + s[j] is Palindrome
