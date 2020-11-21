@@ -1,4 +1,5 @@
-# 42. Trapping Rain Water
+# 42. Trapping Rain Water (hard)
+# https://leetcode.com/problems/trapping-rain-water/
 #
 class Solution:
     def trap(self, height: List[int]) -> int:
