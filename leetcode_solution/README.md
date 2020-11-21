@@ -21,6 +21,7 @@
 | 203 | Remove Linked List Elements | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23203.Remove_Linked_List_Elements.py) |
 | 206 | Reverse Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23206.Reverse_Linked_List.py) |
 | 207 | Course Schedule | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23207.Course_Schedule.py) |
+| 208 | Implement Trie (Prefix Tree) | trie | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/trie/%23208.Implement_Trie_(Prefix_Tree).py)|
 | 210 | Course Schedule II| graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23210.Course_Schedule_II.py) |
 | 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23234.Palindrome_Linked_List.py) |
 | 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
