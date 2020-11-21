@@ -1,5 +1,5 @@
-## [Leetcode#328] Odd Even Linked List
-# 
+# 328 Odd Even Linked List (medium)
+# https://leetcode.com/problems/odd-even-linked-list/
 #
 # Definition for singly-linked list.
 # class ListNode:
