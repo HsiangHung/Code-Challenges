@@ -1,6 +1,6 @@
-# #144 Binary Tree Preorder Traversal
-#
-# iteration for preorder tree traversal
+#  144. Binary Tree Preorder Traversal (medium)
+#  https://leetcode.com/problems/binary-tree-preorder-traversal/
+# 
 #
 #
 # Definition for a binary tree node.
