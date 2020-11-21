@@ -1,4 +1,5 @@
-## [Leetcode#22] Generate Parentheses
+# 22. Generate Parentheses (medium)
+# https://leetcode.com/problems/generate-parentheses/
 #   
 #  i.e. n=3, we have ["((()))","(()())","(())()","()(())","()()()"]
 #
