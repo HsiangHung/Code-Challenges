@@ -6,6 +6,7 @@
 | 21 | Merge Two Sorted Lists | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2321.%20Merge_Two_Sorted_Lists.py) |
 | 23 | Merge k Sorted Lists | heap | hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%2323.Merge_k_Sorted_Lists.py)|
 | 24 | Swap Nodes in Pairs | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2324.Swap_Nodes_in_Pairs.py) |
+| 42 | Trapping Rain Water | dynamical programming |hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2342.Trapping_Rain_Water.py)|
 | 47 | Permutations II | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
 | 53 | Maximum Subarray|dynamical programming|easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2353.Maximum_Subarray.py)|
 | 61 | Rotate List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2361.Rotate_List.py) |
