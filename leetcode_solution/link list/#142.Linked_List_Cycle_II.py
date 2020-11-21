@@ -1,4 +1,5 @@
-# [#142] Linked List Cycle II
+# 142 Linked List Cycle II (medium)
+# https://leetcode.com/problems/linked-list-cycle-ii/
 #
 #  e.g. if 1->2->3->4->5->6->2.... begin at 2
 #
