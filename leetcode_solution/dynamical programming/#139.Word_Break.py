@@ -1,4 +1,5 @@
-# # 139. Word Break
+#  139. Word Break (medium)
+#  https://leetcode.com/problems/word-break/
 #
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
