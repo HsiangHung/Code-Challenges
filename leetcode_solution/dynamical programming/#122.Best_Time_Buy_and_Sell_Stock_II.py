@@ -1,9 +1,10 @@
-## [Leetcode#122] Best Time to Buy and Sell Stock II
-##
-##  total max profit is given by sum of max local profit
-##  when price goes down, we gain max profit by sell previous price to get max local
-##  profit.
-##
+#  122. Best Time to Buy and Sell Stock II (easy)
+#  https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+#
+#  total max profit is given by sum of max local profit
+#  when price goes down, we gain max profit by sell previous price to get max local
+#  profit.
+#
 class Solution(object):
     def maxProfit(self, prices):
         """
