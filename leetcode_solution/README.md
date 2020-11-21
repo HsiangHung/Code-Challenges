@@ -33,6 +33,7 @@
 | 143 | Reorder List| linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23143.Reorder_List.py) |
 | 152 |  Maximum Product Subarray| dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23152.Maximum_Product_Subarray.py) |
 | 160 | Intersection of Two Linked Lists | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23160.Intersection_of_Two_Linked_Lists.py) |
+| 198 | House Robber| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23198.House_Robber.py) |
 | 203 | Remove Linked List Elements | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23203.Remove_Linked_List_Elements.py) |
 | 206 | Reverse Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23206.Reverse_Linked_List.py) |
 | 207 | Course Schedule | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23207.Course_Schedule.py) |
