@@ -16,6 +16,7 @@
 | 62 | Unique Paths| dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2362.Unique_Paths_I.py)|
 | 70 | Climbing Stairs| dynamical programming |easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2370.Climbing_Stairs.py)|
 | 72 | Edit Distance | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2372.Edit_Distance.py) |
+| 78 | Subsets | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2378.Subsets.py) |
 | 83 | Remove Duplicates from Sorted List | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2383.Remove_Duplicates_from_Sorted_List.py) |
 |92 | Reverse Linked List II | linked list| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2392.Reverse_Linked_List_II.py) |
 | 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
