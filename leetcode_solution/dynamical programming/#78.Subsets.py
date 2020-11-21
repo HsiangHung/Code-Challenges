@@ -1,5 +1,5 @@
-## [# 78] Subsets
-#
+#  78 Subsets (medium)
+#  https://leetcode.com/problems/subsets/
 #
 #
 class Solution(object):
