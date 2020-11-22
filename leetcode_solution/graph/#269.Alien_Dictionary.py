@@ -23,13 +23,12 @@ class Solution:
         9. ["wnlb"] => "wnlb"
         '''    
         
-        if len(words) == 1: return words[0]
+        if len(words) == 1: return words[0]  # for case like ["wnlb"]
         
         orders, letter_set = {}, set(list(words[0]))
         for i in range(1, len(words)):
             w1, w2 = words[i-1], words[i]
             l1, l2 = self.compare(w1, w2)
-            # print (l1, l2)
             if l2:
                 orders[l1] = orders.get(l1, []) + [l2]  # normal case, e.g.["wrt", "wrf"]
             else:
@@ -38,20 +37,14 @@ class Solution:
 
             for letter in w2:
                 letter_set.add(letter)
-            
-        # print (orders, letter_set)
                 
         self.acyclic = False
         self.sort = []
         visited = {letter: 0 for letter in letter_set} # inital all 0, unvisited
-        
-        # print (visited)
-        
+                
         # --- topological sort ---
         for letter in letter_set:
-            self.DFS(letter, orders, visited)
-        
-        # print (self.acyclic, self.sort)           
+            self.DFS(letter, orders, visited)         
         
         return "".join(self.sort[::-1]) if not self.acyclic and len(orders) > 0 else ""        
         
