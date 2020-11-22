@@ -44,6 +44,7 @@
 | 211 | Design Add and Search Words Data Structure | trie | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/trie/%23211.Design_Add_and_Search_Words_Data_Structure.py)|
 | 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23234.Palindrome_Linked_List.py) |
 | 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
+| 269 | Alien Dictionary| graph | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23269.Alien_Dictionary.py) |
 | 301 | Remove Invalid Parentheses | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
 | 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23369.Plus_One_Linked_List.py)|
