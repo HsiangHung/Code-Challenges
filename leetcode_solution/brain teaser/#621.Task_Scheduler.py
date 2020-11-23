@@ -5,6 +5,7 @@ class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         '''
         http://bookshadow.com/weblog/2017/06/18/leetcode-task-scheduler/
+        https://www.cnblogs.com/grandyang/p/7098764.html
         
         e.g.
         1. tasks = ["A","A","A","B","B","B"], n = 2
