@@ -46,6 +46,7 @@
 | 208 | Implement Trie (Prefix Tree) | trie | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/trie/%23208.Implement_Trie_(Prefix_Tree).py)|
 | 210 | Course Schedule II| graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23210.Course_Schedule_II.py) |
 | 211 | Design Add and Search Words Data Structure | trie | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/trie/%23211.Design_Add_and_Search_Words_Data_Structure.py)|
+| 225 | Implement Stack using Queues |stack | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23225.Implement_Stack_using_Queues.py)|
 | 227 | Basic Calculator II | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23%20227.Basic_Calculator_II.py)|
 | 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23234.Palindrome_Linked_List.py) |
 | 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
