@@ -1,7 +1,7 @@
-## [#232] Implement Queue using Stacks
-#   
+#  232. Implement Queue using Stacks (easy)
+#  https://leetcode.com/problems/implement-queue-using-stacks/
 #  
-#   The idea is to implement two stacks to form a queue
+#  The idea is to implement two stacks to form a queue
 #
 #     [..   ...]  is a stack
 #    front    back 
