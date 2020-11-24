@@ -1,6 +1,7 @@
-# [# 394] Decode String
-#  
-#   Google, Yelp, Coupang
+#  394. Decode String (medium)
+#  https://leetcode.com/problems/decode-string/
+#
+#  Google, Yelp, Coupang
 #
 #
 class Solution(object):
