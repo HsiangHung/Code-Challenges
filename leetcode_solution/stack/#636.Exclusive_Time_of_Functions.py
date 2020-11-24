@@ -1,4 +1,5 @@
-# 636. Exclusive Time of Functions
+#  636. Exclusive Time of Functions (medium)
+#  https://leetcode.com/problems/exclusive-time-of-functions/
 #
 class Solution:
     def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:        
