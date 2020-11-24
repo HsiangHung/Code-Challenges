@@ -4,6 +4,7 @@
 | 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%232.Add_Two_Numbers.py) |
 | 5 | Longest Palindromic Substring | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%235.Longest_Palindromic_Substring.py) |
 | 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
+| 20 | Valid Parentheses | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2320.Valid_Parentheses.py) |
 | 21 | Merge Two Sorted Lists | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2321.%20Merge_Two_Sorted_Lists.py) |
 | 22 | Generate Parentheses | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2322.Generate_Parentheses.py) |
 | 23 | Merge k Sorted Lists | heap | hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%2323.Merge_k_Sorted_Lists.py)|
