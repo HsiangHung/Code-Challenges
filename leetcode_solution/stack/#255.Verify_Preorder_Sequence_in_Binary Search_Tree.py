@@ -1,6 +1,7 @@
-## [Leetcode#255] Verify Preorder Sequence in Binary Search Tree
+#  255. Verify Preorder Sequence in Binary Search Tree (medium)
+#  https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/  
 #
-# zenefit
+#  zenefit
 #
 #
 class Solution(object):
