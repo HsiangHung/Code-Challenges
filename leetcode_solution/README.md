@@ -59,6 +59,7 @@
 | 394 | Decode String | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23394.Decode_String.py) |
 | 399 | Evaluate Division | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
 | 621 | Task Scheduler| brain teasers | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23621.Task_Scheduler.py)|
+| 636 | Exclusive Time of Functions | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23636.Exclusive_Time_of_Functions.py) |
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 1091 | Shortest Path in Binary Matrix | BFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
