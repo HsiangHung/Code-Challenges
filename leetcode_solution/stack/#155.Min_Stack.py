@@ -1,5 +1,6 @@
-## [Leetcode#155] Min Stack
-##
+# 155. Min Stack (easy)
+# https://leetcode.com/problems/min-stack/
+#
 class MinStack(object):
 
     def __init__(self):
