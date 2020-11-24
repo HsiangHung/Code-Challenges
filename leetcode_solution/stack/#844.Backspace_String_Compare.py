@@ -1,4 +1,5 @@
-# #844. Backspace String Compare
+#  844. Backspace String Compare (easy)
+#  https://leetcode.com/problems/backspace-string-compare/
 #
 class Solution:
     def backspaceCompare(self, S: str, T: str) -> bool:    
