@@ -1,3 +1,6 @@
+#  1047. Remove All Adjacent Duplicates In String (easy)
+#  https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+#
 class Solution:
     def removeDuplicates(self, S: str) -> str:
         '''
