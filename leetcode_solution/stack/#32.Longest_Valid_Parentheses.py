@@ -1,5 +1,6 @@
-# #32. Longest Valid Parentheses
-#
+#  32. Longest Valid Parentheses (hard)
+#  https://leetcode.com/problems/longest-valid-parentheses/
+#  
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
         '''
