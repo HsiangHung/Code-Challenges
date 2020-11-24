@@ -1,5 +1,6 @@
-## [Leetcode#20] Valid Parentheses
-##
+#  20. Valid Parentheses (easy)
+#  https://leetcode.com/problems/valid-parentheses/
+#
 class Solution(object):
     def isValid(self, s):
         """
