@@ -9,6 +9,7 @@
 | 22 | Generate Parentheses | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2322.Generate_Parentheses.py) |
 | 23 | Merge k Sorted Lists | heap | hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%2323.Merge_k_Sorted_Lists.py)|
 | 24 | Swap Nodes in Pairs | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2324.Swap_Nodes_in_Pairs.py) |
+| 32 | Longest Valid Parentheses |stack|hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2332.Longest_Valid_Parentheses.py)|
 | 42 | Trapping Rain Water | dynamical programming |hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2342.Trapping_Rain_Water.py)|
 | 46 | Permutations | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
 | 47 | Permutations II | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
