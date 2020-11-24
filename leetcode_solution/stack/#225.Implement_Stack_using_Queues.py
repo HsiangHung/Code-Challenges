@@ -1,4 +1,5 @@
-## [Leetcode#225] Implement Stack using Queues
+#  225. Implement Stack using Queues (easy)
+#  https://leetcode.com/problems/implement-stack-using-queues/
 #
 #  Bloomberg
 #
