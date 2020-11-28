@@ -4,13 +4,13 @@
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         '''
-        https://www.youtube.com/watch?v=qe_pQCh09yU
-        https://www.youtube.com/watch?v=kXy0ABd1vwo
+        https://www.youtube.com/watch?v=qe_pQCh09yU (course II)
+        https://www.youtube.com/watch?v=kXy0ABd1vwo (course I)
         topological sorting. DAG: directed acyclic diagram
         O(V+E) V:vertex, E: edge
         good test examples:
         * [[1,0], [2,1], [3,2], [0,3]],  cyclic
-        * [[2,5],[0,5],[2,4],[1,4],[1,3],[3,0],[2,0]], sort = [5,4,0,2,3,1]
+        * [[2,5],[0,5],[2,4],[1,4],[1,3],[3,0],[2,0]], sort = [5,4,0,3,1,2] or [4,5,0,3,1,2]
         '''
         
         self.stack = []
