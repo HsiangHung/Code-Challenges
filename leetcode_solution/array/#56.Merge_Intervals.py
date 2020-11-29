@@ -1,5 +1,5 @@
-## [#56] Merge Intervals
-#
+#  56. Merge Intervals (medium)
+#  https://leetcode.com/problems/merge-intervals/
 #
 #
 # Definition for an interval.
