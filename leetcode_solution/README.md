@@ -2,6 +2,7 @@
 | LC# | Title | Level | Category | GitHub |
 | --- | --- | --- | --- | --- |
 | 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%232.Add_Two_Numbers.py) |
+| 3 | Longest Substring Without Repeating Characters | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%233.Longest_Substring_Without_Repeatin.py)|
 | 5 | Longest Palindromic Substring | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%235.Longest_Palindromic_Substring.py) |
 | 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
 | 20 | Valid Parentheses | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2320.Valid_Parentheses.py) |
