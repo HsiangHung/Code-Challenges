@@ -1,7 +1,7 @@
-# [#94] Binary Tree Inorder Traversal
+#  94. Binary Tree Inorder Traversal (medium)
+#  https://leetcode.com/problems/binary-tree-inorder-traversal/
 #
-#
-# iteration for inorder tree traversal
+#  iteration for inorder tree traversal
 #
 #
 # Definition for a binary tree node.
