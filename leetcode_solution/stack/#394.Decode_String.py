@@ -4,6 +4,42 @@
 #  Google, Yelp, Coupang
 #
 #
+#
+class Solution:
+    def decodeString(self, s: str) -> str:
+        '''
+        newer solution, uses only singlet stack. But need to move pointer to
+        collect number like "100" and continuous char "leetcode"
+        '''
+        stack = []
+        
+        rule = ""
+        for i in range(len(s)):
+            if s[i] == "]":
+                
+                char = ""  ## collect letter
+                while stack[-1] != "[":
+                    char = stack.pop() + char    
+                stack.pop()  # this is used to remove "["
+                
+                num = ""  ## collect number, we need to consider cases like "100[aaa]"
+                while len(stack) > 0 and stack[-1] in set([str(i) for i in range(10)]):
+                    num = stack.pop() + num                                
+                decoding = char*int(num) if num != "" else char
+                
+                if stack == []: 
+                    rule += decoding
+                else:
+                    stack.append(decoding)
+            else:
+                stack.append(s[i])
+        
+        if len(stack) > 0: return rule + "".join(stack)
+        return rule
+                
+                 
+#
+#
 class Solution(object):
     def decodeString(self, s):
         """
