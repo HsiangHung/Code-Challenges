@@ -1,5 +1,6 @@
-## [#33] Search in Rotated Sorted Array
-#   
+#  33. Search in Rotated Sorted Array (medium)
+#  https://leetcode.com/problems/search-in-rotated-sorted-array/   
+#
 #  Facebook, LinkedIn, Microsoft, Bloomberg, Uber
 #
 dclass Solution(object):
@@ -9,36 +10,27 @@ dclass Solution(object):
         :type target: int
         :rtype: int
         """
-        if len(nums) == 0: return -1
-        
-        if len(nums) == 1:
-            if nums[0] != target: return -1
-            return 0
+        if len(nums) <= 3:  # if only three elements are left, directly check
+            if target not in nums: return -1
+            return [i for i in range(len(nums)) if nums[i] == target][0]
         
         mid = len(nums) // 2
-        head, end = nums[0], nums[-1]
-        if nums[mid] == target:
-            return mid
-        elif head == target:
-            return 0
-        elif end == target:
-            return len(nums)-1
         
-        if head > nums[mid]:  # when pivot is on left hand side, i.e. [7,0,1,2,3,4,5]
-            if nums[mid] < target < end:
-                offset, index = mid+1, self.search(nums[mid+1:], target)
+        a, b, c = nums[0], nums[mid], nums[-1]
+        
+        if b == target: return mid
+        if a  == target: return 0
+        if c == target: return len(nums)-1
+        
+        if b > a:       # when pivot is on the left, i.e. [1,2,4,5,7,0,1]
+            if  b > target > a:
+                return self.search(nums[:mid], target)
             else:
-                offset, index = 0, self.search(nums[: mid], target)
-        elif nums[mid] > end:  # when pivot is on right hand side, i.e. [2,3,4,5,7,0,1]
-            if head < target < nums[mid]:
-                offset, index = 0, self.search(nums[: mid], target)
+                idx = self.search(nums[mid:], target)
+                return mid + idx if idx != -1 else -1
+        elif c > b:     # when pivot is on the right, i.e. [7,0,1,2,3,4,5]
+            if c > target > b:
+                idx = self.search(nums[mid:], target)
+                return mid + idx if idx != -1 else -1
             else:
-                offset, index = mid+1, self.search(nums[mid+1:], target)
-        else:   # when the list is in order without any rotation, i.e. [0,1,2,...5,7]
-            if nums[mid] > target:
-                offset, index = 0, self.search(nums[: mid], target)
-            else:
-                offset, index = mid+1, self.search(nums[mid+1:], target)
-
-        if index < 0: return -1
-        return offset + index
+                return self.search(nums[:mid], target)
