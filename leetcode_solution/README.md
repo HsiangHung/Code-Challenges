@@ -1,5 +1,5 @@
 
-| LC# | Title | Level | Category | GitHub |
+| LC# | Title | Category | Difficulty | GitHub |
 | --- | --- | --- | --- | --- |
 | 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%232.Add_Two_Numbers.py) |
 | 3 | Longest Substring Without Repeating Characters | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%233.Longest_Substring_Without_Repeatin.py)|
