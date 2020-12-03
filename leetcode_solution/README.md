@@ -44,6 +44,7 @@
 | 144 | Binary Tree Preorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23144.Binary_Tree_Preorder_Traversal.py) |
 | 150 | Evaluate Reverse Polish Notation |stack|medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23150.Evaluate_Reverse_Polish_Notation.py)|
 | 152 |  Maximum Product Subarray| dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23152.Maximum_Product_Subarray.py) |
+| 153 | Find Minimum in Rotated Sorted Array | binary search| medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23153.Find_Minimum_in_Rotated_Sorted_Array.py)|
 | 155 | Min Stack | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23155.Min_Stack.py) |
 | 160 | Intersection of Two Linked Lists | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23160.Intersection_of_Two_Linked_Lists.py) |
 | 198 | House Robber| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23198.House_Robber.py) |
