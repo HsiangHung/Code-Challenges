@@ -1,5 +1,6 @@
 #  46. Permutations (medium)
 #  https://leetcode.com/problems/permutations/
+#
 #  Microsoft, LinkedIn
 #
 class Solution(object):
@@ -8,21 +9,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        if len(nums) <= 1: return [nums]
+        dp = {0: [[nums[0]]]}
+        
+        it = 1
+        while it < len(nums):
+             
+            dp[it] = []
+            for x in dp[it-1]:
+                for i in range(len(x)+1): # note, loop through to len(x)+1
+                    dp[it].append(x[:i]+[nums[it]]+x[i:])
 
-        dp = [[nums[0]]]
-        nums_len = 2
-        while nums_len <= len(nums):
-            insert_elm = nums[nums_len-1]
-            
-            pertmut = []
-            for sublist in dp:
-                for i in range(len(sublist)+1):
-                    new_sublist = sublist[:]
-                    new_sublist.insert(i, insert_elm)
-                    pertmut.append(new_sublist)
-                    
-            dp = pertmut
-            nums_len += 1
-            
-        return dp
+            it += 1
+        
+        return dp[len(nums)-1]
