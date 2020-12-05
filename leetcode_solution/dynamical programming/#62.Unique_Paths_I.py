@@ -4,33 +4,21 @@
 #
 class Solution(object):
     def uniquePaths(self, m, n):
-        '''
-        https://www.youtube.com/watch?v=OIc0mHgHUww
+        if m == 1 and n == 1: return 1
         
-        Given a root and left/right sub BST, the number of various combination is
-        
-        C = C_l*C_r
-        
-        e.g. n=4, root can be 1,2,3,4
-        root = 1: C_l = [];  C_r = [2,3,4].....
-        root = 2: C_l = [1]; C_r = [3,4].....
-        root = 3: C_l = [1,2]; C_r = [4].....
-        root = 4: C_l = [1,2,3]; C_r = [].....
-        '''
-        
-        dp = {0: 1, 1: 1}
-        
-        i = 2
-        while i <= n:
+        dp = []
+        for i in range(m):
+            dp.append([0]*n)
             
-            dp[i] = 0
-            for x in range(i):
-                root = x + 1
+        dp[0][0] = 1
+        for y in range(m):
+            for x in range(n):
                 
-                left, right = root-1, i - root  # left and right are the number of nodes of subtree. 
-                print (left, right)
-                dp[i] += dp[left]*dp[right]
-            
-            i += 1
+                if x > 0 and y > 0:
+                    dp[y][x] = dp[y-1][x] + dp[y][x-1]
+                elif x > 0:
+                    dp[y][x] = dp[y][x-1]
+                elif y > 0:
+                    dp[y][x] = dp[y-1][x]
                 
-        return dp[n]        
+        return dp[m-1][n-1]
