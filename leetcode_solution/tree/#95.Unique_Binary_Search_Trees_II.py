@@ -11,7 +11,9 @@
 class Solution:
     def generateTrees(self, n: int) -> List[TreeNode]:
         '''
-        inspired by 96. Unique Binary Search Trees
+        inspired by 96. Unique Binary Search Trees and the explanation:
+        https://www.youtube.com/watch?v=OIc0mHgHUww
+        
         Need to do recursion unitl child nodes is None or single list
         
         e.g. [1,2,3,4]
