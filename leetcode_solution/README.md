@@ -29,6 +29,7 @@
 | 91 | Decode Ways | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2391.Decode_Ways.py) |
 | 92 | Reverse Linked List II | linked list| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2392.Reverse_Linked_List_II.py) |
 | 94 | Binary Tree Inorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2394.Binary_Tree_Inorder_Traversal.py) |
+| 95 | Unique Binary Search Trees II | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2395.Unique_Binary_Search_Trees_II.py) |
 | 96 | Unique Binary Search Trees | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2396.Unique_Binary_Search_Trees.py) |
 | 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
 | 121 | Best Time to Buy and Sell Stock | dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23121.Best_Time_Buy_and_Sell_Stock.py) |
