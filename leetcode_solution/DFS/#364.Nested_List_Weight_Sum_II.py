@@ -1,4 +1,5 @@
-# #364. Nested List Weight Sum II
+#  364. Nested List Weight Sum II (medium)
+#  https://leetcode.com/problems/nested-list-weight-sum-ii/
 #
 # """
 # This is the interface that allows for creating nested lists.
