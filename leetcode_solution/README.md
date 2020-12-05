@@ -68,6 +68,7 @@
 | 301 | Remove Invalid Parentheses | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
 | 333 | Largest BST Subtree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23333.Largest_BST_Subtree.py) |
+| 364 | Nested List Weight Sum II | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23364.Nested_List_Weight_Sum_II.py) |
 | 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23369.Plus_One_Linked_List.py)|
 | 394 | Decode String | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23394.Decode_String.py) |
 | 399 | Evaluate Division | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
