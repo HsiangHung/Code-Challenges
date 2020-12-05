@@ -64,6 +64,7 @@
 | 269 | Alien Dictionary| graph | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23269.Alien_Dictionary.py) |
 | 270 | Closest Binary Search Tree Value | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23270.Closest_Binary_Search_Tree_Value.py)|
 | 273 | Integer to English Words | string | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23273.Integer_to_English_Words.py) |
+| 282 | Expression Add Operators | DFS | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23282.Expression_Add_Operators.py) |
 | 301 | Remove Invalid Parentheses | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
 | 333 | Largest BST Subtree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23333.Largest_BST_Subtree.py) |
