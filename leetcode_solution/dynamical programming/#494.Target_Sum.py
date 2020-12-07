@@ -1,8 +1,47 @@
-# [# 494] Target Sum
+#  494. Target Sum (medium)
+#  https://leetcode.com/problems/target-sum/
 #  
 #  Google, facebook 
 #
 #
+#############################################################################
+
+class Solution2:
+    def findTargetSumWays(self, nums: List[int], S: int) -> int:
+        '''
+        using tree to find the number of combination is too slow.
+        Using dynamic programming is faster.
+        e.g. if nums = [1,1,1,1,1...]
+        dp = {1:1, -1:1}, {2:1, 0:2, -2:1}, {3:1, 1:3, -1:3, -3:1}, {4:1, 2:4, 0:6, -2:4, -4:1}.....
+        think from this sequence
+
+        Need to consider the corner case like:
+        [0,0,0,0,0,0,0,0,1], target = 1
+        '''
+        if nums[0] != 0:
+            dp = {0: {nums[0]: 1, -nums[0]: 1}}
+        else:
+            dp = {0: {0: 2}}
+                
+        index = 1
+        while index < len(nums):
+            
+            combine_sum = {}
+            for x in dp[index-1]:
+                combine_sum[x+nums[index]] = combine_sum.get(x+nums[index], 0) + dp[index-1][x]
+                combine_sum[x-nums[index]] = combine_sum.get(x-nums[index], 0) + dp[index-1][x]      
+            
+            dp[index] = combine_sum
+            index += 1
+            
+        if S in dp[len(nums)-1]:
+            return dp[len(nums)-1][S]
+        else:
+            return 0
+
+
+#############################################################################
+
 class Solution(object):
     def findTargetSumWays(self, nums, S):
         """
@@ -49,36 +88,3 @@ class Solution(object):
                 return 0
         
         return self.DFS(depth+1, nums, sum+nums[depth+1], S)+self.DFS(depth+1, nums, sum-nums[depth+1], S)
-
-
-#############################################################################
-
-class Solution2:
-    def findTargetSumWays(self, nums: List[int], S: int) -> int:
-        '''
-        using tree to find the number of combination is too slow.
-        Using dynamic programming is faster.
-        e.g. if nums = [1,1,1,1,1...]
-        dp = {1:1, -1:1}, {2:1, 0:2, -2:1}, {3:1, 1:3, -1:3, -3:1}, {4:1, 2:4, 0:6, -2:4, -4:1}.....
-        think from this sequence
-        '''
-        if nums[0] != 0:
-            dp = {0: {nums[0]: 1, -nums[0]: 1}}
-        else:
-            dp = {0: {0: 2}}
-                
-        index = 1
-        while index < len(nums):
-            
-            combine_sum = {}
-            for x in dp[index-1]:
-                combine_sum[x+nums[index]] = combine_sum.get(x+nums[index], 0) + dp[index-1][x]
-                combine_sum[x-nums[index]] = combine_sum.get(x-nums[index], 0) + dp[index-1][x]      
-            
-            dp[index] = combine_sum
-            index += 1
-            
-        if S in dp[len(nums)-1]:
-            return dp[len(nums)-1][S]
-        else:
-            return 0
