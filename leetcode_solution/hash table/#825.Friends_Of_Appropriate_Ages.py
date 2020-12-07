@@ -1,4 +1,5 @@
-# 825. Friends Of Appropriate Ages
+#  825. Friends Of Appropriate Ages (medium)
+#  https://leetcode.com/problems/friends-of-appropriate-ages/
 #
 class Solution:
     def numFriendRequests(self, ages: List[int]) -> int:
