@@ -1,5 +1,5 @@
-# [#278] First Bad Version
-#
+#  278. First Bad Version (easy)
+#  https://leetcode.com/problems/first-bad-version/
 #
 # The isBadVersion API is already defined for you.
 # @param version, an integer
@@ -13,34 +13,21 @@ class Solution(object):
         :rtype: int
         """
         if n == 1: return n
-        return self.search(0, n)
+        return self.search(n, )
         
-    def search(self, init, n):
+    def search(self, n, offset):
+        '''
+        offset term is to calibrate the value.
+        '''
+        if n == 1 or n == 0: return 1
         
-        if n-init == 1:
-            if isBadVersion(init+1):
-                return init+1
-            else:
-                return init+2            
+        m = n // 2
+        a, b = isBadVersion(m+offset), isBadVersion(m+1+offset)
         
-        mid = (n-init) // 2 + 1 + init
-                
-        isMidBad = isBadVersion(mid)
-        isMidBad2 = isBadVersion(mid-1)
-        
-        if n-init == 2:
-            if isMidBad and not isMidBad2:
-                return init+2
-            elif isMidBad2:
-                return init+1
-            elif not isMidBad:
-                return init+2
-        
-        if isMidBad and not isMidBad2:
-            return mid
-        elif isMidBad2:
-            return self.search(init, mid-2)
-        elif not isMidBad:
-            return self.search(mid, n)
-        
+        if not a and b:
+            return m+1+offset
+        elif a and b:
+            return self.search(m, offset)
+        else:
+            return self.search(n-m, offset+m)
         
