@@ -1,35 +1,30 @@
-## [Leetcode#791] Custom Sort String
+#  791. Custom Sort String (medium)
+#  https://leetcode.com/problems/custom-sort-string/
 #
-#
-#
-class Solution(object):
-    def customSortString(self, S, T):
-        """
-        :type S: str
-        :type T: str
-        :rtype: str
-        """
-        # e.g. S = 'cba' and T = 'aabccccd'
-        # should return 'ccccbaad'
-        # so first find the characters in T which do NOT appear in S, (like 'd')
-        # also prepare characters in T which appear in S in dictionary
-        # and then reconstruct
+class Solution:
+    def customSortString(self, S: str, T: str) -> str:
+        '''
+        NOTE letters in T can be repeated, so using dictionary to store the frequency
+        loop through S by order, and insert the remaning letters of T not showing in S anywhere.
+        '''
+        t_dict = self.str_dict(T)
         
-        S_set = set(list(S))
-        T_dict = {}
-        miss_lst = []
-        for ch in T:
-            if ch not in S_set:
-                miss_lst.append(ch)
-            else:
-                T_dict[ch] = T_dict.get(ch, 0) + 1
+        string = []
+        for letter in S:
+            if letter in t_dict:
+                string.append(letter*t_dict[letter])
+                del t_dict[letter]
         
-        string = ''
-        for ch in S:
-            if ch in T_dict:
-                string += T_dict[ch]*ch
-
-        if len(miss_lst) > 0:
-            return string + ''.join(miss_lst)
-        else:
-            return string
+        if len(t_dict) > 0:
+            for x in t_dict:
+                string.append(x*t_dict[x])
+                
+        return "".join(string)
+        
+    def str_dict(self, s):
+        s_dict = {}
+        for i, letter in enumerate(s):
+            s_dict[letter] = s_dict.get(letter, 0) + 1
+        return s_dict
+    
+            
