@@ -85,6 +85,7 @@
 | 670 | Maximum Swap| brain teasers | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23670.Maximum_Swap.py) |
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
+| 791 | Custom Sort String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23791.Custom_Sort_String.py)|
 | 844 | Backspace String Compare | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23844.Backspace_String_Compare.py) |
 | 938 | Range Sum of BST | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23938.Range_Sum_of_BST.py) |
 | 1047 | Remove All Adjacent Duplicates In String | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231047.Remove_All_Adjacent_Duplicates_In_String.py) |
