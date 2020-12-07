@@ -6,7 +6,9 @@
 #
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
-        
+        '''
+        https://www.cnblogs.com/grandyang/p/4332313.html
+        '''
         self.found = False
         for y in range(len(board)):
             for x in range(len(board[0])):
@@ -40,4 +42,4 @@ class Solution:
         if y < len(board)-1:
             self.DFS(x, y+1, board, i+1, word)
 
-        board[y][x] = char  ## important, need to change back, otherwise wrong
+        board[y][x] = char  ## important, need to change back, otherwise wrong, see code from https://www.cnblogs.com/grandyang/p/4332313.html
