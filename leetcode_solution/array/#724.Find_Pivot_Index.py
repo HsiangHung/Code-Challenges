@@ -1,6 +1,7 @@
-# [#724] Find Pivot Index
+#  724. Find Pivot Index (easy)
+#  https://leetcode.com/problems/find-pivot-index/
 #
-# Coupang, radius
+#  Coupang, radius
 #
 class Solution(object):
     def pivotIndex(self, nums):
