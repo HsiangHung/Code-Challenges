@@ -101,3 +101,4 @@
 | 1197 | Minimum Knight Moves | BFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231197.Minimum_Knight_Moves.py) |
 | 1249 | Minimum Remove to Make Valid Parentheses | stack | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231249.Minimum_Remove_to_Make_Valid_Parentheses.py) |
 | 1275 | Find Winner on a Tic Tac Toe Game| hash table | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%231275.Find_Winner_on_a_Tic_Tac_Toe_Game.py)|
+| 1382 | Balance a Binary Search Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231382.Balance_a_Binary_Search_Tree.py) |
