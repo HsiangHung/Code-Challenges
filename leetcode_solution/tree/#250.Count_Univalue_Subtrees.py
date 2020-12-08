@@ -1,31 +1,31 @@
-# [# 250] Count Univalue Subtrees
-#  
+#  250. Count Univalue Subtrees (medium)
+#  https://leetcode.com/problems/count-univalue-subtrees/
 #
 #
 class Solution(object):
     def countUnivalSubtrees(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+        '''
+        given a root, the child returns set of possibles value of the subtree
+        a uniqie subtree only exists only if 
+           len(left_set) = len(right_set) = 1 and root = root.left = root.right
+        '''
         if not root: return 0
-        return self.traversal(root)[1]
-    
-    def traversal(self, root):
+        self.uni_subtree = 0
+        _ = self.DFS(root)
+        return self.uni_subtree
+
+    def DFS(self, root):
         if not root.left and not root.right:
-            return True, 1
+            self.uni_subtree += 1
+            return set([root.val])
         
-        is_tree_uni, num_unisubtree = True, 0
-        if root.left:
-            isUni, num_tree = self.traversal(root.left)
-            is_tree_uni = is_tree_uni and root.val == root.left.val and isUni
-            num_unisubtree += num_tree
+        curr = set([root.val])
+        if root.left and root.right:
+            curr = curr.union(self.DFS(root.left)).union(self.DFS(root.right))
+        elif root.left:
+            curr = curr.union(self.DFS(root.left))
+        elif root.right:
+            curr = curr.union(self.DFS(root.right))
             
-        if root.right:
-            isUni, num_tree = self.traversal(root.right)
-            is_tree_uni = is_tree_uni and root.val == root.right.val and isUni
-            num_unisubtree += num_tree
-            
-        if is_tree_uni: num_unisubtree += 1
-            
-        return is_tree_uni, num_unisubtree
+        if len(curr) == 1: self.uni_subtree += 1
+        return curr
