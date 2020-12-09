@@ -1,5 +1,5 @@
-# [# 501] Find Mode in Binary Search Tree
-# 
+#  501. Find Mode in Binary Search Tree (easy)
+#  https://leetcode.com/problems/find-mode-in-binary-search-tree/
 #
 class Solution(object):
     def findMode(self, root):
@@ -8,25 +8,20 @@ class Solution(object):
         :rtype: List[int]
         """
         if not root: return []
-        mode_dict = {}
-        for num in self.traverse(root):
-            mode_dict[num] = mode_dict.get(num, 0)+1
-            
-        max_freq = max([mode_dict[num] for num in mode_dict])
-        return [num for num in mode_dict if mode_dict[num] == max_freq]
         
+        self.freq = {}
+        self.DFS(root)
+        max_freq = max([self.freq[x] for x in self.freq])        
+        return [x for x in self.freq if self.freq[x] == max_freq]
         
-    def traverse(self, root):
-        if not root.left and not root.right:
-            return [root.val]
+    def DFS(self, root): 
         
-        nodes = []
+        self.freq[root.val] = self.freq.get(root.val, 0) + 1
+        
+        if not root.left and not root.right: return
+        
         if root.left:
-            nodes += self.traverse(root.left)
-                
-        nodes.append(root.val)
-        
-        if root.right:
-            nodes += self.traverse(root.right)
+            self.DFS(root.left)
             
-        return nodes
+        if root.right:
+            self.DFS(root.right)
