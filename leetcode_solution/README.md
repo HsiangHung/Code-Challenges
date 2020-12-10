@@ -90,6 +90,7 @@
 | 670 | Maximum Swap| brain teasers | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23670.Maximum_Swap.py) |
 | 678 | Valid Parenthesis String | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23678.Valid_Parenthesis_String.py) |
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
+| 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
 | 724 | Find Pivot Index | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23724.Find_Pivot_Index.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 791 | Custom Sort String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23791.Custom_Sort_String.py)|
