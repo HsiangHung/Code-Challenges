@@ -1,4 +1,6 @@
-# #721. Accounts Merge
+#  721. Accounts Merge (medium)
+#  https://leetcode.com/problems/accounts-merge/
+#
 #
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
@@ -22,52 +24,48 @@ class Solution:
         input: [["David","David0@m.co","David1@m.co"],["David","David3@m.co","David4@m.co"],["David","David4@m.co","David5@m.co"],["David","David2@m.co","David3@m.co"],["David","David1@m.co","David2@m.co"]]
         '''
         
-        # step 1: set up dict for {name: [emails], ....}
-        merge = {accounts[0][0]: [set(accounts[0][1:])]}
-        for i in range(1, len(accounts)):
-            name, new_account = accounts[i][0], set(accounts[i][1:])            
-            if name not in merge:
-                merge[name] = [set(accounts[i][1:])]
+        # step 1: set up dict for {name: [emails], ....} and also scan if union
+        name_dict = {} 
+        for account in accounts:
+            name, emails = account[0], set(account[1:])   # trick, even from questions, repeated emails
+            if name not in name_dict:
+                name_dict[name] = [emails]
             else:
-                j, union = 0, False
-                while j < len(merge[name]) and union == False:  # once union happens, move
-                    union = self.isSameSet(merge[name][j], new_account)
-                    if union:
-                        merge[name][j] = merge[name][j].union(new_account) # update union
-
-                    j += 1
-
-                if not union:
-                    merge[name].append(new_account)
-                
-            
-        # step 2: check if there is merge needed in dict within same name.
-        for name in merge:
-            union = True
-            while union and len(merge[name]) > 1: 
-                union, i = False, 1
-                while not union and i < len(merge[name]):
-                    union = self.isSameSet(merge[name][0], merge[name][i])
-                    if union:
-                        merge[name][0] = merge[name][0].union(merge[name][i])
-                        merge[name].remove(merge[name][i])
+                i, union = 0, False
+                while not union and i <= len(name_dict[name])-1:  # once union happens, move
+                    if self.isUnion(name_dict[name][i], emails):
+                        name_dict[name][i] = name_dict[name][i].union(emails) # update union
+                        union = True
                     else:
-                        i += 1       
+                        i += 1
+                if not union: name_dict[name].append(emails)
+
+
+        ans = []
+        # step 2: check if there is merge needed in dict within same name.
+        for name in name_dict:
+            emails = name_dict[name][:]
+                        
+            merge = True
+            while merge and len(emails) > 1:
+                merge = False
+                i, merge = 1, False
+                while not merge and i <= len(emails)-1:
+                    if self.isUnion(emails[0], emails[i]):
+                        emails[0] = set(emails[0]).union(emails[i])
+                        emails.pop(i)
+                        merge = True
+                    else:
+                        i += 1
         
-        output = []
-        for name in merge:
-            for i in range(len(merge[name])):
-                output.append([name]+sorted(merge[name][i]))
-        
-        return output
+            for x in emails:
+                ans.append([name] + sorted(list(x)))
+                
+        return ans
+
     
-    
-    def isSameSet(self, set1, set2):
-        '''
-        check if set1 and set2 have common elements 
-        '''
-        union_set = set1.union(set2)
-        if len(union_set) < len(set1) + len(set2):
-            return True
-        else:
-            return False
+    def isUnion(self, a, b):
+        ''' check if set1 and set2 have common elements '''
+        union_set = a.union(b)
+        return True if len(union_set) < len(a) + len(b) else False
+  
