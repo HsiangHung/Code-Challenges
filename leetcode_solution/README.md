@@ -14,6 +14,7 @@
 | 32 | Longest Valid Parentheses |stack|hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2332.Longest_Valid_Parentheses.py)|
 | 33 | Search in Rotated Sorted Array | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/tree/master/leetcode_solution/binary%20search)|
 | 42 | Trapping Rain Water | dynamical programming |hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2342.Trapping_Rain_Water.py)|
+| 44 | Wildcard Matching | dynamical programming | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2344.Wildcard_Matching.py) |
 | 46 | Permutations | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
 | 47 | Permutations II | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
 | 53 | Maximum Subarray|dynamical programming|easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2353.Maximum_Subarray.py)|
