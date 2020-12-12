@@ -1,4 +1,5 @@
-## [Leetcode#39] Combination Sum
+#  39. Combination Sum (medium)
+#  https://leetcode.com/problems/combination-sum/  
 #
 # Uber, Snapchat
 #
