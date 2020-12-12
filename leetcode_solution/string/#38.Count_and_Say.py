@@ -13,10 +13,10 @@ class Solution(object):
             
             new_say = []
             for x in say:
-                if len(new_say) > 0 and new_say[-1][0] == x:
+                if len(new_say) > 0 and new_say[-1][0] == x:  
                     new_say[-1] = (new_say[-1][0], new_say[-1][1] + 1)
                 else:
-                    new_say.append((x, 1))         
+                    new_say.append((x, 1))      # here I use tuple to store (char, count)
             
             say = ""
             for char, val in new_say:
