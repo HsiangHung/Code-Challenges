@@ -1,5 +1,6 @@
-## [Leetcode#249] Group Shifted Strings
-#   
+#  249. Group Shifted Strings (medium)
+#  https://leetcode.com/problems/group-shifted-strings/   
+#
 #  Google, Uber
 #
 class Solution(object):
