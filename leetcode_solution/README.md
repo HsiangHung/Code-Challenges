@@ -34,6 +34,7 @@
 | 95 | Unique Binary Search Trees II | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2395.Unique_Binary_Search_Trees_II.py) |
 | 96 | Unique Binary Search Trees | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2396.Unique_Binary_Search_Trees.py) |
 | 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
+| 114 | Flatten Binary Tree to Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23114.Flatten_Binary_Tree_to_Linked_List.py) |
 | 121 | Best Time to Buy and Sell Stock | dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23121.Best_Time_Buy_and_Sell_Stock.py) |
 | 122 | Best Time to Buy and Sell Stock II| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23122.Best_Time_Buy_and_Sell_Stock_II.py) |
 | 124 | Binary Tree Maximum Path Sum | tree | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23124.Binary_Tree_Maximum_Path_Sum.py) |
