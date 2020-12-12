@@ -95,6 +95,7 @@
 | 528 | Random Pick with Weight | binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23528.Random_Pick_with_Weight.py) |
 | 538 | Convert BST to Greater Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23538.Convert_BST_to_Greater_Tree.py)|
 | 540 | Single Element in a Sorted Array| binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23540.Single_Element_in_Sorted_Array.py) |
+| 617 | Merge Two Binary Trees | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23617.Merge_Two_Binary_Trees.py)|
 | 621 | Task Scheduler| brain teasers | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23621.Task_Scheduler.py)|
 | 636 | Exclusive Time of Functions | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23636.Exclusive_Time_of_Functions.py) |
 | 670 | Maximum Swap| brain teasers | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23670.Maximum_Swap.py) |
