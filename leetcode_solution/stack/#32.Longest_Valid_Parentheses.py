@@ -12,36 +12,32 @@ class Solution:
         site indices won't continue.
         '''
         
-        if len(s) <= 1: return 0
-        
         stack = []
-        
-        valid_pare = []
         for i in range(len(s)):
-            if stack == []:
+            if s[i] == "(":
                 stack.append((s[i], i))
             else:
-                if stack[-1][0] == "(" and s[i] == ")":
-                    valid_pare += [stack[-1][1], i]
+                if len(stack) > 0 and stack[-1][0] == "(":
                     stack.pop()
                 else:
-                    stack.append((s[i], i))
+                    stack.append((s[i], i))  # save stack as (s[i], index)
         
-        valid_pare = sorted(valid_pare) ## this is critical
-        
-        # print (valid_pare)
-                
-        if len(valid_pare) > 0:
-            valid_len, longest = 1, 0
-            for i in range(1, len(valid_pare)):
-                if valid_pare[i] != valid_pare[i-1]+1:
-                    valid_len = 1
-                else:
-                    valid_len += 1
-                longest = max(longest, valid_len)
 
-            return longest
-        else:
-            # consider "((" or ")(" etc.
-            return 0
- 
+        # run through entire string to know the index of invalid parethese.
+        # e.g. ")())()", the only invalid is [0, 3]. Then we sweep the string again to see
+        # longest string between any two indices.
+        
+        if len(stack) > 0:
+            index = [x[1] for x in stack]
+            i, j = 0, 0
+            max_pare = 0
+            while len(index) > 0 and j <= len(index)-1:
+                max_pare = max(max_pare, index[j] - i)
+                i = index[j] + 1
+                j += 1
+
+            if index[-1] != len(s)-1: max_pare = max(max_pare, (len(s)-1)-index[-1])
+            return max_pare
+        else:    # if empty stack, meaning no invalid parenthesis, and entire s is valid.
+            return len(s)
+            
