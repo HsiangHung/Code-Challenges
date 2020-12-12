@@ -1,29 +1,27 @@
-## [Leetcode#38] Count and Say
-##
-##  
+#  38. Count and Say (easy)
+#  https://leetcode.com/problems/count-and-say/
+#  
 class Solution(object):
     def countAndSay(self, n):
         """
         :type n: int
         :rtype: str
         """
-        sq = {1: "1"}
-        term = 2
-        while term <= n:
+        i = 1
+        say = "1"
+        while i < n:
             
-            new_string = ""
-            string = sq[term-1]
-            count = 1
-            for i in range(1, len(string)):
-                if string[i] != string[i-1]:
-                    new_string += str(count) + string[i-1]
-                    count = 1
+            new_say = []
+            for x in say:
+                if len(new_say) > 0 and new_say[-1][0] == x:
+                    new_say[-1] = (new_say[-1][0], new_say[-1][1] + 1)
                 else:
-                    count += 1
-                    
-            new_string += str(count) + string[-1]
-            sq[term] = new_string
+                    new_say.append((x, 1))         
             
-            term += 1
+            say = ""
+            for char, val in new_say:
+                say += str(val)+char
             
-        return sq[n]
+            i+= 1
+        
+        return say
