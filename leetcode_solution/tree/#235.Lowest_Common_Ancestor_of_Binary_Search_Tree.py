@@ -1,6 +1,9 @@
-## [Leetcode#235]Lowest Common Ancestor of a Binary Search Tree
-## Given a binary search tree (BST), find the lowest common ancestor (LCA) 
-## of two given nodes in the BST.
+#  235. Lowest Common Ancestor of a Binary Search Tree (easy)
+#  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+#  
+#
+# Given a binary search tree (BST), find the lowest common ancestor (LCA) 
+# of two given nodes in the BST.
 
 #class TreeNode(object):
 #     def __init__(self, x):
