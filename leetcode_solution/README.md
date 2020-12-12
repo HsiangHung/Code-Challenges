@@ -66,6 +66,7 @@
 | 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23234.Palindrome_Linked_List.py) |
 | 235 | Lowest Common Ancestor of a Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23235.Lowest_Common_Ancestor_of_Binary_Search_Tree.py) |
 | 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
+| 249 | Group Shifted Strings | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23249.Group%20Shifted%20Strings.py) |
 | 250 | Count Univalue Subtrees | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23250.Count_Univalue_Subtrees.py) |
 | 255 | Verify Preorder Sequence in Binary Search Tree | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23255.Verify_Preorder_Sequence_in_Binary%20Search_Tree.py)|
 | 269 | Alien Dictionary| graph | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23269.Alien_Dictionary.py) |
