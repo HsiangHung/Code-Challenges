@@ -1,44 +1,40 @@
-## [#114] Flatten Binary Tree to Linked List
+#  114. Flatten Binary Tree to Linked List (medium)
+#  https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 #
 #  Microsoft
 #
 class Solution(object):
+    '''
+    I found using BFS and instead append, insert to index = 0 is a much easier way.
+    e.g. tree = [1,2,5,3,4,null,6], initial queue = [1]
+               1
+              / \
+             2   5   
+            / \   \
+           3   4   6
+
+         queue   node pop  after pop    queue'
+         [1]      1          []      -> [2,5]
+         [2,5]    2          [5]     -> [3,4,5]
+         [3,4,5]  3          [4,5]   -> [4,5]
+         [4,5]    4          [5]     -> [5]
+         [5]      5          []      -> [6]
+         [6]      6          done
+
+         We can see the popped node.right = queue[0] to flaten
+    '''
      def flatten(self, root: TreeNode) -> None:
         """
         Do not return anything, modify root in-place instead.
         """
-        if not root: return
+        if not root: return root
         
-        if not root.left and not root.right: return root
-                
-        left, right = root.left, root.right
-        
-        if left:
-            root.right = left
-            root.left = None
-            left = self.flatten(left) 
-            if right:
-                left.right = right
-                right = self.flatten(right)
-                return right
-            else:
-                return left
-        else:
-            if right: return self.flatten(right)
-
-        # if left and right:
-        #     root.right = left
-        #     root.left = None
-        #     left = self.flatten(left)            
-        #     left.right = right
-        #     right = self.flatten(right)
-        #     return right
-        # elif left and not right:
-        #     root.right = left
-        #     root.left = None
-        #     left = self.flatten(left)
-        #     return left
-        # elif not left and right:  # note, this is necessary since we need to come back last node for later concat.
-        #     return self.flatten(right)
-        
-        return right               
+        queue = [root]
+        while queue:
+            node = queue.pop(0)
+            
+            if node.right: queue.insert(0, node.right)
+            if node.left:  queue.insert(0, node.left)
+            
+            node.right = queue[0] if len(queue) > 0 else None
+            node.left = None
