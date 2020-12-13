@@ -21,7 +21,7 @@ class Solution:
     
     def DFS(self, x, y, board, i, word):
         
-        if board[y][x] != word[i]: return
+        if board[y][x] is True or board[y][x] != word[i]: return
         
         if i == len(word)-1 and board[y][x] == word[i]:
             self.found = True
