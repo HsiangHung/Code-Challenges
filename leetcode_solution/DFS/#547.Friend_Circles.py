@@ -1,5 +1,5 @@
-# [#547] Friend Circles
-#
+#  547. Friend Circles (medium)
+#  https://leetcode.com/problems/friend-circles/
 #
 #
 class Solution(object):
