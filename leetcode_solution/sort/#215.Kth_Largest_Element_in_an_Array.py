@@ -5,6 +5,9 @@
 #  output minimum val of the queue
 #
 class HeapSort:
+    '''
+    https://www.w3resource.com/python-exercises/heap-queue-algorithm/python-heapq-exercise-7.php
+    '''
     def findKthLargest(self, nums: List[int], k: int) -> int:
         return self.MaxheapSort(nums, k)
     
@@ -20,14 +23,14 @@ class HeapSort:
 #
 #
 class MergeSort:
+    '''
+    https://runestone.academy/runestone/books/published/pythonds3/SortSearch/TheMergeSort.html
+    '''
     def findKthLargest(self, nums: List[int], k: int) -> int:
         nums = self.mergeSort(nums)
         return nums[-k]
     
     def mergeSort(self, nums):
-        '''
-    https://runestone.academy/runestone/books/published/pythonds3/SortSearch/TheMergeSort.html
-        '''
         if len(nums) <= 1: return nums
         
         mid = len(nums) // 2
@@ -64,14 +67,14 @@ class MergeSort:
 #
 #
 class QuickSort:
+    '''
+    http://bookshadow.com/weblog/2015/05/23/leetcode-kth-largest-element-array/
+    http://www.cs.yale.edu/homes/aspnes/pinewiki/QuickSelect.html
+    '''
     def findKthLargest(self, nums: List[int], k: int) -> int:        
         return self.quickSort(nums, k)
         
     def quickSort(self, nums, k):
-        '''
-        http://bookshadow.com/weblog/2015/05/23/leetcode-kth-largest-element-array/
-        http://www.cs.yale.edu/homes/aspnes/pinewiki/QuickSelect.html
-        '''
         import random
         pivot = random.choice(nums)
         nums1, nums2 = [], []
