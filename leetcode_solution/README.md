@@ -113,6 +113,7 @@
 | 844 | Backspace String Compare | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23844.Backspace_String_Compare.py) |
 | 938 | Range Sum of BST | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23938.Range_Sum_of_BST.py) |
 | 997 | Find the Town Judge | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23997.Find_the_Town_Judge.py) |
+| 1026 | Maximum Difference Between Node and Ancestor | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231026.Maximum_Difference_Between_Node_and_Ancestor.py)|
 | 1047 | Remove All Adjacent Duplicates In String | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231047.Remove_All_Adjacent_Duplicates_In_String.py) |
 | 1062 | Longest Repeating Substring | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%231062.Longest_Repeating_Substring.py) |
 | 1091 | Shortest Path in Binary Matrix | BFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
