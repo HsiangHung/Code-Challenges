@@ -31,23 +31,36 @@ class MergeSort:
         if len(nums) <= 1: return nums
         
         mid = len(nums) // 2
+        left, right = nums[:mid], nums[mid:]
         
-        left = self.mergeSort(nums[:mid])
-        right = self.mergeSort(nums[mid:])
+        left, right = self.mergeSort(left), self.mergeSort(right) 
         
-        i, j, k = 0, 0, 0
-        while i < len(left) and j < len(right):
-            if left[i] <= right[j]:
-                nums[k] = left[i]
+        # now left and right should be sorted respectively.
+               
+        if right[0] >= left[-1]:  
+            return left + right
+        elif right[-1] <= left[0]:
+            return right + left
+        else:
+            return self.mergeSortArray(left, right) # regular merge two sorted array problem
+                
+                
+    def mergeSortArray(self, num1, num2):
+        ''' regular merge two sorted arrays problem '''
+        i, j = 0, 0
+        merge = []
+        while i < len(num1) and j < len(num2):
+            if num1[i] <= num2[j]:
+                merge.append(num1[i])
                 i += 1
             else:
-                nums[k] = right[j]
+                merge.append(num2[j])
                 j += 1
-            k += 1
-            
-        if i < len(left): nums[k:] = left[i:]  # if left is longer than right
-        if j < len(right): nums[k:] = right[j:] # if right is longer than left
-        return nums
+        
+        if i < len(num1): return merge + num1[i:]
+        if j < len(num2): return merge + num2[j:]
+        return merge
+
 #
 #
 class QuickSort:
