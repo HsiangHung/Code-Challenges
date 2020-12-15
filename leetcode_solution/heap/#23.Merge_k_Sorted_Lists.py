@@ -20,26 +20,34 @@ class Solution:
         time complexity O(n*log(k)), space O(k)
         k: number of lists, n is total number of all k nodes
         '''
-        from heapq import heappush, heappop
-        
-        if len(lists)==0: return
+        if len(lists) == 0: return None
+
+        dummy_head = ListNode(val=-1)
         
         heap = []
-        curNode = root = ListNode(0) # dummy
         count = 0
         for node in lists:
             if node:
                 count += 1
-                heappush(heap, (node.val, count, node))
-        
-        
+                heapq.heappush(heap, (node.val, count, node))  # (value1, value2, object)
+    
+        # e.g. lists = [1->4->5, 1->3->4, 2->6]
+        # now heap has [1,1,2]
+
+        curr = dummy_head
         while heap:
-            value, _, node = heappop(heap)
-
-            curNode.next = ListNode(value)
-            curNode = curNode.next
-            if node.next:
+            
+            val, _, node = heapq.heappop(heap)   # the minHeap pop out minimum value = val
+            
+            curr.next = node
+            if node.next is not None:
+                node = node.next
                 count += 1
-                heappush(heap,(node.next.val, count, node.next))
-
-        return root.next
+                heapq.heappush(heap, (node.val, count, node)) # after popout a node, insert node.next
+                
+            curr = curr.next
+                
+        
+        return dummy_head.next
+      
+                
