@@ -1,12 +1,33 @@
-## [Leetcode#199] Binary Tree Right Side View
-##
+#  199. Binary Tree Right Side View (medium)
+#  https://leetcode.com/problems/binary-tree-right-side-view/
+#
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 #
-class Solution(object):
+class BFSSolution:
+    def rightSideView(self, root: TreeNode) -> List[int]:
+        if not root: return []
+        
+        views = []
+        queue = [(root, 1)]
+        while queue:            
+            node, depth = queue.pop(0)
+            
+            if len(views) < depth:
+                views.append(node.val)
+            else:
+                views[depth-1] = node.val
+                
+            if node.left: queue.append((node.left, depth+1))
+            if node.right: queue.append((node.right, depth+1))
+                
+        return views
+            
+#
+class DFSSolution(object):
     def rightSideView(self, root: TreeNode) -> List[int]:
         self.view = []
         self.DFS(root, 0)
