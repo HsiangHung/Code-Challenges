@@ -11,35 +11,26 @@ class Solution:
         If update grid[y2][x2] = step+1 on line 19, we will spend a lot time to run
         duplicated paths.
         '''
-        if grid[0][0] !=0: return -1
+        if grid[0][0] == 1 or grid[len(grid)-1][len(grid[0])-1] == 1: return -1
         
-        m = len(grid) 
+        queue = [(0, 0, 1)]
+        visited = set({(0, 0)})
         
-        num_paths = 2**31-1
+        while queue:
+            x, y, step = queue.pop(0)
+            if x == len(grid[0])-1 and y == len(grid)-1: return step
         
-        moves = [(0, 0, 1)]
-        grid[0][0] = 1
-        while moves:
-            y, x, step = moves.pop(0)  ## trick 1: need to pop(0), always deal eariler moves
-                        
-            if x == m-1 and y == m-1:
-                num_paths = min(num_paths, step)       
-            else:
-                for x2, y2 in self.moving(m, x, y):
-                    if grid[y2][x2] == 0 or (grid[y2][x2] != 1 and step+1 < grid[y2][x2]): 
-                        # as long as grid not visited or has been visited but we have lower steps, update it.BufferError
-                        moves.append((y2, x2, step+1))
-                        grid[y2][x2] = step+1           ## trick 2: start to update grid
-                        
-        return num_paths if num_paths < 2**31-1 else -1
-        
-            
-    def moving(self, m, x, y):
+            for x2, y2 in self.move(len(grid[0]), len(grid), x, y):
+                if grid[y2][x2] != 1 and (x2, y2) not in visited:
+                    queue.append((x2, y2, step + 1))
+                    visited.add((x2, y2))
+        return -1 
+    
+    def move(self, m, n, x, y):
         moves = []
-        for i in [1, 0, -1]:
-            for j in [1, 0, -1]:
-                x2, y2 = x+i, y+j
-                if 0 <= x2 < m and 0 <= y2 < m:
-                    moves.append((x2, y2))
-        
+        for i, j in [(1,0), (1,1), (0,1), (-1,1), (-1,0), (-1,-1), (0, -1), (1, -1)]:
+            if  0 <= x+i < m and 0 <= y+j < n:
+                moves.append((x+i, y+j))
         return moves
+            
+       
