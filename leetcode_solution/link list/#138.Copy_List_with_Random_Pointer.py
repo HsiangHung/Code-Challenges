@@ -16,32 +16,29 @@ class Solution:
         need to store the pointer location.
         The copyed node is saved in a list, and original node is saved as 
         (key=node, value=node's rank)
-        '''
-        if not head: return head
+        '''       
+        if not head: return None
         
-        link, copy_link = {}, []
+        head2 = Node(head.val)     
+        n1, n2 = head, head2 
+        visited, randoms = {}, {}
+        while n1.next:
+            nn1 = n1.next
+            nn2 = Node(nn1.val)
+            n2.next = nn2
+                        
+            randoms[n1] = n1.random
+            visited[n1] = n2
+            
+            n1, n2 = nn1, nn2
         
-        copy_head = Node(head.val)        
-        node, copy = head, copy_head
-        idx = 0
-        while node.next != None:
-            copy2 = Node(node.next.val)
-            copy.next = copy2
-            copy_link.append(copy)
-            link[node] = idx
-            node, copy = node.next, copy2
-            idx += 1
-            
-        copy_link.append(copy)
-        link[node] = idx
+        visited[n1] = n2
+        randoms[n1] = n1.random
         
-
-        node, copy = head, copy_head
-        for i, node in enumerate(link):
-            if node.random is not None:
-                copy_link[i].random = copy_link[link[node.random]]          
-            node = node.next
+        for n1 in randoms:
+            n2 = visited[n1]
+            if randoms[n1] in visited:
+                n2.random = visited[randoms[n1]] 
             
-            
-        return copy_head
+        return head2
             
