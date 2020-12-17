@@ -15,45 +15,32 @@ class Solution:
         * If using BFS, we may meet first meet a node as start_id and result in assigning
           its sign, but later actually it is connected to nodes visited before.
         '''
-        graph = {i: graph[i] for i in range(len(graph)) if graph[i] != []}
+        edges = {}
+        for i in range(len(graph)):
+            edges[i] = graph[i]
         
-        if len(graph) == 0: return True
-
-        while len(graph) > 0:  # need to check until graph to make sure all nodes visit
-            start_id = list(graph.keys())[0]
-            self.visited = {start_id: 1}
-            if not self.DFS(graph, start_id): return False
-        return True
-
+        visited = [0]*len(edges)
+                
+        self.bipartite = True
         
-    def DFS(self, graph, id):
-                                
-        if id in graph:
+        for node in range(len(visited)):
+            if visited[node] == 0:
+                visited[node] = 1
+                self.DFS(node, visited, edges)
+        return self.bipartite
             
-            connection = graph[id]
-            del graph[id]
-
-            for neighbor in connection:
-                if neighbor in self.visited:
-                    if self.visited[neighbor] == self.visited[id]:
-                        return False
-                else:
-                    self.visited[neighbor] = self.assign_color(id)
-                    if not self.DFS(graph, neighbor):
-                        return False
-            
-        return True     # important! once all nodes in the current graph visit, and
-                        # all signs correct, return True
-
-        
-            
-        
-    def assign_color(self, i):
-        if self.visited[i] == 1:
-            return -1
-        else:
-            return 1
-            
+    def DFS(self, n, visited, edges):        
+        for x in edges[n]:
+            if visited[x] == 0:
+                visited[x] = self.flip_color(visited[n])
+                self.DFS(x, visited, edges)
+            else:
+                if visited[x] != self.flip_color(visited[n]):
+                    self.bipartite = False
+                    return 
+                    
+    def flip_color(self, color):
+        return -1 if color == 1 else 1
 
 
 class Solution2:
