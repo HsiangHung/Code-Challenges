@@ -113,6 +113,7 @@
 | 724 | Find Pivot Index | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23724.Find_Pivot_Index.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 791 | Custom Sort String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23791.Custom_Sort_String.py)|
+| 824 | Goat Latin | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23824.Goat_Latin.py) |
 | 825 | Friends Of Appropriate Ages| hash table | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23825.Friends_Of_Appropriate_Ages.py) |
 | 844 | Backspace String Compare | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23844.Backspace_String_Compare.py) |
 | 938 | Range Sum of BST | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23938.Range_Sum_of_BST.py) |
