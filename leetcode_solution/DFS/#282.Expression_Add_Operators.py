@@ -38,11 +38,11 @@ class Solution:
                 self.ans.append(ex)
             return
         
-        for i in range(len(num)):
-                        
-            if len(num[:i+1]) > 1 and num[0] == "0": continue   ## trick: for example "02", then we skip
+        for i in range(len(num)): # need to go loop i, "123" try "1", "12" and "123"
             
             y = num[:i+1]
+
+            if len(y) > 1 and num[0] == "0": continue   ## trick: for example y="02", we skip
 
             self.DFS(num[i+1:], target, ex+"+"+y, stack+["+", int(y)], result+int(y))
             self.DFS(num[i+1:], target, ex+"-"+y, stack+["-", int(y)], result-int(y))
