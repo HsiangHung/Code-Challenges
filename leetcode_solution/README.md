@@ -120,6 +120,7 @@
 | 958 | Check Completeness of a Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23958.Check_Completeness_of_Binary_Tree.py) |
 | 987 | Vertical Order Traversal of a Binary Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23987.Vertical_Order_Traversal_of_a_Binary_Tree.py)|
 | 997 | Find the Town Judge | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23997.Find_the_Town_Judge.py) |
+| 1004 | Max Consecutive Ones III| array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231004.Max_Consecutive_Ones_III.py)|
 | 1026 | Maximum Difference Between Node and Ancestor | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231026.Maximum_Difference_Between_Node_and_Ancestor.py)|
 | 1047 | Remove All Adjacent Duplicates In String | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231047.Remove_All_Adjacent_Duplicates_In_String.py) |
 | 1062 | Longest Repeating Substring | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%231062.Longest_Repeating_Substring.py) |
