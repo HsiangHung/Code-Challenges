@@ -1,3 +1,6 @@
+#  1004. Max Consecutive Ones III (medium)
+#  https://leetcode.com/problems/max-consecutive-ones-iii/
+#
 class Solution:
     '''
     https://blog.csdn.net/fuxuemingzhu/article/details/88093268
