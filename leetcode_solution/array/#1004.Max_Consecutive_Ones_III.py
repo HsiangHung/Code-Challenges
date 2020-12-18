@@ -29,7 +29,7 @@ class Solution:
         max_sub = 0
         i, zeros = 0, 0
         for j in range(len(A)):
-            print (i, j, A[i], A[j], zeros, max_sub)
+            # print (i, j, A[i], A[j], zeros, max_sub)
             if A[j] == 0:
                 zeros += 1
             
