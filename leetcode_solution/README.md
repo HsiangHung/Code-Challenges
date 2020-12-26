@@ -99,6 +99,7 @@
 | 399 | Evaluate Division | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
 | 426 | Convert Binary Search Tree to Sorted Doubly Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23426.Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List.py) |
 | 463 | Island Perimeter | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23463.Island_Perimeter.py)|
+| 470 | Implement Rand10() Using Rand7() | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23470.Implement_Rand10()_Using_Rand7().py)|
 | 494 | Target Sum | dynamical programming| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23494.Target_Sum.py) |
 | 501 | Find Mode in Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23501.Find_Mode_in_Binary_Search_Tree.py) |
 | 513 | Find Bottom Left Tree Value | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23513.Find_Bottom_Left_Tree_Value.py)|
