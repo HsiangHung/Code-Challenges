@@ -106,6 +106,7 @@
 | 470 | Implement Rand10() Using Rand7() | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23470.Implement_Rand10()_Using_Rand7().py)|
 | 490 | The Maze | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23490.The_Maze.py)|
 | 494 | Target Sum | dynamical programming| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23494.Target_Sum.py) |
+| 499 | The Maze III | BFS + heap | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23499.The_Maze_III.py) |
 | 501 | Find Mode in Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23501.Find_Mode_in_Binary_Search_Tree.py) |
 | 505 | The Maze II | BFS + heap| medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23505.The_Maze_II.py)|
 | 513 | Find Bottom Left Tree Value | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23513.Find_Bottom_Left_Tree_Value.py)|
