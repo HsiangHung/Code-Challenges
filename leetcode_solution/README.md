@@ -77,6 +77,7 @@
 | 232 | Implement Queue using Stacks | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23232.Implement_Queue_using_Stacks.py) |
 | 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23234.Palindrome_Linked_List.py) |
 | 235 | Lowest Common Ancestor of a Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23235.Lowest_Common_Ancestor_of_Binary_Search_Tree.py) |
+| 236 | Lowest Common Ancestor of a Binary Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23236.Lowest_Common_Ancestor_of_Binary_Tree.py)|
 | 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
 | 239 | Sliding Window Maximum | queue | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/queue/%23239.Sliding_Window_Maximum.py)|
 | 249 | Group Shifted Strings | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23249.Group%20Shifted%20Strings.py) |
