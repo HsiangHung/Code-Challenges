@@ -5,6 +5,8 @@ class Solution:
     '''
     https://wdxtub.com/interview/14520595479135.html
     Run checking from middle site moving to left
+
+    NOTE: this code passed 119/220 test cases, cannot get through all.
     '''
     def shortestPalindrome(self, s: str) -> str:        
         rev_s = s[::-1]
