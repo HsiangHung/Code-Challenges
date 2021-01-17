@@ -124,6 +124,7 @@
 | 528 | Random Pick with Weight | binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23528.Random_Pick_with_Weight.py) |
 | 538 | Convert BST to Greater Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23538.Convert_BST_to_Greater_Tree.py)|
 | 540 | Single Element in a Sorted Array| binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23540.Single_Element_in_Sorted_Array.py) |
+| 542 | 01 Matrix | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23542.01_Matrix.py)|
 | 547 | Friend Circles | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23547.Friend_Circles.py)|
 | 617 | Merge Two Binary Trees | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23617.Merge_Two_Binary_Trees.py)|
 | 621 | Task Scheduler| brain teasers | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23621.Task_Scheduler.py)|
