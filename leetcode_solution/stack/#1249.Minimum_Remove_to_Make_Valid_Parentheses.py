@@ -9,18 +9,14 @@ class Solution:
         invalid paraenthese needed to remove.
         '''
         stack = []
-        idx = []
-        for i in range(len(s)):
-            if s[i] == "(" or s[i] == ")":
-                if len(stack) == 0:
-                    idx.append(i)
-                    stack.append(s[i])
+        for i, char in enumerate(s):
+            if char == "(":
+                stack.append((i, "("))
+            elif char == ")":
+                if len(stack) > 0 and stack[-1][1] == "(":
+                    stack.pop()
                 else:
-                    if stack[-1] == "(" and s[i] == ")":
-                        stack.pop()
-                        idx.pop()
-                    else:
-                        stack.append(s[i])
-                        idx.append(i)
-                            
-        return "".join([s[i] for i in range(len(s)) if i not in set(idx)])
+                    stack.append((i, ")"))
+        
+        stack = set([i[0] for i in stack])
+        return "".join([s[i] for i in range(len(s)) if i not in stack])
