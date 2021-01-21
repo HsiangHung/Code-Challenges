@@ -26,10 +26,10 @@ class Solution:
             queue = [(lx, ly, 0)]
             visited = set({})
             distances = {(bx, by): mx + ny for bx, by in buildings} # for each land, we have a dist hashmap
-            
+        
             building_reach = set({})
             
-            while queue and len(building_reach) < len(buildings): # if BFS valid and # of building reached < total builds
+            while queue and len(building_reach) < len(buildings): # BFS valid and # of building reached < total builds
                 
                 x, y, step = queue.pop(0)
                 
