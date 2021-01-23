@@ -1,42 +1,42 @@
-# [#652]  Find Duplicate Subtrees
+#  652. Find Duplicate Subtrees (medium)
+#  https://leetcode.com/problems/find-duplicate-subtrees/
 #
-# Google
-#
-class Solution(object):
-    def findDuplicateSubtrees(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[TreeNode]
-        """
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    '''
+    We save tree pattern in a set. Only duplication, and save to self.ans
+    NOTE for 28-th line the last "," and 31-th lin ",," are important, 
+         to distinguish [1,2,null] and [1,null,2]
+    '''
+    def __init__(self):
+        self.pattern_set = set({})
+        self.ans = {}
+        
+    def findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
         if not root: return []
-        self.subTree, self.duplicate = {}, set({})
+        _ = self.DFS(root)
+        return [self.ans[pattern] for pattern in self.ans]
         
-        self.traversal(root)
-
-        print self.subTree
+    def DFS(self, root):
         
-        return list(self.duplicate)
-        
-    def traversal(self, root):
-        if not root.left and not root.right:
-            if str(root.val) in self.subTree and self.subTree[str(root.val)] == 1:
-                self.duplicate.add(root)
-            self.subTree[str(root.val)] = self.subTree.get(str(root.val), 0) + 1
-            return str(root.val)
-        
-        path = str(root.val)
-        if root.left:
-            path += ','+self.traversal(root.left)
+        if root.left and root.right:
+            pattern = str(root.val) +',' + self.DFS(root.left) + ',' + self.DFS(root.right)
+        elif root.left:
+            pattern = str(root.val) + ','+ self.DFS(root.left) + ',' # <= the last "," is important. 
+        elif root.right:
+            pattern = str(root.val) + ',,'+ self.DFS(root.right)
         else:
-            path += ',null'  ## consider subtree [1,null,2] is different [1,2,null]
-        
-        if root.right:
-            path += ','+self.traversal(root.right)
-    
-        if path in self.subTree and self.subTree[path] == 1:
-            self.duplicate.add(root)
+            pattern = str(root.val)
             
-        self.subTree[path] = self.subTree.get(path, 0) + 1
+        if pattern in self.pattern_set:
+            if pattern not in self.ans: self.ans[pattern] = root
         
-        return path
-        
+        self.pattern_set.add(pattern)
+            
+        return pattern
+         
