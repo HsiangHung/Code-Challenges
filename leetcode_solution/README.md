@@ -138,6 +138,7 @@
 | 678 | Valid Parenthesis String | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23678.Valid_Parenthesis_String.py) |
 | 688 | Knight Probability in Chessboard | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23688.Knight_Probability_in_Chessboard.py)|
 | 694 | Number of Distinct Islands | DFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23694.Number_of_Distinct_Islands.py) |
+| 698 | Partition to K Equal Sum Subsets | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23698.Partition_to_K_Equal_Sum_Subsets.py)|
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
 | 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
 | 724 | Find Pivot Index | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23724.Find_Pivot_Index.py)|
