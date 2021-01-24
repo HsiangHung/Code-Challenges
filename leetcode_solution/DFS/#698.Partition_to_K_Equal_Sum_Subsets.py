@@ -26,7 +26,7 @@ class Solution:
         
         target = sum(nums) // k
         partitions = [0]*k
-        return self.DFS(partitions, sorted(nums, reverse=True), target) # NOTE: sorted reversely is trick
+        return self.DFS(partitions, sorted(nums, reverse=True), target) # <= sorted reversely is trick
         
     def DFS(self, partitions, nums, target):
         if len(nums) == 0:
