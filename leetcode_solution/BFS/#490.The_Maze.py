@@ -8,51 +8,33 @@ class Solution:
         
         visited = set({})
         
-        while BFS:
+        while queue:
+            x, y = queue.pop(0)
             
-            x, y = BFS.pop(0)
-            
-            if y == destination[0] and x == destination[1]: return True
+            if (x, y) == (destination[1], destination[0]): 
+                return True
             
             visited.add((x, y))
             
-            x2, y = self.left(x, y, maze)
-            if x2 != x and (x2, y) not in visited: BFS.append((x2, y))
-
-            x2, y = self.right(x, y, maze)
-            if x2 != x and (x2, y) not in visited: BFS.append((x2, y))
-                
-            x, y2 = self.up(x, y, maze)
-            if y2 != y and (x, y2) not in visited: BFS.append((x, y2))
+            for new_loc in self.move(x, y, maze):
+                if new_loc not in visited:
+                    queue.append(new_loc)
             
-            x, y2 = self.down(x, y, maze)
-            if y2 != y and (x, y2) not in visited: BFS.append((x, y2))
-                     
         return False
-
-
-    def left(self, x, y, maze):
-        x2 = x
-        while x2 > 0 and maze[y][x2-1] == 0:
-            x2 -= 1
-        return x2, y
-
-    def right(self, x, y, maze):
-        x2 = x
-        while x2 < len(maze[0])-1 and maze[y][x2+1] == 0:
-            x2 += 1
-        return x2, y
-                                                      
-    def up(self, x, y, maze):
-        y2 = y
-        while y2 > 0 and maze[y2-1][x] == 0:
-            y2 -= 1
-        return x, y2   
-                                                                
-    def down(self, x, y, maze):
-        y2 = y
-        while y2 < len(maze)-1 and maze[y2+1][x] == 0:
-            y2 += 1
-        return x, y2                              
-        
+    
+    
+    def move(self, x, y, maze):
+        locs = []
+        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+            x2, y2 = x, y
+            while len(maze[0]) > x2+dx >= 0 and len(maze) > y2+dy >= 0 and maze[y2+dy][x2+dx] == 0:
+                x2 += dx
+                y2 += dy
+                
+            if (x2, y2) != (x, y): locs.append((x2, y2))
+                
+        return locs
+            
+            
+             
         
