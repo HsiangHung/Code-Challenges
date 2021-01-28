@@ -10,6 +10,7 @@
 class Solution:
     '''
     inspired by video: https://www.youtube.com/watch?v=4u9oblkt_jA
+    and http://fisherlei.blogspot.com/2013/01/leetcode-construct-binary-tree-from.html
     
     The first element in preorder is always the root.
     And then we use inorder to split left and right from the root.
