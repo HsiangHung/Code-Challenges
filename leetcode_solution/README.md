@@ -79,6 +79,7 @@
 | 212 | Word Search II | DFS | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23212.Word_Search_II.py)|
 | 214 | Shortest Palindrome | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23214.Shortest_Palindrome.py)|
 | 215 | Kth Largest Element in an Array | sort | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%23215.Kth_Largest_Element_in_an_Array.py) |
+| 221 | Maximal Square | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23221.Maximal_Square.py) |
 | 225 | Implement Stack using Queues |stack | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23225.Implement_Stack_using_Queues.py)|
 | 227 | Basic Calculator II | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23%20227.Basic_Calculator_II.py)|
 | 232 | Implement Queue using Stacks | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23232.Implement_Queue_using_Stacks.py) |
