@@ -165,6 +165,7 @@
 | 1091 | Shortest Path in Binary Matrix | BFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
 | 1123 | Lowest Common Ancestor of Deepest Leaves | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231123.Lowest_Common_Ancestor_of_Deepest_Leaves.py) |
 | 1153 | String Transforms Into Another String | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%231153.String_Transforms_Into_Another_String.py)|
+| 1155 | Number of Dice Rolls With Target Sum |dynamical programming | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%231155.Number_of_Dice_Rolls_With_Target_Sum.py)|
 | 1197 | Minimum Knight Moves | BFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231197.Minimum_Knight_Moves.py) |
 | 1249 | Minimum Remove to Make Valid Parentheses | stack | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231249.Minimum_Remove_to_Make_Valid_Parentheses.py) |
 | 1254 | Number of Closed Islands | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231254.Number_of_Closed_Islands.py)|
