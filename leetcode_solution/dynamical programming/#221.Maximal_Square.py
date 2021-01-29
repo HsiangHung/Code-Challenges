@@ -4,15 +4,15 @@
 class Solution:
     '''
     use dynamical programming. dp is 2D array
-    [["1","0","1","0","0"],
-     ["1","0","1","1","1"],
-     ["1","1","1","1","1"],
-     ["1","0","0","1","0"]]
+    [["1","0","1","0","0"],         dp = 1 0 1 0 0
+     ["1","0","1","1","1"],              1 0 1 1 1
+     ["1","1","1","1","1"],              1 1 1 2 2
+     ["1","0","0","1","0"]]              1 0 0 1 0
      
         dp[y][x] = min(dp[y-1][x-1], dp[y-1][x], dp[y][x-1]) + 1 if matrix[y][x] == "1" 
      or dp[y][x] = 0 if matrix[y][x] == "0" 
      
-     maximal_square is determined by minimum length of x, y,diagonal direction 
+     maximal_square is determined by minimum length of x, y,diagonal direction. 
      
     '''
     def maximalSquare(self, matrix: List[List[str]]) -> int:
