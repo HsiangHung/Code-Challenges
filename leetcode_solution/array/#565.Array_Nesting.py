@@ -1,27 +1,29 @@
-## [Leetcode#565] Array Nesting
+#  565. Array Nesting (medium)
+#  https://leetcode.com/problems/array-nesting/
 #
-#
-#
-class Solution(object):
-    def arrayNesting(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        self.nums_appear = set({})
-        ## note: not just simply run resurrsion, time will exceed.
-        ## as long as the num appeared, we got to save and not need to do DFS.
+class Solution:
+    '''
+    when index is visited, removing from index_dict, which saves time by avoid vitisted sites 
+    '''
+    def arrayNesting(self, nums: List[int]) -> int:
         
-        max_len = -float('inf')
+        idx_dict = {}
+        for i, num in enumerate(nums):
+            idx_dict[num] = i
+      
+        max_seq= 0
         for i in range(len(nums)):
-            if nums[i] not in self.nums_appear:
-                max_len = max(max_len, self.DFS(nums[i], nums, set({})))        
             
-        return max_len
+            seq = 0
+            while i in idx_dict:
+                seq += 1
+                idx = idx_dict[i]
+                del idx_dict[i]
+                i = idx
+
+            max_seq = max(max_seq, seq)
+            
+        return max_seq
             
             
-    def DFS(self, num, nums, nums_set):
-        if num in nums_set: return len(nums_set)
-        nums_set.add(num)
-        self.nums_appear.add(num)
-        return self.DFS(nums[num], nums, nums_set)
+    
