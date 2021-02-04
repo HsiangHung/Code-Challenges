@@ -3,7 +3,8 @@
 #
 class Solution:
     '''
-    ** I feel this version is easier to understand
+    ** I feel this version is easier to understand than hash table verion:
+       https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23305.Number_of_Islands_II.py
 
     e.g. [[0,0], [0,1], [1,2], [2,1], [2,2], [1,1]], ans = [1,1,2,3,2,1] 
     
