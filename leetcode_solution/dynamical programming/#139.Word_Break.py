@@ -21,19 +21,17 @@ class Solution:
 
 
 ## NOTE: using the following BFS solution cannot pass all test cases. Time exceed. 
-
-class BFSSolution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        
-        queue = [""]
-        
-        while queue:
-            word1 = queue.pop(0)
-            if word1 == s: return True
-            
-            for word2 in wordDict:
-                if s[len(word1) : len(word1)+len(word2)] == word2:
-                    queue.append(word1+word2)
-             
-        return False
+#
+# class BFSSolution:
+#     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+#         queue = [""]
+#         while queue:
+#             word1 = queue.pop(0)
+#             if word1 == s: return True
+#            
+#             for word2 in wordDict:
+#                 if s[len(word1) : len(word1)+len(word2)] == word2:
+#                     queue.append(word1+word2)
+#             
+#         return False
                     
