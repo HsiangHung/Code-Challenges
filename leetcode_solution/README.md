@@ -5,6 +5,7 @@
 | 3 | Longest Substring Without Repeating Characters | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%233.Longest_Substring_Without_Repeatin.py)|
 | 5 | Longest Palindromic Substring | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%235.Longest_Palindromic_Substring.py) |
 | 10 | Regular Expression Matching | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2310.Regular_Expression_Matching.py) |
+| 12 | Integer to Roman | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2312.Integer_to_Roman.py)|
 | 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
 | 20 | Valid Parentheses | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2320.Valid_Parentheses.py) |
 | 21 | Merge Two Sorted Lists | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2321.%20Merge_Two_Sorted_Lists.py) |
