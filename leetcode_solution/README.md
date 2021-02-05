@@ -27,6 +27,7 @@
 | 63 | Unique Paths II | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2363.Unique_Paths_II.py)|
 | 64 | Minimum Path Sum | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2364.Minimum_Path_Sum.py)|
 | 66 | Plus One | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%2366.Plus_One.py) |
+| 68 | Text Justification | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2368.Text_Justification.py)|
 | 69 | Sqrt(x) | binary search | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%2369.Sqrt(x).py)|
 | 70 | Climbing Stairs| dynamical programming |easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2370.Climbing_Stairs.py)|
 | 71 | Simplify Path | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2371.Simplify_Path.py)|
