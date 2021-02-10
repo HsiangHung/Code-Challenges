@@ -21,6 +21,7 @@
 | 46 | Permutations | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
 | 47 | Permutations II | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
 | 53 | Maximum Subarray|dynamical programming|easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2353.Maximum_Subarray.py)|
+| 54 | Spiral Matrix | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2354.Spiral_Matrix.py)|
 | 56 | Merge Intervals | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2356.Merge_Intervals.py)|
 | 57 | Insert Interval | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2357.Insert_Interval.py)|
 | 61 | Rotate List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2361.Rotate_List.py) |
