@@ -151,6 +151,7 @@
 | 688 | Knight Probability in Chessboard | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23688.Knight_Probability_in_Chessboard.py)|
 | 694 | Number of Distinct Islands | DFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23694.Number_of_Distinct_Islands.py) |
 | 698 | Partition to K Equal Sum Subsets | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23698.Partition_to_K_Equal_Sum_Subsets.py)|
+| 704 | Binary Search | binary search | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23704.Binary_Search.py)|
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
 | 713 | Subarray Product Less Than K | two pointer |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/two%20pointer/%23713.Subarray_Product_Less_Than_K.py)|
 | 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
