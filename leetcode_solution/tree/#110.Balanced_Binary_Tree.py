@@ -15,16 +15,11 @@ class Solution(object):
         :rtype: TreeNode
         """
         if not root: return True
-        return self.get_subtree_depth(root) != - 1
+        return self.get_subtree_depth(root)
 
         
     def get_subtree_depth(self, root):
         if not root: return 0
-        
         left_depth, right_depth = self.get_subtree_depth(root.left), self.get_subtree_depth(root.right)
-        
-        if left_depth == -1 or right_depth == -1 or abs(left_depth-right_depth) > 1:
-            return -1
-        else:
-            return max(left_depth + 1, right_depth + 1)
-
+        return False if (left_depth is False) or (right_depth is False) or (abs(left_depth - right_depth) > 1) else max(left_depth, right_depth) + 1
+       
