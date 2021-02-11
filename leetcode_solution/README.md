@@ -174,6 +174,7 @@
 | 1047 | Remove All Adjacent Duplicates In String | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231047.Remove_All_Adjacent_Duplicates_In_String.py) |
 | 1062 | Longest Repeating Substring | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%231062.Longest_Repeating_Substring.py) |
 | 1091 | Shortest Path in Binary Matrix | BFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231091.Shortest_Path_in_Binary_Matrix.py) |
+| 1010 | Pairs of Songs With Total Durations Divisible by 60 | array |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231010.Pairs_of_Songs_With_Total_Duration_Divisible_by_60.py)|
 | 1123 | Lowest Common Ancestor of Deepest Leaves | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231123.Lowest_Common_Ancestor_of_Deepest_Leaves.py) |
 | 1153 | String Transforms Into Another String | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%231153.String_Transforms_Into_Another_String.py)|
 | 1155 | Number of Dice Rolls With Target Sum |dynamical programming | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%231155.Number_of_Dice_Rolls_With_Target_Sum.py)|
