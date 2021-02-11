@@ -46,6 +46,7 @@
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py)|
 | 106 |  Construct Binary Tree from Inorder and Postorder Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23106.Construct_Binary_Tree_from_Inorde_and_Postorder_Traversal.py)|
 | 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
+| 110 | Balanced Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23110.Balanced_Binary_Tree.py)|
 | 114 | Flatten Binary Tree to Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23114.Flatten_Binary_Tree_to_Linked_List.py) |
 | 116 | Populating Next Right Pointers in Each Node | tree |medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23116.Populating_Next_Right_Pointers_in_Each_Node.py)|
 | 119 | Pascal's Triangle II | dynamical programming | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23119.Pascal's_Triangle_II.py) |
