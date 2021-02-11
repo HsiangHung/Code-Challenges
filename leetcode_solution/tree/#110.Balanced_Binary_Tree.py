@@ -1,5 +1,5 @@
-## [Leetcode#700] Search in a Binary Search Tree
-#
+#  110. Balanced Binary Tree (easy)
+#  https://leetcode.com/problems/balanced-binary-tree/ 
 #
 # class TreeNode(object):
 #     def __init__(self, x):
