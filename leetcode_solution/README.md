@@ -115,6 +115,7 @@
 | 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
 | 333 | Largest BST Subtree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23333.Largest_BST_Subtree.py) |
 | 341 | Flatten Nested List Iterator | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23341.Flatten_Nested_List_Iterator.py)|
+| 353 | Design Snake Game| design | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23353.Design_Snake_Game.py)|
 | 364 | Nested List Weight Sum II | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23364.Nested_List_Weight_Sum_II.py) |
 | 366 | Find Leaves of Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23366.Find_Leaves_of_Binary_Tree.py) |
 | 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23369.Plus_One_Linked_List.py)|
