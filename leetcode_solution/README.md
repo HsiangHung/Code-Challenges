@@ -112,6 +112,7 @@
 | 305 | Number of Islands II | DFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23305.Number_of_Islands_II.py) |
 | 317 | Shortest Distance from All Buildings | BFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23317.Shortest_Distance_from_All_Buildings.py) |
 | 322 | Coin Change | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23322.Coin_Change.py)|
+| 323 | Number of Connected Components in an Undirected Graph | graph | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23323.Number_of_Connected_Components_in_an_Undirected_Graph.py)|
 | 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
 | 333 | Largest BST Subtree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23333.Largest_BST_Subtree.py) |
 | 341 | Flatten Nested List Iterator | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23341.Flatten_Nested_List_Iterator.py)|
