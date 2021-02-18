@@ -12,32 +12,31 @@ class Solution:
         site indices won't continue.
         '''
         
-        stack = []
-        for i in range(len(s)):
-            if s[i] == "(":
-                stack.append((s[i], i))
+        stack, idx = [], []  # idx store invalid parathese 
+        for i, char in enumerate(s):
+            if char == ")" and len(stack) > 0 and stack[-1] == "(":
+                stack.pop()
+                idx.pop()
             else:
-                if len(stack) > 0 and stack[-1][0] == "(":
-                    stack.pop()
-                else:
-                    stack.append((s[i], i))  # save stack as (s[i], index)
+                stack.append(char)
+                idx.append(i)
         
-
         # run through entire string to know the index of invalid parethese.
-        # e.g. ")())()", the only invalid is [0, 3]. Then we sweep the string again to see
+        # e.g. ")())()", the only invalid index is idx = [0, 3]. Then we sweep the string again to see
         # longest string between any two indices.
         
-        if len(stack) > 0:
-            index = [x[1] for x in stack]
-            i, j = 0, 0
-            max_pare = 0
-            while len(index) > 0 and j <= len(index)-1:
-                max_pare = max(max_pare, index[j] - i)
-                i = index[j] + 1
-                j += 1
+        if len(idx) == 0: # if empty stack, meaning no invalid parenthesis, and entire s is valid.
+            return len(s) 
+        else:
+            if len(idx) == 1: # if len(idx) == 1, one invalid parathese, say "()((())", idx = [2]
+                return max(idx[0], len(s)-(idx[0]+1)) 
+            else:
+                # e.g. if len(s) = 11, idx = [3, 6], then valid are [0,1,2], [4,5], [7,8,9,10]. return 4
+                max_len = idx[0]  
+                for i in range(1, len(idx)):
+                    max_len = max(max_len, idx[i]-idx[i-1]-1)
 
-            if index[-1] != len(s)-1: max_pare = max(max_pare, (len(s)-1)-index[-1])
-            return max_pare
-        else:    # if empty stack, meaning no invalid parenthesis, and entire s is valid.
-            return len(s)
-            
+            return max(max_len, len(s)-(idx[i]+1))
+  
+
+                   
