@@ -57,6 +57,7 @@
 | 127 | Word Ladder | BFS| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23127.Word_Ladder.py)|
 | 130 | Surrounded Regions | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23130.Surrounded_Regions.py)|
 | 133 | Clone Graph | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23133.Clone_Graph.py) |
+| 135 | Candy | greedy | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/greedy/%23135.Candy.py)|
 | 137 | Single Number II | bit manipulation | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%23137.Single_Number_II.py)|
 | 138 | Copy List with Random Pointer | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23138.Copy_List_with_Random_Pointer.py) |
 | 139 | Word Break | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23139.Word_Break.py) |
