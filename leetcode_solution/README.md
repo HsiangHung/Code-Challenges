@@ -99,6 +99,7 @@
 | 240 | Search a 2D Matrix II | DFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23240.Search_a_2D_Matrix_II.py) |
 | 249 | Group Shifted Strings | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23249.Group%20Shifted%20Strings.py) |
 | 250 | Count Univalue Subtrees | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23250.Count_Univalue_Subtrees.py) |
+| 254 | Factor Combinations | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23254.Factor_Combinations.py) |
 | 255 | Verify Preorder Sequence in Binary Search Tree | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23255.Verify_Preorder_Sequence_in_Binary%20Search_Tree.py)|
 | 269 | Alien Dictionary| graph | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23269.Alien_Dictionary.py) |
 | 270 | Closest Binary Search Tree Value | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23270.Closest_Binary_Search_Tree_Value.py)|
