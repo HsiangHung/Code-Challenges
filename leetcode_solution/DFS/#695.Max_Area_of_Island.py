@@ -10,27 +10,19 @@ class Solution(object):
         for y in range(len(grid)):
             for x in range(len(grid[0])):
                 if grid[y][x] == 1:
-                    max_area = max(max_area, self.get_area(grid, x, y))
+                    max_area = max(max_area, self.get_area(x, y, grid))
                 
         return max_area
     
     
-    def get_area(self, grid, x, y):
+    def get_area(self, x, y, grid):
         if grid[y][x] == 0: return 0
         
         grid[y][x] = 0  ## after checking, need to turn to 0; otherwise unlimted recursion
-        
         area = 1
-        if x-1 >= 0:
-            area += self.get_area(grid, x-1, y)
-            
-        if y-1 >= 0:
-            area += self.get_area(grid, x, y-1)
-            
-        if x+1 < len(grid[0]):
-            area += self.get_area(grid, x+1, y)
-            
-        if y+1 < len(grid):
-            area += self.get_area(grid, x, y+1)
         
+        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+            if len(grid[0]) > x + dx >= 0 and len(grid) > y + dy >= 0 and grid[y+dy][x+dx] == 1:
+                area += self.get_area(x+dx, y+dy, grid)
+    
         return area
