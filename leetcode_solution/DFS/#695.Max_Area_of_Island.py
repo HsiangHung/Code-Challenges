@@ -1,5 +1,6 @@
-## [Leetcode#695] Max Area of Island
-##
+#  695. Max Area of Island (medium)
+#  https://leetcode.com/problems/max-area-of-island/
+#
 class Solution(object):
     def maxAreaOfIsland(self, grid):
         """
