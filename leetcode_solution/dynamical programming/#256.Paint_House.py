@@ -1,6 +1,5 @@
-#[Leetcode#256] Paint House
-#
-#  LinkedIn
+#  256. Paint House (medium)
+#  https://leetcode.com/problems/paint-house/
 #
 class Solution(object):
     def minCost(self, costs):
@@ -9,15 +8,13 @@ class Solution(object):
         :rtype: int
         """
         if len(costs) == 0: return 0
-        if len(costs) == 1: return min(costs[0])
         
-        dp = {1: costs[0]}
-        house = 2
-        while house <= len(costs):
-            dp[house] = [costs[house-1][0]+min(dp[house-1][1], dp[house-1][2]),
-                         costs[house-1][1]+min(dp[house-1][0], dp[house-1][2]),
-                         costs[house-1][2]+min(dp[house-1][0], dp[house-1][1])
-                        ]
-            house += 1
+        dp = costs[0]
         
-        return min(dp[len(costs)])
+        for i in range(1, len(costs)):
+            dp_0 = min(dp[1], dp[2]) + costs[i][0]
+            dp_1 = min(dp[0], dp[2]) + costs[i][1]
+            dp_2 = min(dp[0], dp[1]) + costs[i][2]
+            dp = [dp_0, dp_1, dp_2]
+            
+        return min(dp)
