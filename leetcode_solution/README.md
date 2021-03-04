@@ -101,6 +101,7 @@
 | 250 | Count Univalue Subtrees | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23250.Count_Univalue_Subtrees.py) |
 | 254 | Factor Combinations | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23254.Factor_Combinations.py) |
 | 255 | Verify Preorder Sequence in Binary Search Tree | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23255.Verify_Preorder_Sequence_in_Binary%20Search_Tree.py)|
+| 256 | Paint House | dynamical programming| medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23256.Paint_House.py)|
 | 269 | Alien Dictionary| graph | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23269.Alien_Dictionary.py) |
 | 270 | Closest Binary Search Tree Value | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23270.Closest_Binary_Search_Tree_Value.py)|
 | 272 | Closest Binary Search Tree Value II | tree | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23272.Closest_Binary_Search_Tree_Value_II.py) |
