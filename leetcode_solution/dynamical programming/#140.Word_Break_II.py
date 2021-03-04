@@ -2,47 +2,44 @@
 #  https://leetcode.com/problems/word-break-ii/
 #
 class Solution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
-        '''
-        in addition to the dp = {True, False}, need to store the next pointer.
+    '''
+    in addition to the dp = {True, False}, need to store the next pointer.
         e.g. s = "catsanddog", wordDict = ["cat", "cats", "and", "sand", "dog"]
         
         we got dp = [True, False, False, True, True, False, False, True, False, False, True]
-               next_pointer = {0: [3, 4], 3: [7], 4: [7], 7: [10]}
-        meaning, 0->3 or 0->4, then 0->3->7 or 0->4->7, then 0->3->7->10 or 0->4->7->10
-        This step is carried out using DFS
+                
+        If dp[-1] = False, return [], otherwise we move to collect answer:
         
-        Note if dp[-1] = False, return empty list
-        '''
-        char_dict = {}
+        now dp starts as dp = {0: [""]}.
+        e.g. s = "catsanddog",
+             wordDict = ["cat", "cats", "and", "sand", "dog"]             
+        then we will have same iteration to get dp
+        dp = {0: [''], 3: [' cat'], 4: [' cats'], 7: [' cat sand', ' cats and'], 
+             10: [' cat sand dog', ' cats and dog']}
+    '''
+    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
+        
+        wordDict = set(wordDict)
         
         dp = [False]*(len(s)+1)
         dp[0] = True
-        
-        next_pointer = {}
+
+        # check if there is solution:
         for i in range(len(s)+1):
             for j in range(i+1, len(s)+1):
-                if s[i:j] in wordDict and dp[i]:  # note, here we update only if dp[i]=True
+                if s[i:j] in wordDict and dp[i]:
                     dp[j] = True
-                    next_pointer[i] = next_pointer.get(i, []) + [j]
-                
-        print (dp)
-        print (next_pointer)
+        
         if not dp[len(s)]:
             return []
-        else:
-            self.ans = []
-            self.DFS(s, 0, [], next_pointer)
-            return [" ".join(x) for x in self.ans]
-            
-            
-    def DFS(self, s, i, path, next_pointer):
-        if i == len(s):
-            self.ans.append(path)
-            return
+        else:        
+            dp = {0: [""]}
+            for i in range(len(s)+1):
+                for j in range(i+1, len(s)+1):
+                    if s[i:j] in wordDict and i in dp:
+                        for x in dp[i]:
+                            dp[j] = dp.get(j, []) + [x+" "+s[i:j]]
         
-        if i not in next_pointer: return  # trick 2, behind append path to self.ans
-        
-        for x in next_pointer[i]:
-            self.DFS(s, x, path + [s[i:x]], next_pointer)
+            return [x[1:] for x in dp[len(s)]] if len(s) in dp else []
+      
         
