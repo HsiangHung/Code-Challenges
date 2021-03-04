@@ -1,28 +1,22 @@
-## [Leetcode#213] House Robber II
-#
-# microsfot
+#  213. House Robber II (medium)
+#  https://leetcode.com/problems/house-robber-ii/
+# 
 #
 class Solution(object):
-    def rob(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        if nums == []: return 0
-        if len(nums) <= 3: return max(nums)
+    '''
+    two dp array: 'dp' includes first element, and 'no_first' not includes first elements
+    
+    eventually compare max(no_first[-2] + nums[-1], no_first[-1], dp[-1])
+    '''
+    def rob(self, nums: List[int]) -> int:
+        if len(nums) == 0: return 0
+        if len(nums) <= 2: return max(nums)
         
-        isFirstRob = False
-        if max(nums[:3]) == nums[0]: 
-            isFirstRob = True
+        dp = [nums[0], max(nums[:2])]
+        no_first = [0, nums[1]]
+        
+        for i in range(2, len(nums)-1):
+            dp.append(max(dp[i-2]+nums[i], dp[i-1]))
+            no_first.append(max(no_first[i-2]+nums[i], no_first[i-1]))
             
-        dp1 = {1: nums[0], 2: max(nums[0], nums[1]), 3: max(nums[0]+nums[2], nums[1])} ## consider first in dp 
-        dp2 = {1: 0, 2: nums[1], 3: max(nums[1:3])}                                    ## not consider first in dp
-        
-        step = 4
-        while step < len(nums):
-            dp1[step] = max(dp1[step-1], dp1[step-2]+nums[step-1])
-            dp2[step] = max(dp2[step-1], dp2[step-2]+nums[step-1])
-            step += 1
-
-        return max(dp1[len(nums)-1], dp2[len(nums)-1], dp2[len(nums)-2]+nums[step-1])
-        
+        return max(no_first[-2]+nums[-1], no_first[-1], dp[-1])
