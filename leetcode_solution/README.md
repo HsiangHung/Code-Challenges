@@ -153,6 +153,7 @@
 | 617 | Merge Two Binary Trees | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23617.Merge_Two_Binary_Trees.py)|
 | 621 | Task Scheduler| brain teasers | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23621.Task_Scheduler.py)|
 | 636 | Exclusive Time of Functions | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23636.Exclusive_Time_of_Functions.py) |
+| 647 | Palindromic Substrings | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23647.Palindromic_Substrings.py)|
 | 652 | Find Duplicate Subtrees | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23652.Find_Duplicate_Subtrees.py) |
 | 670 | Maximum Swap| brain teasers | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23670.Maximum_Swap.py) |
 | 671 | Second Minimum Node In a Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23671.Second_Minimum_Node_In_Binary_Tree.py)|
