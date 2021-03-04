@@ -85,6 +85,7 @@
 | 210 | Course Schedule II| graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23210.Course_Schedule_II.py) |
 | 211 | Design Add and Search Words Data Structure | trie | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/trie/%23211.Design_Add_and_Search_Words_Data_Structure.py)|
 | 212 | Word Search II | DFS | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23212.Word_Search_II.py)|
+| 213 | House Robber II | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23213.House_Robber_II.py) |
 | 214 | Shortest Palindrome | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23214.Shortest_Palindrome.py)|
 | 215 | Kth Largest Element in an Array | sort | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%23215.Kth_Largest_Element_in_an_Array.py) |
 | 221 | Maximal Square | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23221.Maximal_Square.py) |
