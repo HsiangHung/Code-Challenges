@@ -42,35 +42,27 @@ class DFS_Solution:
         save data as dict = {x:{y1:[a, b], y2: [c]}..} 
         '''
         if not root: return []
-     
-        self.DFS(0, 0, root)
-    
-        output = []
-        for x in sorted(self.position.keys()):
-            same_x = []
-            for y in sorted(self.position[x]):
-                if len(self.position[x][y]) > 1:
-                    same_x += sorted(self.position[x][y]) 
-                else:
-                    same_x += self.position[x][y]
-            output.append(same_x)
-                
-        return output
         
+        self.xy = {}
+        self.DFS(root, 0, 0)
         
-    def DFS(self, x, y, root):
+        ans = []
+        for x in sorted(self.xy.keys()):
+            trav = []
+            for y in sorted(self.xy[x].keys()):
+                trav += sorted(self.xy[x][y])
+            ans.append(trav)
+        return ans
         
+    def DFS(self, root, x, y):
         if not root: return 
         
-        if x in self.position: 
-            if y in self.position[x]:
-                self.position[x][y].append(root.val)
-            else:
-                self.position[x][y] = [root.val]
-        else:
-            self.position[x] = {y: [root.val]}
+        if x not in self.xy:
+            self.xy[x] = {}
         
-        self.DFS(x-1, y+1, root.left)
-        self.DFS(x+1, y+1, root.right)
-        
+        self.xy[x][y] = self.xy[x].get(y, []) + [root.val]
+            
+        self.DFS(root.left,  x-1, y+1)
+        self.DFS(root.right, x+1, y+1)
+         
         
