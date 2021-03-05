@@ -2,13 +2,24 @@
 #  https://leetcode.com/problems/edit-distance/
 #
 class Solution:
+    '''
+    * Youtube: https://www.youtube.com/watch?v=kgcEaoM_QJA&list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBarMYv&index=9
+    * ButtomDown code but time limit exceed: https://www.geeksforgeeks.org/edit-distance-dp-5/
+
+    if s[i] == s[j]: 
+        dp[i,j] = dp[i-1,j-1]
+    else:
+        dp[i,j] = min(dp[i-1,j-1], dp[i-1,j], dp[i,j-1]) + 1
+      
+    e.g. word1 = "horse", word2 = "ros", initialize as
+     
+      h o r s e                h o r s e
+    0 1 2 3 4 5              0 1 2 3 4 5
+    r 1                    r 1 1 2 2 3 4
+    o 2             =>     o 2 2 1 2 3 4
+    s 3                    s 3 3 2 2 2 3
+    ''' 
     def minDistance(self, word1: str, word2: str) -> int:
-        '''
-        * Youtube: https://www.youtube.com/watch?v=fN3Js7H72HE&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=8
-        * ButtomDown code but time limit exceed: 
-         https://www.geeksforgeeks.org/edit-distance-dp-5/
-        '''
-        
         if word1 == word2 == "": return 0
         if word1 == "":
             return len(word2)
@@ -21,9 +32,8 @@ class Solution:
                                 
         for i in range(1,len(word2)+1):
             for j in range(1,len(word1)+1):
-                # print (i, j)
                 if word1[j-1] == word2[i-1]:
-                    dp[i][j] = dp[i-1][j-1]
+                    dp[i][j] = dp[i-1][j-1]  # here comes from diagonal value only
                 else:
                     dp[i][j] = 1+min(dp[i-1][j-1], dp[i][j-1], dp[i-1][j])
                     
