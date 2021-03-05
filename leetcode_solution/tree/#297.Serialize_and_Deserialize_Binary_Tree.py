@@ -14,29 +14,25 @@ class Codec:
         :rtype: str
         """
         if not root: return str([])
-        
-        outcome = [root.val]
-        
-        stack = [root]
-        while len(stack) != 0:
-            
-            node = stack.pop()
-            
-            if node.left and node.right:
-                left, right = node.left, node.right
-                stack.insert(0, left)
-                stack.insert(0, right)
-                outcome += [left.val, right.val]
-            elif node.left and not node.right:
-                stack.insert(0, node.left)
-                outcome += [node.left.val, None]
-            elif not node.left and node.right:
-                stack.insert(0, node.right)
-                outcome += [None, node.right.val]
+    
+        ans = [root.val]
+        queue = [root]
+        while queue:
+            node = queue.pop(0)
+                        
+            if node.left:
+                queue.append(node.left)
+                ans.append(node.left.val)
             else:
-                outcome += [None, None]
+                ans.append(None)
+                
+            if node.right:
+                queue.append(node.right)
+                ans.append(node.right.val)
+            else:
+                ans.append(None)
 
-        return str(outcome)
+        return str(ans)
 
 
     def deserialize(self, data):
