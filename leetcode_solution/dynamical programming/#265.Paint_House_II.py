@@ -1,4 +1,5 @@
-# #265. Paint House II (Hard)
+#  265. Paint House II (Hard)
+#  https://leetcode.com/problems/paint-house-ii/
 #
 class Solution:
     def minCostII(self, costs: List[List[int]]) -> int:
@@ -8,15 +9,21 @@ class Solution:
         consider the cost using current color and previous color as matrix.
         time complexity O(nk*k)
         '''
-        if costs == []: return 0
+        if len(costs) == 0: return 0
         
-        dp = {0: costs[0]}
+        houses, colors = len(costs), len(costs[0])
         
-        for i in range(1, len(costs)):
-            dp[i] = []
-            for color in range(len(costs[i])):
-                min_cost = min([dp[i-1][prev_color] for prev_color in range(len(costs[i])) if prev_color != color])
-                dp[i].append(costs[i][color] + min_cost)
-            
-        return min(dp[len(costs)-1])
-            
+        dp = costs[0]
+        for i in range(1, houses):
+                        
+            update = []
+            for j in range(colors):
+                min_cost = 2**31-1
+                for k in range(colors):
+                    if j != k:
+                        min_cost = min(min_cost, dp[k])
+                update.append(min_cost+costs[i][j])
+                        
+            dp[:] = update[:]
+                        
+        return min(dp)
