@@ -2,7 +2,10 @@
 #  https://leetcode.com/problems/design-hashmap/
 #
 class MyHashMap:
-
+    '''
+    https://www.cnblogs.com/grandyang/p/9972764.html
+    
+    '''
     def __init__(self):
         """
         Initialize your data structure here.
