@@ -168,6 +168,7 @@
 | 695 | Max Area of Island | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23695.Max_Area_of_Island.py)|
 | 698 | Partition to K Equal Sum Subsets | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23698.Partition_to_K_Equal_Sum_Subsets.py)|
 | 704 | Binary Search | binary search | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23704.Binary_Search.py)|
+| 706 | Design HashMap | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23706.Design_HashMap.py) |
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
 | 713 | Subarray Product Less Than K | two pointer |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/two%20pointer/%23713.Subarray_Product_Less_Than_K.py)|
 | 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
