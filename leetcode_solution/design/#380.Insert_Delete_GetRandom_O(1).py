@@ -1,4 +1,5 @@
-# #380. Insert Delete GetRandom O(1)
+#  380. Insert Delete GetRandom O(1) (medium)
+#  https://leetcode.com/problems/insert-delete-getrandom-o1/
 #
 class RandomizedSet:
     '''
@@ -17,18 +18,17 @@ class RandomizedSet:
         """
         Initialize your data structure here.
         """
-        self.data = {}
+        self.dict = {}
         self.array = []
 
     def insert(self, val: int) -> bool:
         """
         Inserts a value to the set. Returns true if the set did not already contain the specified element.
         """
-        idx = len(self.array)
-        if val in self.data:
+        if val in self.dict:
             return False
         else:
-            self.data[val] = idx
+            self.dict[val] = len(self.array)
             self.array.append(val)
             return True
         
@@ -37,20 +37,16 @@ class RandomizedSet:
         """
         Removes a value from the set. Returns true if the set contained the specified element.
         """
-        if val not in self.data:
+        if val not in self.dict:
             return False
         else:
-            if val == self.array[-1]:
-                del self.data[val]
-            else:
-                idx = self.data[val]
-                del self.data[val]
-
-                last_val = self.array[-1]
-                self.array[idx] = last_val
-                self.data[last_val] = idx
-
+            if self.array[-1] != val:
+                last = self.array[-1]
+                self.array[self.dict[val]], self.array[-1] = last, val
+                self.dict[last] = self.dict[val] # remember to update swapped value's index
+                
             self.array.pop()
+            del self.dict[val]
                       
             return True
         
@@ -63,6 +59,9 @@ class RandomizedSet:
         return self.array[random.randint(0, len(self.array)-1)]
 
 
+# 
+# the following time complexitiy O(n) when getRandom()
+#
 class RandomizedSet2:
 
     def __init__(self):
