@@ -130,6 +130,7 @@
 | 366 | Find Leaves of Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23366.Find_Leaves_of_Binary_Tree.py) |
 | 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23369.Plus_One_Linked_List.py)|
 | 378 | Kth Smallest Element in a Sorted Matrix | heap | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23378.Kth_Smallest_Element_in_Sorted_Matrix.py) |
+| 380 | Insert Delete GetRandom O(1) | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23380.Insert_Delete_GetRandom_O(1).py) |
 | 382 | Linked List Random Node | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23382.Linked_List_Random_Node.py) |
 | 394 | Decode String | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23394.Decode_String.py) |
 | 399 | Evaluate Division | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
