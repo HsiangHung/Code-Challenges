@@ -9,32 +9,29 @@ class Solution:
         1. since intervals is a sorted list, find the right position to insert newInterval
         2. then the procedure is the same as 56. merge intervals.
         '''
-        if len(intervals) == 0:
-            return [newInterval]
-        else:
-            if newInterval[1] < intervals[0][0]: 
-                return [newInterval] + intervals
-            elif newInterval[0] > intervals[-1][1]:
-                return intervals + [newInterval]
-        
-        # find the right position to insert "newInterval"
-        i = 0
-        while i < len(intervals) and newInterval[0] > intervals[i][0]:
-            i += 1
-            
-        intervals.insert(i, newInterval)
 
-        # thr following is the same process as 56. merge interval.
+        insert = False
+        if len(intervals) == 0 or newInterval[0] <= intervals[0][0]:
+            intervals.insert(0, newInterval)
+            insert = True
+        elif newInterval[0] >= intervals[-1][0]:
+            intervals.append(newInterval)
+            insert = True
+        
         i = 0
-        while i < len(intervals)-1:
-            if intervals[i+1][0] > intervals[i][1]:
-                i += 1
-            elif intervals[i+1][0] <= intervals[i][1]:
-                intervals[i][0] = min(intervals[i+1][0], intervals[i][0])
-                intervals[i][1] = max(intervals[i+1][1], intervals[i][1])
-                intervals.pop(i+1)
-                
-        return intervals
-                
-                
+        while i < len(intervals)-1: # part of this iteration is the similar to 56. merge interval.
             
+            if not insert and intervals[i+1][0] > newInterval[0] >= intervals[i][0]: # NOTE >= is important
+                intervals.insert(i+1, newInterval)
+                insert = True
+            
+            if intervals[i+1][0] <= intervals[i][1]: # NOTE >= is important
+                intervals[i] = [min(intervals[i][0], intervals[i+1][0]), max(intervals[i][1], intervals[i+1][1])]
+                intervals.pop(i+1)
+            else:
+                i += 1
+                
+
+        return intervals
+
+        
