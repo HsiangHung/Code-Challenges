@@ -1,4 +1,5 @@
-# # 611. Valid Triangle Number
+#  611. Valid Triangle Number (medium)
+#  https://leetcode.com/problems/valid-triangle-number/
 #
 class Solution:
     def triangleNumber(self, nums: List[int]) -> int:
