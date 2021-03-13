@@ -145,7 +145,7 @@ def partition(arr, first, last):
     while not done:
         while L <= R and arr[L] <= pivot:
             L += 1
-        while arr[R] >= pivot and R >= L:
+        while L <= R and arr[R] >= pivot:
             R -= 1
 
         if R < L:
@@ -185,7 +185,7 @@ def partition(arr, first, last):
     while not done:
         while L <= R and arr[L] <= pivot:
             L += 1
-        while arr[R] >= pivot and R >= L:
+        while L <= R and arr[R] >= pivot:
             R -= 1
 
         if R < L:
