@@ -178,6 +178,7 @@
 | 706 | Design HashMap | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23706.Design_HashMap.py) |
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
 | 713 | Subarray Product Less Than K | two pointer |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/two%20pointer/%23713.Subarray_Product_Less_Than_K.py)|
+| 716 | Max Stack | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23716.Max_Stack.py) |
 | 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
 | 724 | Find Pivot Index | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23724.Find_Pivot_Index.py)|
 | 726 | Number of Atoms | stack | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23726.Number_of_Atoms.py)|
