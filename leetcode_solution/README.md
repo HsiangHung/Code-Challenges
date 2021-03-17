@@ -174,6 +174,7 @@
 | 694 | Number of Distinct Islands | DFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23694.Number_of_Distinct_Islands.py) |
 | 695 | Max Area of Island | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23695.Max_Area_of_Island.py)|
 | 698 | Partition to K Equal Sum Subsets | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23698.Partition_to_K_Equal_Sum_Subsets.py)|
+| 701 | Insert into a Binary Search Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23701.Insert_into_a_Binary_Search_Tree.py)|
 | 704 | Binary Search | binary search | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23704.Binary_Search.py)|
 | 705 | Design HashSet | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23705.Design_HashSet.py) |
 | 706 | Design HashMap | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23706.Design_HashMap.py) |
