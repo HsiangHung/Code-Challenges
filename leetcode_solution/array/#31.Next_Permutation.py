@@ -1,4 +1,5 @@
-# #31. Next Permutation
+#  31. Next Permutation (medium)
+#  https://leetcode.com/problems/next-permutation/
 #
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
