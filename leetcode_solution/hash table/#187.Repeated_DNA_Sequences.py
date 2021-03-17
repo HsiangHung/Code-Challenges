@@ -1,10 +1,28 @@
 #  187. Repeated DNA Sequences (medium)
 #  https://leetcode.com/problems/repeated-dna-sequences/
 #
+#
 class Solution:
     '''
     https://blog.csdn.net/fuxuemingzhu/article/details/83017233
+    straightfoward solution
+    '''
+    def findRepeatedDnaSequences(self, s: str) -> List[str]:
+        DNA = set({})
+        ans = set({})
+        for i in range(len(s)-10+1):
+            if s[i:i+10] in DNA:
+                ans.add(s[i:i+10])
+            else:
+                DNA.add(s[i:i+10])
+                
+        return list(ans)
+#
+#
+class Solution:
+    '''
     http://bookshadow.com/weblog/2015/02/06/leetcode-repeated-dna-sequences/
+    need to convert to 16 bits
     '''
     def findRepeatedDnaSequences(self, s: str) -> List[str]:
         
