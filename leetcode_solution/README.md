@@ -12,6 +12,7 @@
 | 22 | Generate Parentheses | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2322.Generate_Parentheses.py) |
 | 23 | Merge k Sorted Lists | heap | hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%2323.Merge_k_Sorted_Lists.py)|
 | 24 | Swap Nodes in Pairs | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2324.Swap_Nodes_in_Pairs.py) |
+| 31 | Next Permutation | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2331.Next_Permutation.py)|
 | 32 | Longest Valid Parentheses |stack|hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2332.Longest_Valid_Parentheses.py)|
 | 33 | Search in Rotated Sorted Array | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/tree/master/leetcode_solution/binary%20search)|
 | 38 | Count and Say | string | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2338.Count_and_Say.py)|
