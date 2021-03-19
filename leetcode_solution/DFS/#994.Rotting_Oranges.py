@@ -5,8 +5,7 @@ class Solution:
     '''
     This is similar to #286. Walls and Gates:
     starting from every rotten orange, and go through all fresh orangs. 
-    Every DFS step dist + 1, and if dist < steps, return
-
+    For each DFS, dist + 1, and if dist < steps, return
     need to consider if no rotten oranges exist (return -1) and no fresh oranges (return 0)
     '''
     def orangesRotting(self, grid: List[List[int]]) -> int:
