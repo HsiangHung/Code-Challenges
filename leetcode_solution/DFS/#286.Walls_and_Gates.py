@@ -2,6 +2,10 @@
 #  https://leetcode.com/problems/walls-and-gates/
 #
 class Solution:
+    '''
+    starting from every gate, and go through all empty spaces. 
+    Each DFS, dist + 1, and if dist < steps, return
+    '''
     def wallsAndGates(self, rooms: List[List[int]]) -> None:
         """
         Do not return anything, modify rooms in-place instead.
