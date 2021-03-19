@@ -1,4 +1,5 @@
-# #286. Walls and Gates
+#  286. Walls and Gates (medium)
+#  
 #
 class Solution:
     def wallsAndGates(self, rooms: List[List[int]]) -> None:
@@ -8,34 +9,21 @@ class Solution:
         '''
         https://www.cnblogs.com/grandyang/p/5285868.html
         '''
-        if len(rooms) == 0 or len(rooms[0]) == 0: return rooms
-        
-        m, n = len(rooms[0]), len(rooms)
-        
-        for y in range(n):
-            for x in range(m):
+        for y in range(len(rooms)):
+            for x in range(len(rooms[0])):
                 if rooms[y][x] == 0:
-                    self.DFS(m, n, x, y, rooms, 0)
-        return rooms
-                    
+                    self.DFS(x, y, rooms, 0)
+        return rooms            
         
-    def DFS(self, m, n, x, y, rooms, distance):
-                
-        if distance > rooms[y][x]: return
         
-        rooms[y][x] = distance
-    
+    def DFS(self, x, y, rooms, step):
+        if rooms[y][x] == -1: return 
         
-        if x > 0 and (rooms[y][x] != -1 or rooms[y][x] != 0):
-            self.DFS(m, n, x-1, y, rooms, distance +1)
+        if rooms[y][x] > 0:
+            if step > rooms[y][x]: return
+            rooms[y][x] = step
             
-        if x < m-1 and (rooms[y][x] != -1 or rooms[y][x] != 0):
-            self.DFS(m, n, x+1, y, rooms, distance +1)
-       
-        if y > 0 and (rooms[y][x] != -1 or rooms[y][x] != 0):
-            self.DFS(m, n, x, y-1, rooms, distance +1)
-            
-        if y < n-1 and (rooms[y][x] != -1 or rooms[y][x] != 0):
-            self.DFS(m, n, x, y+1, rooms, distance +1)
-       
- 
+        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+            if len(rooms[0]) > dx + x >= 0 and len(rooms) > dy + y >= 0 and rooms[y+dy][x+dx] > 0:
+                self.DFS(x+dx, y+dy, rooms, step + 1)
+        
