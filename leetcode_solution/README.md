@@ -35,6 +35,7 @@
 | 70 | Climbing Stairs| dynamical programming |easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2370.Climbing_Stairs.py)|
 | 71 | Simplify Path | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2371.Simplify_Path.py)|
 | 72 | Edit Distance | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2372.Edit_Distance.py) |
+| 77 | Combinations | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2377.Combinations.py)|
 | 78 | Subsets | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2378.Subsets.py) |
 | 79 | Word Search | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2379.Word_Search.py) |
 | 83 | Remove Duplicates from Sorted List | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2383.Remove_Duplicates_from_Sorted_List.py) |
