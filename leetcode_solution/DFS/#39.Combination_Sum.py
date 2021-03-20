@@ -4,23 +4,28 @@
 # Uber, Snapchat
 #
 class Solution(object):
+    '''
+    e.g. target = 7, and candidates = [2,3,4,7], 
+    [3,2,2] and [2,3,2] are solutions, but only show [2,2,3]
+    '''
     def combinationSum(self, candidates, target):
         """
         :type candidates: List[int]
         :type target: int
         :rtype: List[List[int]]
         """
-        if candidates == [] or min(candidates) > target: return []
+        if len(candidates) == 0 or target <= 0: return []
+        if min(candidates) > target: return []
         
-        sol = []
-        for num in candidates:
-            if num == target:
-                sol.append([num])
+        ans = []
+        for i in range(len(candidates)):
+            if candidates[i] == target:
+                ans.append([candidates[i]])
             else:
-                sol_set = self.combinationSum(candidates, target-num)
-                if len(sol_set) > 0:
-                    for x in sol_set:
-                        possible_sum = sorted([num]+x)
-                        if possible_sum not in sol:
-                            sol.append(possible_sum)
-        return sol
+                sol = self.combinationSum(candidates, target-candidates[i])
+                for x in sol:
+                    if candidates[i] <= x[0]:  ## to make sure non-repeated
+                        comb = [candidates[i]] + x
+                        ans.append(comb)
+                
+        return ans
