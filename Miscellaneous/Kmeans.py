@@ -1,104 +1,105 @@
 
 
-class KMeans(object):
+def get_distance(x1, x2):
+    return [(x1[d]-x2[d])**2 for d in range(len(x1))]
 
+class KMeans(object):
     def __init__(self, data):
         self.data = data
 
-    def initialize(self, data, k):
-        import random 
-        centroids = []
-        for _ in range(k):
-            i = random.randint(0, len(data)-1)
-            centroids.append(data[i])
-        return centroids
+    def train(self, k=2):
 
-
-    def fit(self, k=2):
-
-        # k = 3
-        centroids = self.initialize(self.data, k)
-
-        # print ("inital", centroids)
-
-        centroids = [[-2,3], [6, 1], [2, 7]]
-
-        print (self.data)
-        print ("inital", centroids)
+        centroids = self.initialize_centroids(k)
 
         update, iteration = True, 0
-        while update and iteration <= 10:
+        while update and iteration <= 500:
+            
+            # print (iteration, centroids)
 
             labels = self.assign_labels(centroids)
-            print (labels)
-            # exit(0)
-            new_centroids = self.update_centroids(labels)
-            print (iteration, centroids, new_centroids)
-            update = self.ifStop(centroids, new_centroids)
+            new_centroids = self.get_new_centroids(labels)
+
+            if self.ifStop(centroids, new_centroids):
+                update = False
+            # else:
+            #     centroids = self.update_centroids(centroids, new_centroids)
 
             centroids[:] = new_centroids[:]
 
-            # if update:
-            #     for i in range(len(centroids)):
-            #         for j in range(len(centroids[0])):
-            #             centroids[i][j] += 0.1*(new_centroids[i][j]-centroids[i][j])
-
             # print (centroids)
+            # print ('----------------')
 
-            print ()
             iteration += 1
-            print ('-------------')
 
-        print (centroids, labels)
+        print (iteration, centroids)
 
-    def update_centroids(self, labels):
-        f = len(self.data[0])
-        n_data_class = {}
+    def update_centroids(self, centroids, new_centroids):
+        for c in range(len(centroids)):
+            for f in range(len(centroids[0])):
+                df = new_centroids[c][f]-centroids[c][f]
+                centroids[c][f] += 0.01*df
+        return centroids
 
-        new_centroids = {}
+    def ifStop(self, centroids, new_centroids):
+        stop = True
+        for c in range(len(centroids)):
+            for f in range(len(centroids[0])):
+                if abs(centroids[c][f]-new_centroids[c][f]) > 0.001: return False
+        return stop
+
+
+    def get_new_centroids(self, labels):
+
+        num_features = len(self.data[0])
+        label_coord, num_data_class = {}, {}
+
         for i in range(len(self.data)):
             c = labels[i]
-            n_data_class[c] = n_data_class.get(c, 0) + 1
-            if c not in new_centroids:
-                new_centroids[c] = [0]*f
+            if c not in label_coord: label_coord[c] = [0]*num_features
 
-            for j in range(f):
-                new_centroids[c][j] += self.data[i][j]
+            for f in range(num_features):
+                label_coord[c][f] += self.data[i][f]
 
-        for c in range(len(new_centroids)):
-            for j in range(f):
-                new_centroids[c][j] = float(new_centroids[c][j])/n_data_class[c]
+            num_data_class[c] = num_data_class.get(c, 0) + 1
 
-        return [new_centroids[c] for c in new_centroids]
+        new_centroids = []
+        for c in sorted(label_coord.keys()):
+            coord = []
+            for f in range(num_features):
+                coord.append(float(label_coord[c][f])/num_data_class[c])
+            new_centroids.append(coord)
 
+        return new_centroids
 
-
-    def ifStop(self, centroids, new_centroids, epsilon = 0.01):
-        for i in range(len(centroids)):
-            for j in range(len(centroids[0])):
-                if abs(centroids[i][j]-new_centroids[i][j]) >= epsilon:
-                    return True
-        return False
 
     def assign_labels(self, centroids):
         labels = []
         for i in range(len(self.data)):
 
-            min_dist, c = self.get_distance(self.data[i], centroids[0]), 0
+            min_dist, tag = get_distance(self.data[i], centroids[0]), 0
             for k in range(1, len(centroids)):
-                dist = self.get_distance(self.data[i], centroids[k])
+                dist = get_distance(self.data[i], centroids[k])
                 if dist < min_dist:
-                    min_dist, c = dist, k
-            labels.append(c)
+                    min_dist, tag = dist, k
+            labels.append(tag)
 
         return labels
 
-    def get_distance(self, point1, point2):
-        return sum([(point1[i]-point2[i])**2 for i in range(len(point1))])
+    def initialize_centroids(self, k):
+        import random
+        centroids = []
+        while len(centroids) < k:
+            i = random.randint(0, len(self.data)-1)
+            if self.data[i] not in centroids:
+                centroids.append(self.data[i])
+        return centroids
 
 
 
 
 data = [[1, 1], [0, 3], [6, 0], [7, 4], [0.5, -1], [6.5, 2], [3, 10], [3.5, 11]]
+# data = [[1, 1], [0, 3], [6, 0], [7, 4], [0.5, -1], [6.5, 2]]
 obj = KMeans(data)
-obj.fit(k=3)
+obj.train(k=3)
+
+print ([(1+0+0.5)/3, (1+3-1)/3], [(6+7+6.5)/3, (0+4+2)/3], [6.5/2, 21/2])
