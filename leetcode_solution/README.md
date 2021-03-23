@@ -119,6 +119,7 @@
 | 286 | Walls and Gates | DFS | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23286.Walls_and_Gates.py)|
 | 295 | Find Median from Data Stream | heap | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23295.Find_Median_from_Data_Stream.py)|
 | 296 | Best Meeting Point | DFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23296.Best_Meeting_Point.py)|
+| 298 | Binary Tree Longest Consecutive Sequence | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23298.Binary_Tree_Longest_Consecutive_Sequence.py)|
 | 301 | Remove Invalid Parentheses | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 305 | Number of Islands II | DFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23305.Number_of_Islands_II.py) |
 | 317 | Shortest Distance from All Buildings | BFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23317.Shortest_Distance_from_All_Buildings.py) |
