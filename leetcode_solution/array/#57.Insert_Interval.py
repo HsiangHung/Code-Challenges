@@ -3,12 +3,11 @@
 #
 #
 class Solution:
+    '''
+    The procedure is the same as 56. merge intervals, but first insert newInterval before merge 
+    if necessary
+    '''
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
-        '''
-        The procedure is the same as 56. merge intervals, but first insert newInterval before merge 
-        if necessary
-        '''
-
         insert = False
         if len(intervals) == 0 or newInterval[0] <= intervals[0][0]:
             intervals.insert(0, newInterval)
@@ -19,7 +18,7 @@ class Solution:
         
         i = 0
         while i < len(intervals)-1: # part of this iteration is the similar to 56. merge interval.
-            
+
             if not insert and intervals[i+1][0] > newInterval[0] >= intervals[i][0]: # NOTE >= is important
                 intervals.insert(i+1, newInterval)
                 insert = True
@@ -29,7 +28,6 @@ class Solution:
                 intervals.pop(i+1)
             else:
                 i += 1
-                
 
         return intervals
 #
