@@ -24,5 +24,7 @@ class Solution:
                         ans.append([i]+x)
                 
             i += 1
-            
+        
+        self.factors[n] = ans
+
         return ans
