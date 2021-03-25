@@ -17,6 +17,7 @@
 | 33 | Search in Rotated Sorted Array | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/tree/master/leetcode_solution/binary%20search)|
 | 38 | Count and Say | string | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2338.Count_and_Say.py)|
 | 39 | Combination Sum | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2339.Combination_Sum.py)|
+| 40 | Combination Sum II | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2340.Combination_Sum_II.py)|
 | 42 | Trapping Rain Water | dynamical programming |hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2342.Trapping_Rain_Water.py)|
 | 44 | Wildcard Matching | dynamical programming | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2344.Wildcard_Matching.py) |
 | 46 | Permutations | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
