@@ -6,6 +6,7 @@
 class DFSSolution:
     '''
     DFS solution, runtime beats 60%, but code also looks concise
+    https://www.cnblogs.com/grandyang/p/4358848.html
     '''
     def permute(self, nums: List[int]) -> List[List[int]]:
         if len(nums) == 0: return []
