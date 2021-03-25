@@ -1,7 +1,37 @@
 # 47. Permutations II (medium)
 # https://leetcode.com/problems/permutations-ii/
 #
-class Solution:
+class DFSSolution:
+    '''
+    DFS solutions, need to sort first, and then divide and conque
+    when duplicated number, skip until different one.
+    run time beats 50%!
+    '''
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        nums = sorted(nums)
+        return self.DFS(nums)
+        
+    def DFS(self, nums):
+        if len(nums) == 0: return []
+        if len(nums) == 1: return [[nums[0]]]
+        ans = []
+        i = 0
+        while i <= len(nums)-1:
+            sol = self.permuteUnique(nums[:i] + nums[i+1:])
+            for item in sol:
+                ans.append([nums[i]]+item)
+                
+            i += 1
+            while i <= len(nums)-1 and nums[i] == nums[i-1]:
+                i += 1
+                
+        return ans
+
+
+class DPSolution:
+    '''
+    DP solutions, runtime only beats 19%
+    '''
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         '''
         the part different from Permutations I is here we have duplciated number.
