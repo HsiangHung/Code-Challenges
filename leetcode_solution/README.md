@@ -198,6 +198,7 @@
 | 863 | All Nodes Distance K in Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23863.All_Nodes_Distance_K_in_Binary_Tree.py) |
 | 938 | Range Sum of BST | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23938.Range_Sum_of_BST.py) |
 | 958 | Check Completeness of a Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23958.Check_Completeness_of_Binary_Tree.py) |
+| 973 | K Closest Points to Origin | heap | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23973.K_Closest_Points_to_Origin.py)|
 | 987 | Vertical Order Traversal of a Binary Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23987.Vertical_Order_Traversal_of_a_Binary_Tree.py)|
 | 994 | Rotting Oranges | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23994.Rotting_Oranges.py) |
 | 997 | Find the Town Judge | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23997.Find_the_Town_Judge.py) |
