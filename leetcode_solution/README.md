@@ -20,8 +20,8 @@
 | 40 | Combination Sum II | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2340.Combination_Sum_II.py)|
 | 42 | Trapping Rain Water | dynamical programming |hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2342.Trapping_Rain_Water.py)|
 | 44 | Wildcard Matching | dynamical programming | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2344.Wildcard_Matching.py) |
-| 46 | Permutations | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
-| 47 | Permutations II | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
+| 46 | Permutations | dynamical programming, DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
+| 47 | Permutations II | dynamical programming, DFS |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
 | 53 | Maximum Subarray|dynamical programming|easy|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2353.Maximum_Subarray.py)|
 | 54 | Spiral Matrix | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2354.Spiral_Matrix.py)|
 | 56 | Merge Intervals | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2356.Merge_Intervals.py)|
