@@ -3,7 +3,28 @@
 #
 #  Microsoft, LinkedIn
 #
-class Solution(object):
+class DFSSolution:
+    '''
+    DFS solution, runtime beats 60%, but code also looks concise
+    '''
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        if len(nums) == 0: return []
+        if len(nums) == 1: return [[nums[0]]]
+        
+        ans = []
+        for i in range(len(nums)):            
+            sol = self.permute(nums[:i] + nums[i+1:])
+            for item in sol:
+                ans.append([nums[i]] + item)
+
+        return ans
+            
+
+
+class DPSolution(object):
+    '''
+    dynamical programming solutions, runtime beats 89%
+    '''
     def permute(self, nums):
         """
         :type nums: List[int]
