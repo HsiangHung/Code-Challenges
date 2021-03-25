@@ -26,15 +26,18 @@ class Solution:
         
         if self.ancestor: return  # once found common acnestor, stop search
         
-        if self.DFS(root.left, p, q) and self.DFS(root.right, p, q):
-            self.ancestor = root
-            return True
-        elif self.DFS(root.left, p, q) or self.DFS(root.right, p, q):
-            if root == p or root == q:
+        l, r = self.DFS(root.left, p, q), self.DFS(root.right, p, q)
+
+        if root.val in (p.val, q.val):
+            if l or r:
                 self.ancestor = root
             return True
         else:
-            return True if root == p or root == q else False
+            if l and r:
+                self.ancestor = root
+                return True
+            else:
+                return l or r
             
             
             
