@@ -29,21 +29,11 @@ class Solution:
         for i in range(len(s)):
             dp[i][i] = 1
             
-        max_dp = 1
-        
-        l = 1
-        while l <= len(s)-1:
-            j = 0
-            while j + l <= len(s)-1:
-                if s[j] == s[j+l]:
-                    dp[j][j+l] = dp[j+1][j+l-1] + 2
+        for x in range(len(s)):
+            for y in range(x-1, -1, -1):
+                if s[y] == s[x]:
+                    dp[y][x] = dp[y+1][x-1] + 2  # check s[y+1: x-1] + 2
                 else:
-                    dp[j][j+l] = max(dp[j+1][j+l], dp[j][j+l-1])
+                    dp[y][x] = max(dp[y+1][x], dp[y][x-1], dp[y+1][x-1])
                     
-                max_dp = max(max_dp, dp[j][j+l])
-                j += 1
-            
-            l += 1
-        
-
-        return max_dp
+        return dp[0][-1]
