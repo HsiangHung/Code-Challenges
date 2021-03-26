@@ -9,8 +9,8 @@ class Solution:
                              j\i 0 1 2 3 4
          b b b a b               b b b a b
        b 1                   0 b 1 2 3 3 4
-       b 0 1            =>   1 b 0 1 2 2 3
-       b   0 1               2 b   0 1 1 3
+       b 0 1            =>   1 b 0 1 2 2 3    i and j denote s[i:j]
+       b   0 1               2 b   0 1 1 2
        a     0 1             3 a     0 1 1
        b       0 1           4 b       0 1
        
