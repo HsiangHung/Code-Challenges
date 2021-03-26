@@ -144,6 +144,7 @@
 | 417 | Pacific Atlantic Water Flow | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23417.Pacific_Atlantic_Water_Flow.py)|
 | 426 | Convert Binary Search Tree to Sorted Doubly Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23426.Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List.py) |
 | 463 | Island Perimeter | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23463.Island_Perimeter.py)|
+| 464 | Can I Win | DFS+meomry | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23464.Can_I_Win.py)|
 | 470 | Implement Rand10() Using Rand7() | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23470.Implement_Rand10()_Using_Rand7().py)|
 | 486 | Predict the Winner | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23486.Predict_the_Winner.py)|
 | 490 | The Maze | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23490.The_Maze.py)|
