@@ -1,26 +1,23 @@
-## [#88] Merge Sorted Array
-#
-#  FB
+#  88. Merge Sorted Array (easy)
+#  https://leetcode.com/problems/merge-sorted-array/
 #
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-                
-        idx, end_idx = 0, m
+        if n == 0: return
+        if nums1[m-1] <= nums2[0]: nums1[m:] = nums2[:]
         
-        while len(nums2)>0 and nums2[0] < nums1[end_idx-1] and end_idx < len(nums1):
-            if nums1[idx] >= nums2[0]:
-                nums1[idx+1:end_idx+1] = nums1[idx:end_idx]
-                nums1[idx] = nums2[0]
-                idx += 1
-                end_idx += 1
-                nums2.pop(0)
-            elif nums1[idx] < nums2[0]:
-                idx += 1
-        
-        if len(nums2) > 0 and nums2[0] >= nums1[end_idx-1]:
-            nums1[end_idx:] = nums2[:]
-            
-        return nums1
+        i, j = 0, 0
+        while i < m and j < n:
+            if nums1[i] <= nums2[j]:
+                i += 1
+            else:
+                nums1.insert(i, nums2[j])
+                j += 1
+                nums1.pop()
+                m += 1
+
+        if j < n:
+            nums1[i:] = nums2[j:]
