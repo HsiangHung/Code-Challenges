@@ -4,33 +4,24 @@
 class Solution:
     '''
     somehow, using BFS in this problem cannot pass all test cases in Leetcode
+
+    https://www.cnblogs.com/grandyang/p/4669134.html
+    using DFS, start from lower left corner, and search up-right.
     '''
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        if len(matrix) == 0 or len(matrix[0]) == 0: return False
+        self.found = False
+        self.DFS(0, len(matrix)-1, matrix, target)
+        return self.found
         
-        midx, midy = len(matrix[0]) // 2, len(matrix) // 2
-        return self.DFS(midx, midy, matrix, target, set({}))
         
-    
-    def DFS(self, x, y, matrix, target, visited):
-        if matrix[y][x] == target: return True
-        if (x, y) in visited: return False
-    
-        visited.add((x, y))
+    def DFS(self, x, y, matrix, target):
+        if self.found: return 
         
-        found = False
-        if matrix[y][x] > target:
-            if x > 0 and (x-1, y) not in visited:
-                found = found or self.DFS(x-1, y, matrix, target, visited)
-
-            if y > 0 and (x, y-1) not in visited:
-                found = found or self.DFS(x, y-1, matrix, target, visited)
-
-        if matrix[y][x] < target:
-            if x < len(matrix[0])-1 and (x+1, y) not in visited:
-                found = found or self.DFS(x+1, y, matrix, target, visited)
-
-            if y < len(matrix)-1 and (x, y+1) not in visited:
-                found = found or self.DFS(x, y+1, matrix, target, visited)
-
-        return found
+        if matrix[y][x] == target:
+            self.found = True
+        elif matrix[y][x] > target:
+            if y > 0: 
+                self.DFS(x, y-1, matrix, target)
+        else:
+            if x < len(matrix[0]) -1:
+                self.DFS(x+1, y, matrix, target)
