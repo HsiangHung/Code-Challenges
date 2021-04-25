@@ -1,4 +1,5 @@
-# # 173. Binary Search Tree Iterator
+#  173. Binary Search Tree Iterator (medium)
+#  https://leetcode.com/problems/binary-search-tree-iterator/submissions/
 #
 # Definition for a binary tree node.
 # class TreeNode:
@@ -14,34 +15,33 @@ class BSTIterator:
     def __init__(self, root: TreeNode):
         
         self.nodes = []
-        self.push_left(root)
+        self.goLeft(root)
 
     def next(self) -> int:
         """
         @return the next smallest number
         """
-        
-        print ([x.val for x in self.nodes])
-        
-        root = self.nodes.pop()
-        self.push_left(root.right)
+        x = self.nodes.pop(0)
             
-        return root.val
-        
+        if x.right:
+            self.goLeft(x.right)
+           
+        return x.val
 
     def hasNext(self) -> bool:
         """
         @return whether we have a next smallest number
         """
-        if len(self.nodes) == 0: return False
-        
-        return True
+        return len(self.nodes) > 0 
 
     def push_left(self, node):
+        if not root: return
         
-        while node:
-            self.nodes.append(node)
-            node = node.left
+        self.nodes.insert(0, root)
+        
+        while root.left:
+            root = root.left
+            self.nodes.insert(0, root)
 
 
 # Your BSTIterator object will be instantiated and called as such:
