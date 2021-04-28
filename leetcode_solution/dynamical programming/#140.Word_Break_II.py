@@ -21,25 +21,17 @@ class Solution:
         
         wordDict = set(wordDict)
         
-        dp = [False]*(len(s)+1)
-        dp[0] = True
-
-        # check if there is solution:
+        dp = {0: [""]}
+        
         for i in range(len(s)+1):
             for j in range(i+1, len(s)+1):
-                if s[i:j] in wordDict and dp[i]:
-                    dp[j] = True
-        
-        if not dp[len(s)]:
+                if s[i:j] in wordDict and i in dp:
+                    for x in dp[i]:
+                        dp[j] = dp.get(j, []) + [x+" "+s[i:j]]
+                    
+        if len(s) in dp:
+            return [x[1:] for x in dp[len(s)]]
+        else:
             return []
-        else:        
-            dp = {0: [""]}
-            for i in range(len(s)+1):
-                for j in range(i+1, len(s)+1):
-                    if s[i:j] in wordDict and i in dp:
-                        for x in dp[i]:
-                            dp[j] = dp.get(j, []) + [x+" "+s[i:j]]
-        
-            return [x[1:] for x in dp[len(s)]] if len(s) in dp else []
       
         
