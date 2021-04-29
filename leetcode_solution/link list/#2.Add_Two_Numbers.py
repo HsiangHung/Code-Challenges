@@ -1,5 +1,5 @@
-# 2 Add Two Numbers (medium)
-# https://leetcode.com/problems/add-two-numbers/ 
+#  2. Add Two Numbers (medium)
+#  https://leetcode.com/problems/add-two-numbers/ 
 #
 # class ListNode(object):
 #     def __init__(self, x):
@@ -8,73 +8,37 @@
 #
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
-        len_1 = self.getLength(l1)
-        len_2 = self.getLength(l2)
-        if len_1 >= len_2:
-            long_ = l1
-            short_ = l2
-        else:
-            long_ = l2
-            short_ = l1
+        if not l1 and not l2: return None      
+        
+        head, prev, nextdigit = None, None, 0
+        while l1 and l2:
+            listsum = l1.val + l2.val + nextdigit
+            node, nextdigit = ListNode(val = listsum % 10), listsum // 10
             
-        ## at beginning, prepare the head node
-        head, next_digit = self.generateNodes(long_, short_, 0)
-        node = head
-        while short_.next != None:
-            long_ = long_.next
-            short_ = short_.next
-            newNode, next_digit = self.generateNodes(long_, short_, next_digit)
-            node.next = newNode
-            node = newNode
-            
-        ## now shorted list has been run over.
-        ## next we have to consider like [4,8,8] + [2,6,9] = [6,4,8,1]
-        ## also [4,8,8,9,9,9] + [2,6,9] = [6,4,8,0,0,0,1]
-        if next_digit == 0:
-            if long_.next != None: node.next = long_.next
-        else:
-            if long_.next == None:
-                node.next = ListNode(1)
+            if not head:
+                head = node
             else:
-                zeroNode = ListNode(0)
-                while long_.next != None:
-                    long_ = long_.next
-                    newNode, next_digit = self.generateNodes(long_, zeroNode, next_digit)
-                    node.next = newNode
-                    node = newNode
-                if next_digit != 0: node.next = ListNode(1)
-                    
+                prev.next = node
+                
+            prev = node
+            l1 = l1.next
+            l2 = l2.next
+        
+        if not l1 and not l2:
+            remain = None
+        elif l1:
+            remain = l1
+        elif l2:
+            remain = l2
+        
+        while remain:
+            listsum = remain.val + nextdigit
+            node, nextdigit = ListNode(val = listsum % 10), listsum // 10
+            prev.next = node
+            prev = node
+            remain = remain.next
+        
+        if nextdigit == 1:
+            prev.next = ListNode(val=1)
+        
         return head
-        
-        
-    def generateNodes(self, long_, short_, next_digit):
-        """
-        :type long_, short_: listNode
-        :type next_digit: int
-        :rtype: ListNode, int
-        """
-        sum_ = long_.val + short_.val+next_digit
-        next_digit = 0
-        if sum_ >= 10: 
-            next_digit = 1
-            sum_ -= 10
-        return ListNode(sum_), next_digit
-        
-        
-    def getLength(self, head):
-        """
-        get the length of the list
-        :type head: ListNode
-        :rtype: int
-        """
-        length = 1
-        node = head
-        while node.next != None:
-            node = node.next
-            length += 1
-        return length
