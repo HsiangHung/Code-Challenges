@@ -38,6 +38,7 @@ class Solution(object):
             prev = node
             remain = remain.next
         
+        # NOTE, always need to check if next 1 exist:
         if nextdigit == 1:
             prev.next = ListNode(val=1)
         
