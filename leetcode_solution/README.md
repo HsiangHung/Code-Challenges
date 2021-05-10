@@ -224,6 +224,7 @@
 | 1153 | String Transforms Into Another String | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%231153.String_Transforms_Into_Another_String.py)|
 | 1155 | Number of Dice Rolls With Target Sum |dynamical programming | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%231155.Number_of_Dice_Rolls_With_Target_Sum.py)|
 | 1197 | Minimum Knight Moves | BFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231197.Minimum_Knight_Moves.py) |
+| 1229 | Meeting Scheduler | array |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231229.Meeting_Scheduler.py)|
 | 1249 | Minimum Remove to Make Valid Parentheses | stack | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231249.Minimum_Remove_to_Make_Valid_Parentheses.py) |
 | 1254 | Number of Closed Islands | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231254.Number_of_Closed_Islands.py)|
 | 1275 | Find Winner on a Tic Tac Toe Game| hash table | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%231275.Find_Winner_on_a_Tic_Tac_Toe_Game.py)|
