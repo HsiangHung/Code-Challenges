@@ -229,6 +229,7 @@
 | 1254 | Number of Closed Islands | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231254.Number_of_Closed_Islands.py)|
 | 1275 | Find Winner on a Tic Tac Toe Game| hash table | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%231275.Find_Winner_on_a_Tic_Tac_Toe_Game.py)|
 | 1352 | Product of the Last K Numbers | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231352.Product_of_the_Last_K_Numbers.py) |
+| 1366 | Rank Teams by Votes | sort |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%231366.Rank_Teams_by_Votes.py)|
 | 1382 | Balance a Binary Search Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231382.Balance_a_Binary_Search_Tree.py) |
 | 1448 | Count Good Nodes in Binary Tree|tree|medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231448.Count_Good_Nodes_in_Binary_Tree.py)|
 | 1472 | Design Browser History | design | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%231472.Design_Browser_History.py)|
