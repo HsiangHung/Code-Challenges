@@ -108,6 +108,7 @@
 | 240 | Search a 2D Matrix II | DFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23240.Search_a_2D_Matrix_II.py) |
 | 249 | Group Shifted Strings | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23249.Group%20Shifted%20Strings.py) |
 | 250 | Count Univalue Subtrees | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23250.Count_Univalue_Subtrees.py) |
+| 251 | Flatten 2D Vector | design | tree |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23251.Flatten_2D_Vector.py)|
 | 252 | Meeting Rooms | sort | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%23252.Meeting_Rooms.py) |
 | 253 | Meeting Rooms II | sort |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%23253.Meeting_Rooms_II.py)|
 | 254 | Factor Combinations | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23254.Factor_Combinations.py) |
