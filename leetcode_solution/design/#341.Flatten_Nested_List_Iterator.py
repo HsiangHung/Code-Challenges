@@ -26,8 +26,8 @@
 class NestedIterator:
     def __init__(self, nestedList: [NestedInteger]):
         '''
-        We need to prepare the flat nest first but calls next() and hasNext().
-        Otherwsie while i.appen(next()), there are still [[1,5], [2,3,4], ...] structures
+        We need to prepare the self.data first but calls next() and hasNext().
+        Otherwsie while i.append(next()), there are still [[1,5], [2,3,4], ...] structures
         So the self.pointer is the pointer on the flatten array.
         '''
         self.data = self.DFS(nestedList)
