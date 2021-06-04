@@ -136,7 +136,7 @@
 | 332 | Reconstruct Itinerary | graph |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23332.Reconstruct_Itinerary.py)|
 | 333 | Largest BST Subtree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23333.Largest_BST_Subtree.py) |
 | 337 | House Robber III | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23337.House_Robber_III.py)|
-| 341 | Flatten Nested List Iterator | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23341.Flatten_Nested_List_Iterator.py)|
+| 341 | Flatten Nested List Iterator | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23341.Flatten_Nested_List_Iterator.py)|
 | 353 | Design Snake Game| design | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23353.Design_Snake_Game.py)|
 | 360 | Sort Transformed Array | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23360.Sort_Transformed_Array.py) |
 | 362 | Design Hit Counter | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23362.Design_Hit_Counter.py) |
