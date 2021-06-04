@@ -1,33 +1,30 @@
-# [#251] Flatten 2D Vector
+#  251. Flatten 2D Vector (medium)
+#  https://leetcode.com/problems/flatten-2d-vector/
 #
-#
-class Vector2D(object):
+class Vector2D:
+    def __init__(self, vec: List[List[int]]):
+        self.data = self.flatten(vec)
+        self.pointer = 0
 
-    def __init__(self, vec2d):
-        """
-        Initialize your data structure here.
-        :type vec2d: List[List[int]]
-        """
-        self.vec2d = []
-        for vec in vec2d:
-            self.vec2d += vec
-
-    def next(self):
-        """
-        :rtype: int
-        """
-        lst = self.vec2d[0]
-        self.vec2d.remove(lst)
-        return lst
+    def next(self) -> int:
+        x = self.data[self.pointer]
+        self.pointer += 1
+        return x
         
+    def hasNext(self) -> bool:
+        return self.pointer < len(self.data)
+    
+    def flatten(self, vec):
+        ans = []
+        for x in vec:
+            if len(x) == 1:
+                ans.append(x[0])
+            else:
+                ans += x
+        return ans
 
-    def hasNext(self):
-        """
-        :rtype: bool
-        """
-        return len(self.vec2d) > 0
-        
 
 # Your Vector2D object will be instantiated and called as such:
-# i, v = Vector2D(vec2d), []
-# while i.hasNext(): v.append(i.next())
+# obj = Vector2D(vec)
+# param_1 = obj.next()
+# param_2 = obj.hasNext()
