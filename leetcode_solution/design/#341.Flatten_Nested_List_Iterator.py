@@ -1,4 +1,5 @@
-# #341. Flatten Nested List Iterator
+#  341. Flatten Nested List Iterator (medium)
+#  https://leetcode.com/problems/flatten-nested-list-iterator/
 #
 # """
 # This is the interface that allows for creating nested lists.
@@ -29,34 +30,25 @@ class NestedIterator:
         Otherwsie while i.appen(next()), there are still [[1,5], [2,3,4], ...] structures
         So the self.pointer is the pointer on the flatten array.
         '''
-        self.flat = []
-        for x in nestedList:
-            if x.isInteger():
-                self.flat += [x.getInteger()]
-            else:
-                self.flat += self.flatten(x.getList())
-        
+        self.data = self.DFS(nestedList)
         self.pointer = 0
-                
-    def next(self) -> int:
-        val = self.flat[self.pointer]
-        self.pointer += 1
-        return val
-                
-    def flatten(self, nestList):
-        output = []
-        for x in nestList:
-            if x.isInteger():
-                output += [x.getInteger()]
-            else:
-                output += self.flatten(x.getList())
-        return output
     
+    def next(self) -> int:
+        x = self.data[self.pointer]
+        self.pointer += 1
+        return x
+        
     def hasNext(self) -> bool:
-        if self.pointer > len(self.flat)-1:
-            return False
-        else:
-            return True
+        return self.pointer < len(self.data)
+    
+    def DFS(self, nest):
+        ans = []
+        for x in nest:
+            if x.isInteger():
+                ans += [x.getInteger()]
+            else:
+                ans += self.DFS(x.getList())
+        return ans
          
 
 # Your NestedIterator object will be instantiated and called as such:
