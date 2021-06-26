@@ -14,22 +14,27 @@ class Solution(object):
         #                         maximum of left subtree should be less than the root
         #
         if not root: return True
-        a, b = self.DFS(root)
-        if a is False or b is False: return False
-        return True
-    
-    
-    def DFS(self, root):
-        if not root.left and not root.right: 
-            return root.val, root.val  
+        self.valid = True
+        _, _ = self.traversal(root)
+        return self.valid
+
+    def traversal(self, root):
+        if not root.left and not root.right:
+            return root.val, root.val
+
+        if not self.valid: return None, None
         
-        min_left, max_right = root.val, root.val
-        if root.left:
-            min_left, max_left = self.DFS(root.left)
-            if max_left is False or root.val <= max_left: return False, False
+        if root.left and root.right:
+            min_L, max_L = self.traversal(root.left)
+            min_R, max_R = self.traversal(root.right)
+            if self.valid: self.valid = max_L < root.val < min_R
+            return min_L, max_R
+        elif root.left:
+            min_L, max_L = self.traversal(root.left)
+            if self.valid: self.valid = max_L < root.val
+            return min_L, root.val
+        elif root.right:
+            min_R, max_R = self.traversal(root.right)
+            if self.valid: self.valid = root.val < min_R
+            return root.val, max_R
             
-        if root.right:
-            min_right, max_right = self.DFS(root.right)
-            if max_right is False or root.val >= min_right: return False, False
-        
-        return min_left, max_right
