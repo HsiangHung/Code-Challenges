@@ -10,17 +10,15 @@
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
         if not root: return 0
-        self.ans = 1
-        self.DFS(root.left, root.val)
-        self.DFS(root.right, root.val)
-        return self.ans
-    
-    def DFS(self, root, max_val):
-        if not root: return
+        return self.traversal(root, root.val)
         
-        if root.val >= max_val: 
-            self.ans += 1
-            max_val = max(max_val, root.val)
+    def traversal(self, root, max_val):
+        if not root: return 0
         
-        self.DFS(root.left, max_val) 
-        self.DFS(root.right, max_val)
+        L = self.traversal(root.left, max(max_val, root.val)) 
+        R = self.traversal(root.right, max(max_val, root.val))
+        
+        if max_val <= root.val:
+            return L + R + 1
+        else:
+            return L + R
