@@ -4,23 +4,22 @@
 #  amazon
 #
 class Solution(object):
-    def mergeTrees(self, t1, t2):
+    def mergeTrees(self, root1, root2):
         """
         :type t1: TreeNode
         :type t2: TreeNode
         :rtype: TreeNode
         """
-        if not t1 and not t2: return
+        if not root1 and not root2: return
         
-        if not t2: return t1
-        
-        if not t1: return t2
-        
-        t1.val += t2.val
-                
-        t1.left = self.mergeTrees(t1.left, t2.left)
-        t1.right = self.mergeTrees(t1.right, t2.right)
-        
-        return t1
+        if root1 and root2:
+            root1.val += root2.val
+            root1.left = self.mergeTrees(root1.left, root2.left)
+            root1.right = self.mergeTrees(root1.right, root2.right)
+            return root1
+        elif root1:
+            return root1
+        elif root2:
+            return root2
                 
        
