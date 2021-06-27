@@ -87,6 +87,7 @@
 | 187 | Repeated DNA Sequences | hash table | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23187.Repeated_DNA_Sequences.py)|
 | 198 | House Robber| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23198.House_Robber.py) |
 | 199 | Binary Tree Right Side View | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23199.Binary_Tree_Right_Side_View.py) |
+| 200 |  Number of Islands | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23200.Number_of_Islands.py)|
 | 203 | Remove Linked List Elements | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23203.Remove_Linked_List_Elements.py) |
 | 206 | Reverse Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23206.Reverse_Linked_List.py) |
 | 207 | Course Schedule | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23207.Course_Schedule.py) |
