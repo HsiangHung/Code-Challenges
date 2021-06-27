@@ -1,4 +1,5 @@
-## [Leetcode#572] Subtree of Another Tree
+#  572. Subtree of Another Tree
+#  https://leetcode.com/problems/subtree-of-another-tree/
 #
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -7,26 +8,28 @@
 #         self.right = None
 
 class Solution(object):
-    def isSubtree(self, s, t):
-        """
-        :type s: TreeNode
-        :type t: TreeNode
-        :rtype: bool
-        """
-        if not s and not t: return True
-        if not s or not t: return False
+    def __init__(self):
+        self.subTree = False
         
-        if s.val == t.val:
-            if self.isSameTree(s, t):
-                return True
+    def isSubtree(self, root: TreeNode, subRoot: TreeNode) -> bool:
+        if not root and subRoot: return False
+        
+        if root.val == subRoot.val:
+            self.subTree = self.subTree or self.isSameTree(root, subRoot)
             
-        return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
+        if self.subTree: return True # if found subtree, no need to keep DFS
         
+        self.isSubtree(root.left, subRoot)
+        self.isSubtree(root.right, subRoot)
+        
+        return self.subTree
     
-    def isSameTree(self, p, q):
-        if not p and not q: return True
-        if not p or not q: return False
+    
+    def isSameTree(self, t1, t2):
+        if not t1 and not t2: return True
+        if not t1 or not t2: return False
         
-        if p.val != q.val: return False
+        if t1.val != t2.val: return False
         
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        return self.isSameTree(t1.left, t2.left) and self.isSameTree(t1.right, t2.right)
+        
