@@ -178,6 +178,7 @@
 | 542 | 01 Matrix | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23542.01_Matrix.py)|
 | 547 | Friend Circles | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23547.Friend_Circles.py)|
 | 565 | Array Nesting |array |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23565.Array_Nesting.py)|
+| 572  Subtree of Another Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23572.Subtree_Another_Tree.py)|
 | 611 | Valid Triangle Number | array | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23611.Valid_Triangle_Number.py) |
 | 617 | Merge Two Binary Trees | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23617.Merge_Two_Binary_Trees.py)|
 | 621 | Task Scheduler| brain teasers | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain%20teaser/%23621.Task_Scheduler.py)|
