@@ -131,6 +131,7 @@
 | 298 | Binary Tree Longest Consecutive Sequence | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23298.Binary_Tree_Longest_Consecutive_Sequence.py)|
 | 301 | Remove Invalid Parentheses | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23301.Remove_Invalid_Parentheses.py) |
 | 305 | Number of Islands II | DFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23305.Number_of_Islands_II.py) |
+| 314 |  Binary Tree Vertical Order Traversal| tree| medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23314.Binary_Tree_Vertical_Order_Traversal.py)|
 | 317 | Shortest Distance from All Buildings | BFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23317.Shortest_Distance_from_All_Buildings.py) |
 | 322 | Coin Change | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23322.Coin_Change.py)|
 | 323 | Number of Connected Components in an Undirected Graph | graph | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23323.Number_of_Connected_Components_in_an_Undirected_Graph.py)|
