@@ -1,40 +1,22 @@
-## [Leetcode#200] Number of Islands
-## 
+#  200. Number of Islands
+#  https://leetcode.com/problems/number-of-islands/
+# 
 class Solution(object):
-    def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
-        if grid == []: return 0
-        
-        m = len(grid[0])
-        n = len(grid)
-        
-        num_island = 0
-        for y in range(n):
-            for x in range(m):
-                if grid[y][x] == u'1':
-                    num_island += 1
-                    self.DFS(m, n, x, y, grid)
-                    
-        return num_island
+    def numIslands(self, grid: List[List[str]]) -> int:
+        n_islands = 0
+        for y in range(len(grid)):
+            for x in range(len(grid[0])):
+                if grid[y][x] == "1":
+                    self.DFS(x, y, grid)
+                    n_islands += 1
+        return n_islands
     
-    def DFS(self, m, n, x, y, grid):
-        if grid[y][x] == u'0': return
+    def DFS(self, x, y, grid):
+        if grid[y][x] == "0": return
         
-        grid[y][x] = u'0'
+        grid[y][x] = "0"
         
-        if x > 0:
-            self.DFS(m, n, x-1, y, grid)
-        
-        if x < m-1:
-            self.DFS(m, n, x+1, y, grid)
-            
-        if y > 0:
-            self.DFS(m, n, x, y-1, grid)
-        
-        if y < n-1:
-            self.DFS(m, n, x, y+1, grid)
-            
-
+        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+            if 0 <= x + dx < len(grid[0]) and  0 <= y + dy < len(grid):
+                self.DFS(x+dx, y+dy, grid)
+   
