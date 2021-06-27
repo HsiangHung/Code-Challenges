@@ -63,5 +63,6 @@ class DFSSolution:
             root.right = left
             return left_last
         else:
+            # NOTE, even only right branch, need to DFS to return last node
             right_last = self.flatten(right)
             return right_last
