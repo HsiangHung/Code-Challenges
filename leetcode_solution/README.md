@@ -178,6 +178,7 @@
 | 540 | Single Element in a Sorted Array| binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23540.Single_Element_in_Sorted_Array.py) |
 | 542 | 01 Matrix | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23542.01_Matrix.py)|
 | 547 | Friend Circles | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23547.Friend_Circles.py)|
+| 560 | Subarray Sum Equals K | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23560.Subarray_Sum_Equals_K.py)|
 | 565 | Array Nesting |array |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23565.Array_Nesting.py)|
 | 572 | Subtree of Another Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23572.Subtree_Another_Tree.py)|
 | 611 | Valid Triangle Number | array | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23611.Valid_Triangle_Number.py) |
