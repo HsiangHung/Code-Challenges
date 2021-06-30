@@ -1,36 +1,36 @@
 #  96. Unique Binary Search Trees (medium)
-#  https://leetcode.com/problems/unique-binary-search-trees/description/
+#  https://leetcode.com/problems/unique-binary-search-trees/
 #
 class Solution:
     def numTrees(self, n: int) -> int:
         '''
         https://www.youtube.com/watch?v=OIc0mHgHUww
         
-        Given a root and left/right sub BST, the number of various combination is
+        n = 1        n=2                     n=3 
         
-        C = C_l*C_r
-        
-        e.g. n=4, root can be 1,2,3,4
-        root = 1: C_l = [];  C_r = [2,3,4].....
-        root = 2: C_l = [1]; C_r = [3,4].....
-        root = 3: C_l = [1,2]; C_r = [4].....
-        root = 4: C_l = [1,2,3]; C_r = [].....
+                 1       2     1      1       2        3     3
+          1       \     /       \      \     / \      /     /
+                   2   1         2      3   1   3    2     1
+                                  \    /            /       \
+                                   3  2            1         2
+                                   
+                  root          if root = 1, left = 0, right = 2
+                  /  \             root = 2, left = 1, right = 1
+               left   right        root = 3, left = 2, right = 0
         '''
+        dp = {0:1, 1:1, 2: 2}
         
-        dp = {0: 1, 1: 1}
-        
-        i = 2
+        i = 3
         while i <= n:
             
-            dp[i] = 0
-            for x in range(i):
-                root = x + 1
+            num_BST = 0
+            for root in range(i):
+                root += 1
                 
-                left, right = root-1, i - root  # left and right are the number of nodes of subtree. 
-                print (left, right)
-                dp[i] += dp[left]*dp[right]
-            
+                left, right = root-1, i - root
+                num_BST += dp[left]*dp[right]
+                
+            dp[i] = num_BST 
             i += 1
-                
+            
         return dp[n]
-                
