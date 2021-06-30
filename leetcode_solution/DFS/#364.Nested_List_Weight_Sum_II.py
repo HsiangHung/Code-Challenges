@@ -55,16 +55,16 @@ class Solution:
         deeper, smaller depth, so use max_depth-current_depth
         '''
         def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
-        self.max_depth = self.get_depth(nestedList)
-        return self.DFS(nestedList, 0)
+        max_depth = self.get_depth(nestedList)
+        return self.DFS(nestedList, max_depth)
     
     def DFS(self, nestedList, depth):        
         nestSum = 0
         for x in nestedList:       
             if x.isInteger():
-                nestSum += (self.max_depth-depth)*x.getInteger()
+                nestSum += depth*x.getInteger()
             else:
-                nestSum += self.DFS(x.getList(), depth+1)
+                nestSum += self.DFS(x.getList(), depth-1)
         return nestSum
 
     def get_depth(self, nestedList):
