@@ -4,7 +4,7 @@
 class Solution(object):
     def compress(self, chars: List[str]) -> int:
         '''
-        the problems requies to modify chars in-place
+        NOTE: the problems requies to modify chars in-place
         '''
         if len(chars) == 0: return 0
         
