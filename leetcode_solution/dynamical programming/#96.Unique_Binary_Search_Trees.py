@@ -14,9 +14,11 @@ class Solution:
                                   \    /            /       \
                                    3  2            1         2
                                    
-                  root          if root = 1, left = 0, right = 2
-                  /  \             root = 2, left = 1, right = 1
-               left   right        root = 3, left = 2, right = 0
+                            if n=3                            n_BST
+                  root         root = 1, left = 0, right = 2,  1*2
+                  /  \         root = 2, left = 1, right = 1,  1*1
+               left   right    root = 3, left = 2, right = 0,  2*1
+                                                        total   5
         '''
         dp = {0:1, 1:1, 2: 2}
         
