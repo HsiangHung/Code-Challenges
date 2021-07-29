@@ -8,6 +8,12 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    '''
+    run through tree using in-order and store to an array O(n) space.
+    Then use O(n) time to search wrong order.
+    if one pair wrong, (i-1, i), (i-1, i) -> (i, i-1), e.g. [3,1,4,null,null,2]
+    if two pairs wrong, (i-1, i), (j-1, j), (i, j) -> (j, i), e.g. [1,3,null,null,2]
+    '''
     def recoverTree(self, root: TreeNode) -> None:
         """
         Do not return anything, modify root in-place instead.
