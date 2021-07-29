@@ -9,6 +9,8 @@
 #         self.right = right
 class Solution:
     '''
+    https://www.cnblogs.com/grandyang/p/4298069.html
+    
     run through tree using in-order and store to an array O(n) space.
     Then use O(n) time to search wrong order.
     if one pair wrong, (i-1, i), (i-1, i) -> (i, i-1), e.g. [3,1,4,null,null,2]
