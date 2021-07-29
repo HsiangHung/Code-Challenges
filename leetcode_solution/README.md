@@ -48,6 +48,7 @@
 | 94 | Binary Tree Inorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2394.Binary_Tree_Inorder_Traversal.py) |
 | 95 | Unique Binary Search Trees II | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2395.Unique_Binary_Search_Trees_II.py) |
 | 96 | Unique Binary Search Trees | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2396.Unique_Binary_Search_Trees.py) |
+| 99 | Recover Binary Search Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2399.Recover_Binary_Search_Tree.py) |
 | 101 | Symmetric Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23101.Symmetric_Tree.py)|
 | 103 | Binary Tree Zigzag Level Order Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23103.Binary_Tree_Zigzag_Level_Order_Traversal.py)|
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py)|
