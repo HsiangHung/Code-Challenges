@@ -217,6 +217,7 @@
 | 824 | Goat Latin | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23824.Goat_Latin.py) |
 | 825 | Friends Of Appropriate Ages| hash table | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23825.Friends_Of_Appropriate_Ages.py) |
 | 844 | Backspace String Compare | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23844.Backspace_String_Compare.py) |
+| 852 |  Peak Index in a Mountain Array | binary search | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23852.Peak_Index_in_a_Mountain_Array.py) |
 | 863 | All Nodes Distance K in Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23863.All_Nodes_Distance_K_in_Binary_Tree.py) |
 | 938 | Range Sum of BST | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23938.Range_Sum_of_BST.py) |
 | 958 | Check Completeness of a Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23958.Check_Completeness_of_Binary_Tree.py) |
