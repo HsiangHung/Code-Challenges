@@ -1,42 +1,46 @@
-# # 34. Find First and Last Position of Element in Sorted Array
+#  34. Find First and Last Position of Element in Sorted Array (medium)
+#  https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 #
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        
         if len(nums) == 0: return [-1, -1]
-                    
-        self.range = set({})
-        
-        self.search(nums, target, 0)
-        
-        if len(self.range) == 0: return [-1, -1]
-        
-        return [min(self.range), max(self.range)]
+        return [self.left(nums, target), self.right(nums, target)]
         
         
-    def search(self, nums, target, offset):
+    def left(self, nums, target):
+        if len(nums) <= 3:
+            if target not in nums: return -1
+            for i in range(len(nums)):
+                if nums[i] == target: return i
         
-        if nums == []: return
+        mid = len(nums) // 2
+        if nums[mid-1] < target and nums[mid] == target:
+            return mid
+        elif nums[mid] < target and nums[mid+1] == target:
+            return mid+1
+        else:
+            if nums[mid] >= target:
+                x = self.left(nums[:mid], target)
+                return x if x != -1 else -1
+            else:
+                x = self.left(nums[mid+1:], target)
+                return mid + x + 1 if x != -1 else -1
         
-        if len(nums) == 1:
-            if nums[0] == target: self.range.add(offset) ## trick, need to consider one nums
-            return
-
-        if len(nums) == 2:       
-            if nums[0] == target: self.range.add(offset)  ## need to consider two nums too
-            if nums[1] == target: self.range.add(offset+1)
-            return
+    def right(self, nums, target):
+        if len(nums) <= 3:
+            if target not in nums: return -1
+            for i in range(len(nums)-1, -1, -1):
+                if nums[i] == target: return i
         
-        middle = int(len(nums)/2)
-        if nums[middle] == target:
-            self.range.add(offset + middle)
-            if nums[middle-1] == target:     # if nums[middle-1], also need to search left
-                self.search(nums[: middle], target, offset)
-
-            if nums[middle+1] == target:     # if nums[middle+1], also need to search right
-                self.search(nums[middle+1:], target, offset+middle+1)
-
-        elif nums[middle] > target:
-            self.search(nums[: middle], target, offset)
-        elif nums[middle] < target:
-            self.search(nums[middle:], target, offset+middle)
+        mid = len(nums) // 2
+        if nums[mid] == target and nums[mid+1] > target:
+            return mid
+        elif nums[mid-1] == target and nums[mid] > target:
+            return mid-1
+        else:
+            if nums[mid] > target:
+                x = self.right(nums[:mid], target)
+                return x if x != -1 else -1
+            else:
+                x = self.right(nums[mid+1:], target)
+                return mid + x + 1 if x != -1 else -1
