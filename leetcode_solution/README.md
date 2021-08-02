@@ -15,6 +15,7 @@
 | 31 | Next Permutation | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2331.Next_Permutation.py)|
 | 32 | Longest Valid Parentheses |stack|hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2332.Longest_Valid_Parentheses.py)|
 | 33 | Search in Rotated Sorted Array | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%2333.Search_in_Rotated_Sorted_Array.py)|
+| 34 | Find First and Last Position of Element in Sorted Array | binary search | medium) |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%2334.Find_First_and_Last_Position_of_Element_in_Sorted_Array.py)|
 | 38 | Count and Say | string | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2338.Count_and_Say.py)|
 | 39 | Combination Sum | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2339.Combination_Sum.py)|
 | 40 | Combination Sum II | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2340.Combination_Sum_II.py)|
