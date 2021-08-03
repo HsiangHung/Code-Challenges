@@ -10,8 +10,7 @@
 #         self.right = right
 class Solution:
     def balanceBST(self, root: TreeNode) -> TreeNode:
-        if not root: return []
-        array = self.get_array(root)
+        array = self.inorder(root)
         return self.DFS(array)
         
     def DFS(self, array):
@@ -23,9 +22,6 @@ class Solution:
         root.right = self.DFS(array[mid+1:])
         return root
         
-    def get_array(self, root):
+    def inorder(self, root):
         if not root: return []
-        ans = self.get_array(root.left)
-        ans += [root.val]
-        ans += self.get_array(root.right)
-        return ans
+        return self.inorder(root.left) + [root.val] + self.inorder(root.right)
