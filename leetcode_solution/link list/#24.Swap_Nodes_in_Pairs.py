@@ -18,7 +18,7 @@ class Solution(object):
         new_head = head.next 
         
         prev, node = head, head.next
-        while node.next != None and node.next.next != None:
+        while node and node.next and node.next.next:
             nextNode = node.next
             nn = nextNode.next
             node.next = prev
@@ -26,14 +26,11 @@ class Solution(object):
             prev, node = nextNode, nn
         
         # now the last prev, node pair doesn't swap. we need to swap them:
-
-        if node.next != None:
-            nextNode = node.next  # when odd link-list: [1,2,3,4,5] => [2,1,4,3,5]
-            node.next = prev
-            prev.next = nextNode
-        else:                     # when even link-list: [1,2,3,4]
-            node.next = prev
+        if node.next:
+            prev.next = node.next
+        else:
             prev.next = None
             
+        node.next = prev
             
         return new_head
