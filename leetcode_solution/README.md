@@ -210,6 +210,7 @@
 | 724 | Find Pivot Index | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23724.Find_Pivot_Index.py)|
 | 726 | Number of Atoms | stack | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23726.Number_of_Atoms.py)|
 | 729 | My Calendar I | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23729.My_Calendar_I.py)|
+| 740 | Delete and Earn | dynamical programming | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23740.Delete_and_Earn.py) |
 | 767 | Reorganize String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23767.Reorganize_String.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 791 | Custom Sort String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23791.Custom_Sort_String.py)|
