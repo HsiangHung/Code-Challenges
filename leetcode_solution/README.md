@@ -66,6 +66,7 @@
 | 126 | Word Ladder II | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23126.Word_Ladder_II.py) |
 | 127 | Word Ladder | BFS| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23127.Word_Ladder.py)|
 | 130 | Surrounded Regions | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23130.Surrounded_Regions.py)|
+| 131 | Palindrome Partitioning | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23131.Palindrome_Partitioning.py)|
 | 133 | Clone Graph | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23133.Clone_Graph.py) |
 | 135 | Candy | greedy | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/greedy/%23135.Candy.py)|
 | 137 | Single Number II | bit manipulation | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%23137.Single_Number_II.py)|
