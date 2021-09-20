@@ -162,6 +162,7 @@
 | 426 | Convert Binary Search Tree to Sorted Doubly Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23426.Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List.py) |
 | 443 | String Compression | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23443.String_Compression.py)|
 | 445 | Add Two Numbers II | linked list | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23445.Add_Two_Numbers_II.py)|
+| 461 | Hamming Distance | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%23461.Hamming_Distance.py) |
 | 463 | Island Perimeter | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23463.Island_Perimeter.py)|
 | 464 | Can I Win | DFS+meomry | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23464.Can_I_Win.py)|
 | 470 | Implement Rand10() Using Rand7() | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23470.Implement_Rand10()_Using_Rand7().py)|
