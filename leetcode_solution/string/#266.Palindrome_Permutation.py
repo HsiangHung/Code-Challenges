@@ -1,23 +1,19 @@
-# [#266] Palindrome Permutation
+#  266. Palindrome Permutation (easy)
+#  https://leetcode.com/problems/palindrome-permutation/
 #
-class Solution(object):
-    def canPermutePalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        ch_dict = {}
-        for ch in s:
-            ch_dict[ch] = ch_dict.get(ch, 0) + 1
+class Solution:
+    def canPermutePalindrome(self, s: str) -> bool:
+        if len(s) <= 1: return True
         
+        char_dict = {}
+        for char in s:
+            char_dict[char] = char_dict.get(char, 0) + 1
+            
         num_odd = 0
-        for ch in ch_dict:
-            if ch_dict[ch] % 2 == 1:
+        for char in char_dict:
+            if char_dict[char] % 2 == 1:
                 num_odd += 1
-                
-        if len(s) % 2 == 0 and num_odd == 0:
-            return True
-        elif len(s) % 2 == 1 and num_odd == 1:
-            return True
-        
-        return False
+            
+            if num_odd >= 2: return False
+            
+        return True
