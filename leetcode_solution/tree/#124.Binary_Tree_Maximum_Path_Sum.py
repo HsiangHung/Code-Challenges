@@ -43,20 +43,16 @@ class Solution:
     '''
     def maxPathSum(self, root: TreeNode) -> int:
         if not root: return 0
-        self.max_path = -2**31-1
+        self.global_max = root.val
         self.DFS(root)
-        return self.max_path
+        return self.global_max
         
     def DFS(self, root):
-        if not root: return -2**31-1
+        if not root: return 0
+
+        l, curr, r = self.DFS(root.left), root.val, self.DFS(root.right)
         
-        l_sum = self.DFS(root.left)
-        r_sum = self.DFS(root.right)
-                
-        path_sum = max(l_sum, r_sum, max(l_sum, r_sum)+root.val, root.val)
-        cross_root_sum = l_sum + root.val + r_sum
+        local_max = max(curr, curr + r, curr + l, curr + l + r)
+        self.global_max = max(self.global_max, local_max)
         
-        self.max_path = max(self.max_path, path_sum, cross_root_sum)
-        
-        return max(max(l_sum, r_sum) + root.val, root.val)
-        
+        return max(curr, curr + r, curr + l)
