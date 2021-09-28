@@ -42,17 +42,20 @@ class Solution:
     ......
     '''
     def maxPathSum(self, root: TreeNode) -> int:
-        return self.DFS(root)[1]
+       if not root: return 0
+        self.global_max = root.val
+        self.DFS(root)        
+        return self.global_max
+        
         
     def DFS(self, root):
-        if not root: return -2**31, -2**31
+        if not root: return 0
         
         curr = root.val
-        l, l_max = self.DFS(root.left) 
-        r, r_max = self.DFS(root.right)
         
-        local_max = max(curr, curr + r, curr + l, curr + l + r)  # local means curr node through
-        global_max = max(local_max, l_max, r_max)       # global means curr node may not through
+        l, r = self.DFS(root.left), self.DFS(root.right)
         
-        return max(curr, curr + r, curr + l), global_max
-            
+        local_max = max(curr, curr + r, curr + l, curr + l + r) # local means through curr node
+        self.global_max = max(self.global_max, local_max) # global means may not through curr node 
+        
+        return max(curr, curr + r, curr + l)
