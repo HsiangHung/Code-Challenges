@@ -45,7 +45,7 @@ class Solution:
         return self.DFS(root)[1]
         
     def DFS(self, root):
-        if not root: return 0, 0
+        if not root: return -2**31, -2**31
         
         curr = root.val
         l, l_max = self.DFS(root.left) 
