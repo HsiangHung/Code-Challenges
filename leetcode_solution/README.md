@@ -128,6 +128,7 @@
 | 277 | Find the Celebrity | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23277.Find_the_Celebrity.py)|
 | 278 | First Bad Version | binary search | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23278.First_Bad_Version.py)|
 | 282 | Expression Add Operators | DFS | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23282.Expression_Add_Operators.py) |
+| 283 | Move Zeroes | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23283.Move_Zeroes.py) |
 | 285 | Inorder Successor in BST | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23285.Inorder_Successor_in_BST.py)|
 | 286 | Walls and Gates | DFS | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23286.Walls_and_Gates.py)|
 | 287 | Find the Duplicate Number | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23287.Find_the_Duplicate_Number.py)|
