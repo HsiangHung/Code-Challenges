@@ -13,7 +13,6 @@ class Solution(object):
         :rtype: int
         """
         if not root: return 0
-        if not root.left and not root.right: return 1
         
         if root.left and root.right:
             return min(self.minDepth(root.left)+1, self.minDepth(root.right)+1)
@@ -21,3 +20,5 @@ class Solution(object):
             return self.minDepth(root.left)+1
         elif not root.left and root.right:
             return self.minDepth(root.right)+1
+        else: # if root has no children
+            return 1

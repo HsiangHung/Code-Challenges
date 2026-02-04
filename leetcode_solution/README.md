@@ -56,6 +56,7 @@
 | 106 |  Construct Binary Tree from Inorder and Postorder Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23106.Construct_Binary_Tree_from_Inorde_and_Postorder_Traversal.py)|
 | 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
 | 110 | Balanced Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23110.Balanced_Binary_Tree.py)|
+| 111 | Minimum Depth of Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23111.Minimum_Depth_of_Binary_Tree.py)|
 | 114 | Flatten Binary Tree to Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23114.Flatten_Binary_Tree_to_Linked_List.py) |
 | 116 | Populating Next Right Pointers in Each Node | tree |medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23116.Populating_Next_Right_Pointers_in_Each_Node.py)|
 | 117 | Populating Next Right Pointers in Each Node II | tree |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23117.Populating_Next_Right_Pointers_in_Each_Node_II.py)|
