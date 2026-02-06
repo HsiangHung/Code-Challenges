@@ -78,6 +78,7 @@
 | 142 | Linked List Cycle II | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23142.Linked_List_Cycle_II.py)|
 | 143 | Reorder List| linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23143.Reorder_List.py) |
 | 144 | Binary Tree Preorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23144.Binary_Tree_Preorder_Traversal.py) |
+| 145 | Binary Tree Postorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23144.Binary_Tree_Postorder_Traversal.py) |
 | 146 | LRU Cache | design |medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23146.LRU_Cache.py)|
 | 148 | Sort List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23148.Sort_List.py) |
 | 149 | Max Points on a Line | math | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23149.Max_Points_on_a_Line.py)|
