@@ -19,24 +19,7 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        if not root: return []
+        if not root: 
+            return []
 
-        inorder_traversal = []
- 
-        nodeStack = []
-        done = False
-   
-        while not done:
-         
-            if root != None:
-                nodeStack.append(root)
-                root = root.left
-            else:
-                if len(nodeStack) > 0:
-                    root = nodeStack.pop()
-                    inorder_traversal.append(root.val)
-                    root = root.right
-                else:
-                    done = True
-                
-        return inorder_traversal
+        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right) 
