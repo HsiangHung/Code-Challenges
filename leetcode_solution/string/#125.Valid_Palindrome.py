@@ -1,32 +1,46 @@
-## [#125] Valid Palindrome
-#   
-#  zenefit, Facebook, Uber, Microsoft
-#
+## [Leetcode#125] Valid Palindrome
+##
 class Solution(object):
     def isPalindrome(self, s):
         """
         :type s: str
         :rtype: bool
         """
-        alpha = set({'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',           
-                     'r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9'})
+        import copy
         
-        left, right = 0, len(s)-1
-        while left < right:
-            left_ch = s[left].lower()
-            right_ch = s[right].lower()
-            if left_ch in alpha and right_ch in alpha:
-                if left_ch != right_ch:
-                    return False
-                else:
-                    left += 1
-                    right -= 1
-            elif left_ch in alpha and right_ch not in alpha:
-                right -= 1
-            elif left_ch not in alpha and right_ch in alpha:
-                left += 1
+        if len(s) <= 1: return True
+        
+        alphanumeric = set({'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',\
+                    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'})
+                    
+        alphanumeric2 = copy.copy(alphanumeric)
+        for ch in alphanumeric2:
+            alphanumeric.add(ch.upper())
+        
+        for i in range(10):
+            alphanumeric.add(str(i))
+            
+            
+        isPali = True
+        i = 0
+        j = len(s)-1
+        while j>=i:
+            s1 = s[i]
+            s2 = s[j]
+            if s1 in alphanumeric and s2 in alphanumeric:
+                s1 = s1.lower()
+                s2 = s2.lower()
+                if s1 != s2: return False
+                i +=1
+                j -=1
+            elif s1 in alphanumeric and s2 not in alphanumeric:
+                s1 = s1.lower()
+                j -=1
+            elif s1 not in alphanumeric and s2 in alphanumeric:
+                s2 = s2.lower()
+                i +=1
             else:
-                left += 1
-                right -= 1 
+                i +=1
+                j -=1
                 
-        return True
+        return isPali

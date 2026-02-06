@@ -64,6 +64,7 @@
 | 121 | Best Time to Buy and Sell Stock | dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23121.Best_Time_Buy_and_Sell_Stock.py) |
 | 122 | Best Time to Buy and Sell Stock II| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23122.Best_Time_Buy_and_Sell_Stock_II.py) |
 | 124 | Binary Tree Maximum Path Sum | tree | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23124.Binary_Tree_Maximum_Path_Sum.py) |
+| 125 | Valid Palindrome | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23125.Valid_Palindrome.py) |
 | 126 | Word Ladder II | BFS| hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23126.Word_Ladder_II.py) |
 | 127 | Word Ladder | BFS| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23127.Word_Ladder.py)|
 | 130 | Surrounded Regions | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23130.Surrounded_Regions.py)|
