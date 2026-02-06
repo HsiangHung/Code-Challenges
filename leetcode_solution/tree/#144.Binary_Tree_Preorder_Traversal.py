@@ -1,4 +1,4 @@
-#  144. Binary Tree Preorder Traversal (medium)
+#  144. Binary Tree Preorder Traversal (easy)
 #  https://leetcode.com/problems/binary-tree-preorder-traversal/
 # 
 #
@@ -16,22 +16,8 @@ class Solution(object):
         https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
         :type root: TreeNode
         :rtype: List[int]
-        """
-        
-        preorder = []
-        
-        if not root: return preorder
-        
-        stack = [root]
-        while len(stack) != 0:
-            node = stack.pop(0)
-            
-            preorder.append(node.val)
-            #print node.val
-            if node.right:
-                stack.insert(0, node.right)
-                
-            if node.left:
-                stack.insert(0, node.left)
-                
-        return preorder
+        """        
+        if not root:
+            return []
+
+        return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
