@@ -158,7 +158,7 @@
 | 380 | Insert Delete GetRandom O(1) | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23380.Insert_Delete_GetRandom_O(1).py) |
 | 382 | Linked List Random Node | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23382.Linked_List_Random_Node.py) |
 | 384 | Shuffle an Array | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23384.Shuffle_an_Array.py) |
-| 389 | Find the Difference | string | easy | [link]() |
+| 389 | Find the Difference | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23389.Find_the_Difference.py) |
 | 394 | Decode String | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23394.Decode_String.py) |
 | 399 | Evaluate Division | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23399.Evaluate_Division.py)|
 | 403 | Frog Jump | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23403.Frog_Jump.py) |
