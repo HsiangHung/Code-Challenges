@@ -10,20 +10,21 @@
 
 class Solution:
     def hasPathSum(self, root: TreeNode, sum: int) -> bool:
-        if not root: return False
-        
-        return self.hasPathSum2(root, sum-root.val)
-    
-    def hasPathSum2(self, root, sum):
-        
-        if root.left and root.right:
-            return self.hasPathSum2(root.left, sum-root.left.val) or self.hasPathSum2(root.right, sum-root.right.val)
-        elif root.left:
-            return self.hasPathSum2(root.left, sum-root.left.val)
-        elif root.right:
-            return self.hasPathSum2(root.right, sum-root.right.val)
-        else:
-            return sum == 0
+        def helper(root: TreeNode, path_sum: int) -> bool:
+            if not root.left and not root.right:
+                return path_sum + root.val == sum
+
+            has_sum = False
+            if root.left:
+                has_sum = helper(root.left, path_sum + root.val)
+            if root.right:
+                has_sum = has_sum or helper(root.right, path_sum + root.val)
+            
+            return has_sum
+
+        if not root:
+            return False
+        return helper(root, 0)
 
 ## solution-2
 
