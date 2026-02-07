@@ -8,25 +8,21 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        if not root: return []
-        
-        self.levels = []
-        self.traversal(1, root)
-        return self.levels
-    
-    def traversal(self, depth, root):
-        if len(self.levels) < depth:
-            self.levels.append([root.val])
-        else:
-            self.levels[depth-1].append(root.val)
+        if not root:
+            return []
+
+        traversal = []
+        bfs = [(root, 0)]
+        while len(bfs) > 0:
+            node, layer = bfs.pop(0)
             
-        if not root.left and not root.right:
-            return
+            if layer > len(traversal) - 1:
+                traversal.append([])
+            traversal[layer].append(node.val)
+
+            if node.left:
+                bfs.append((node.left, layer + 1))
+            if node.right:
+                bfs.append((node.right, layer + 1))
         
-        if root.left:
-            self.traversal(depth + 1, root.left)
-
-        if root.right:
-            self.traversal(depth + 1, root.right)
-
-
+        return traversal
