@@ -51,6 +51,7 @@ class DFSSolution:
         if not root:
             return
 
+        # every recursion returns root and most right node
         if root.left and root.right:
             l1, l2 = self.flatten(root.left)
             r1, r2 = self.flatten(root.right)
