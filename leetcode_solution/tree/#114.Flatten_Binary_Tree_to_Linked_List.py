@@ -48,21 +48,23 @@ class DFSSolution:
         """
         Do not return anything, modify root in-place instead.
         """
-        if not root or (not root.left and not root.right): return root
-        
-        left, right = root.left, root.right
-        root.left = None
-        
-        if left and right:
-            left_last, right_last = self.flatten(left),  self.flatten(right)
-            root.right = left
-            left_last.right = right
-            return right_last
-        elif left:
-            left_last = self.flatten(left)
-            root.right = left
-            return left_last
+        if not root:
+            return
+
+        if root.left and root.right:
+            l1, l2 = self.flatten(root.left)
+            r1, r2 = self.flatten(root.right)
+            root.left = None
+            root.right = l1
+            l2.right = r1
+            return root, r2
+        elif root.left and not root.right:
+            l1, l2 = self.flatten(root.left)
+            root.left = None
+            root.right = l1
+            return root, l2
+        elif not root.left and root.right:
+            r1, r2 = self.flatten(root.right)
+            return root, r2
         else:
-            # NOTE, even only right branch, need to DFS to return last node
-            right_last = self.flatten(right)
-            return right_last
+            return root, root
