@@ -181,6 +181,7 @@
 | 501 | Find Mode in Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23501.Find_Mode_in_Binary_Search_Tree.py) |
 | 505 | The Maze II | BFS + heap| medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23505.The_Maze_II.py)|
 | 513 | Find Bottom Left Tree Value | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23513.Find_Bottom_Left_Tree_Value.py)|
+| 515 | Find Largest Value in Each Tree Row | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23515.Find_Largest_Value_in_Each_Tree%20Row.py)|
 | 516 | Longest Palindromic Subsequence | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23516.Longest_Palindromic_Subsequence.py)|
 | 518 | Coin Change 2 | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23518.Coin_Change_2.py)|
 | 528 | Random Pick with Weight | binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23528.Random_Pick_with_Weight.py) |

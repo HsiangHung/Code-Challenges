@@ -7,26 +7,25 @@ class Solution(object):
         """
         :type root: TreeNode
         :rtype: List[int]
+
+        NOTE BFS is easier for such problem
         """
-        if not root: return []
-        
-        self.max_node = []
-        self.traversal(0, root)
-        return self.max_node
-    
-    def traversal(self, depth, root):
-        
-        if len(self.max_node) < depth+1:
-            self.max_node.append(root.val)
-        else:
-            self.max_node[depth] = max(self.max_node[depth], root.val)
-        
-        if not root.left and not root.right:
-            return
-        
-        if root.left:
-            self.traversal(depth+1, root.left)
-            
-        if root.right:
-            self.traversal(depth+1, root.right)
-        
+        if not root:
+            return []
+
+        ans = []
+        bfs = [(root, 0)]
+        while bfs:
+            node, layer = bfs.pop(0)
+
+            if len(ans) == layer:
+                ans.append(node.val)
+            else:
+                ans[layer] = max(ans[layer], node.val)
+
+            if node.left:
+                bfs.append((node.left, layer + 1))
+            if node.right:
+                bfs.append((node.right, layer + 1))
+
+        return ans
