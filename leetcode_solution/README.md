@@ -260,3 +260,4 @@
 | 1472 | Design Browser History | design | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%231472.Design_Browser_History.py)|
 | 1574 | Shortest Subarray to be Removed to Make Array Sorted | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231574.Shortest_Subarray_to_be_Removed_to_Make_Array_Sorted.py) |
 | 1971 | Find if Path Exists in Graph | BFS | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231971.Find_if_Path_Exists_in_Graph.py) |
+| 3507 |  Minimum Pair Removal to Sort Array I | array | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%233507.Minimum_Pair_Removal_to_Sort_Array_I.py) |
