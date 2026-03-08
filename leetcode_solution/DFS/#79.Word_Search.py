@@ -2,44 +2,41 @@
 #  https://leetcode.com/problems/word-search/
 #
 #
-#  This version passed 87/89 test cases, but time limit exceed
-#
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
-        '''
-        https://www.cnblogs.com/grandyang/p/4332313.html
-        '''
-        self.found = False
-        for y in range(len(board)):
-            for x in range(len(board[0])):
-                if board[y][x] == word[0]:
-                    self.DFS(x, y, board, 0, word)
-                    if self.found: return True
-                    
+        if not board and word:
+            return False
+
+        # 1. identify the coordinate (x, y) in board whose ch == word[0]
+        ch_loc = []
+        for i in range(len(board)):
+            for j in range(len(board[0])): # initial character of word
+                if board[i][j] == word[0]:
+                    ch_loc.append((i, j))
+
+        # 2. DFS search to see if the word exists. Remember to store visited sites, but need 
+        #    to remove the visited sites for other DFS thread.
+        self.is_word_exist = False
+        def DFS(x, y, visited, word_index):
+            if (not 0 <= x < len(board)) or (not 0 <= y < len(board[0])) or (x, y) in visited:
+                return 
+
+            if board[x][y] == word[word_index]:
+                if word_index == len(word) - 1:
+                    self.is_word_exist = True
+                    return
+
+                visited.add((x, y))
+                for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                    if (x + dx, y + dy) not in visited:
+                         DFS(x+dx, y+dy, visited, word_index + 1)
+                visited.remove((x, y)) # NOTE, for DFS, we remove it otherwise "visited" always visits!
+
+        for x, y in ch_loc:
+            DFS(x, y, set({}), 0)
+            if self.is_word_exist == True:
+                return True
+
         return False
-
-    
-    def DFS(self, x, y, board, i, word):
         
-        if board[y][x] is True or board[y][x] != word[i]: return
         
-        if i == len(word)-1 and board[y][x] == word[i]:
-            self.found = True
-            return
-        
-        char = board[y][x]
-        board[y][x] = True
-        
-        if x > 0:
-            self.DFS(x-1, y, board, i+1, word)
-            
-        if x < len(board[0])-1:
-            self.DFS(x+1, y, board, i+1, word)
-        
-        if y > 0:
-            self.DFS(x, y-1, board, i+1, word)
-            
-        if y < len(board)-1:
-            self.DFS(x, y+1, board, i+1, word)
-
-        board[y][x] = char  ## important, need to change back, otherwise wrong, see code from https://www.cnblogs.com/grandyang/p/4332313.html
