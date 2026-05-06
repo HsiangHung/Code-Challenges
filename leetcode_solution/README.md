@@ -131,6 +131,7 @@
 | 273 | Integer to English Words | string | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23273.Integer_to_English_Words.py) |
 | 277 | Find the Celebrity | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23277.Find_the_Celebrity.py)|
 | 278 | First Bad Version | binary search | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23278.First_Bad_Version.py)|
+| 279 | Perfect Squares | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%23279.Perfect_Squares.py)|
 | 282 | Expression Add Operators | DFS | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23282.Expression_Add_Operators.py) |
 | 283 | Move Zeroes | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23283.Move_Zeroes.py) |
 | 285 | Inorder Successor in BST | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23285.Inorder_Successor_in_BST.py)|
