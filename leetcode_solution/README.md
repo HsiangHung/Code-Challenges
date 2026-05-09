@@ -20,6 +20,7 @@
 | 39 | Combination Sum | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2339.Combination_Sum.py)|
 | 40 | Combination Sum II | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2340.Combination_Sum_II.py)|
 | 42 | Trapping Rain Water | dynamical programming |hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2342.Trapping_Rain_Water.py)|
+| 43 | Multiply Strings | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2343.Multiply_Strings.py) | 
 | 44 | Wildcard Matching | dynamical programming | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2344.Wildcard_Matching.py) |
 | 46 | Permutations | dynamical programming, DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2346.Permutations.py)|
 | 47 | Permutations II | dynamical programming, DFS |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical%20programming/%2347.Permutations_II.py)|
