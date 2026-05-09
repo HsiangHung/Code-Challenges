@@ -6,37 +6,28 @@
 # 
 class Solution(object):
     def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        if len(s) < 2: return s
-        
-        dp ={1: [(i,i) for i in range(len(s))], 2: [(i, i+1) for i in range(len(s)-1) if s[i] == s[i+1]]}
+        if len(s) == 0:
+            return ""
 
-        max_palindrome = 1
-        if len(dp[2]) > 0: max_palindrome = 2
-        
-        len_substring = 3
-        noPalindrome = 0   
-        ## when two consective substring len shows no Palindrome, we can leave the loop.
-        ## e.g. if len = 10, there is no Palindrome, then len = 12 no need to check
-        ##      if len = 11, there is no Palindrome, then len = 13 no need to check
-        ##      then even string has length of 100, longest palindrome is 9.
-        while len_substring <= len(s) and noPalindrome < 2:
+        def sliding_check(l, r):
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                l -= 1
+                r += 1
+            return r - l - 1
+
+        l, r = 0, 0
+        max_palindrome = 0
+        for i in range(len(s)):
             
-            dp[len_substring] = []
-            for sub_index in dp[len_substring-2]:
-                i, j = sub_index
-                if i > 0 and j < len(s)-1 and s[i-1] == s[j+1]:
-                    dp[len_substring].append((i-1, j+1))
-                                
-            if len(dp[len_substring]) > 0: 
-                max_palindrome = len_substring
-                noPalindrome = 0
-            else:
-                noPalindrome += 1
-                
-            len_substring += 1
-                
-        return s[dp[max_palindrome][0][0]: dp[max_palindrome][0][1]+1]
+            len1 = sliding_check(i, i+1) # "babad", sart from "b", and -1, + 1
+            len2 = sliding_check(i, i) # "cbbd", start from "bb" and -1, +1
+
+            palind_len = max(len1, len2)
+
+            if palind_len > max_palindrome:
+                max_palindrome = palind_len
+                l = i - (palind_len - 1) // 2
+                r = i + palind_len // 2
+
+        return s[l:r+1]
+        
