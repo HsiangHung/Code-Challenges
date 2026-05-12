@@ -1,17 +1,17 @@
 
 | LC# | Title | Category | Difficulty | GitHub |
 | --- | --- | --- | --- | --- |
-| 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%232.Add_Two_Numbers.py) |
+| 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%232.Add_Two_Numbers.py) |
 | 3 | Longest Substring Without Repeating Characters | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%233.Longest_Substring_Without_Repeatin.py)|
 | 5 | Longest Palindromic Substring | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%235.Longest_Palindromic_Substring.py) |
 | 10 | Regular Expression Matching | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2310.Regular_Expression_Matching.py) |
 | 12 | Integer to Roman | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2312.Integer_to_Roman.py)|
-| 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
+| 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
 | 20 | Valid Parentheses | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2320.Valid_Parentheses.py) |
-| 21 | Merge Two Sorted Lists | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2321.%20Merge_Two_Sorted_Lists.py) |
+| 21 | Merge Two Sorted Lists | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2321.%20Merge_Two_Sorted_Lists.py) |
 | 22 | Generate Parentheses | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2322.Generate_Parentheses.py) |
 | 23 | Merge k Sorted Lists | heap | hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%2323.Merge_k_Sorted_Lists.py)|
-| 24 | Swap Nodes in Pairs | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2324.Swap_Nodes_in_Pairs.py) |
+| 24 | Swap Nodes in Pairs | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2324.Swap_Nodes_in_Pairs.py) |
 | 31 | Next Permutation | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2331.Next_Permutation.py)|
 | 32 | Longest Valid Parentheses |stack|hard|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%2332.Longest_Valid_Parentheses.py)|
 | 33 | Search in Rotated Sorted Array | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%2333.Search_in_Rotated_Sorted_Array.py)|
@@ -29,7 +29,7 @@
 | 56 | Merge Intervals | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2356.Merge_Intervals.py)|
 | 57 | Insert Interval | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2357.Insert_Interval.py)|
 | 59 | Spiral Matrix II | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2359.Spiral_Matrix_II.py)|
-| 61 | Rotate List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2361.Rotate_List.py) |
+| 61 | Rotate List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2361.Rotate_List.py) |
 | 62 | Unique Paths| dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2362.Unique_Paths_I.py)|
 | 63 | Unique Paths II | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2363.Unique_Paths_II.py)|
 | 64 | Minimum Path Sum | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2364.Minimum_Path_Sum.py)|
@@ -44,11 +44,11 @@
 | 78 | Subsets | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2378.Subsets.py) |
 | 79 | Word Search | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%2379.Word_Search.py) |
 | 81 | Search in Rotated Sorted Array II | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%2381.Search_in_Rotated_Sorted_Array_II.py)|
-| 83 | Remove Duplicates from Sorted List | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2383.Remove_Duplicates_from_Sorted_List.py) |
+| 83 | Remove Duplicates from Sorted List | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2383.Remove_Duplicates_from_Sorted_List.py) |
 | 88 | Merge Sorted Array | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%2388.Merge_Sorted_Array.py)|
 | 90 | Subsets II | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2390.Subsets_II.py)|
 | 91 | Decode Ways | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2391.Decode_Ways.py) |
-| 92 | Reverse Linked List II | linked list| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%2392.Reverse_Linked_List_II.py) |
+| 92 | Reverse Linked List II | linked list| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2392.Reverse_Linked_List_II.py) |
 | 94 | Binary Tree Inorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2394.Binary_Tree_Inorder_Traversal.py) |
 | 95 | Unique Binary Search Trees II | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%2395.Unique_Binary_Search_Trees_II.py) |
 | 96 | Unique Binary Search Trees | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2396.Unique_Binary_Search_Trees.py) |
@@ -57,7 +57,7 @@
 | 103 | Binary Tree Zigzag Level Order Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23103.Binary_Tree_Zigzag_Level_Order_Traversal.py)|
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py)|
 | 106 |  Construct Binary Tree from Inorder and Postorder Traversal | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23106.Construct_Binary_Tree_from_Inorde_and_Postorder_Traversal.py)|
-| 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
+| 109 | Convert Sorted List to Binary Search Tree | linked list |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23109.Convert_Sorted_List_to_Binary_Search_Tree.py) |
 | 110 | Balanced Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23110.Balanced_Binary_Tree.py)|
 | 111 | Minimum Depth of Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23111.Minimum_Depth_of_Binary_Tree.py)|
 | 114 | Flatten Binary Tree to Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23114.Flatten_Binary_Tree_to_Linked_List.py) |
@@ -75,30 +75,30 @@
 | 133 | Clone Graph | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23133.Clone_Graph.py) |
 | 135 | Candy | greedy | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/greedy/%23135.Candy.py)|
 | 137 | Single Number II | bit manipulation | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit-manipulation/%23137.Single_Number_II.py)|
-| 138 | Copy List with Random Pointer | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23138.Copy_List_with_Random_Pointer.py) |
+| 138 | Copy List with Random Pointer | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23138.Copy_List_with_Random_Pointer.py) |
 | 139 | Word Break | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23139.Word_Break.py) |
 | 140 | Word Break II | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23140.Word_Break_II.py) |
-| 141 | Linked List Cycle | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23141.Linked_List_Cycle.py)|
-| 142 | Linked List Cycle II | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23142.Linked_List_Cycle_II.py)|
-| 143 | Reorder List| linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23143.Reorder_List.py) |
+| 141 | Linked List Cycle | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23141.Linked_List_Cycle.py)|
+| 142 | Linked List Cycle II | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23142.Linked_List_Cycle_II.py)|
+| 143 | Reorder List| linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23143.Reorder_List.py) |
 | 144 | Binary Tree Preorder Traversal | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23144.Binary_Tree_Preorder_Traversal.py) |
 | 145 | Binary Tree Postorder Traversal | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23144.Binary_Tree_Postorder_Traversal.py) |
 | 146 | LRU Cache | design |medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23146.LRU_Cache.py)|
-| 148 | Sort List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23148.Sort_List.py) |
+| 148 | Sort List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23148.Sort_List.py) |
 | 149 | Max Points on a Line | math | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23149.Max_Points_on_a_Line.py)|
 | 150 | Evaluate Reverse Polish Notation |stack|medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23150.Evaluate_Reverse_Polish_Notation.py)|
 | 152 |  Maximum Product Subarray| dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23152.Maximum_Product_Subarray.py) |
 | 153 | Find Minimum in Rotated Sorted Array | binary search| medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23153.Find_Minimum_in_Rotated_Sorted_Array.py)|
 | 155 | Min Stack | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23155.Min_Stack.py) |
 | 156 | Binary Tree Upside Down | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23156.Binary_Tree_Upside_Down.py) |
-| 160 | Intersection of Two Linked Lists | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23160.Intersection_of_Two_Linked_Lists.py) |
+| 160 | Intersection of Two Linked Lists | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23160.Intersection_of_Two_Linked_Lists.py) |
 | 173 | Binary Search Tree Iterator | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23173.Binary_Search_Tree_Iterator.py)|
 | 187 | Repeated DNA Sequences | hash table | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23187.Repeated_DNA_Sequences.py)|
 | 198 | House Robber| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23198.House_Robber.py) |
 | 199 | Binary Tree Right Side View | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23199.Binary_Tree_Right_Side_View.py) |
 | 200 |  Number of Islands | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23200.Number_of_Islands.py)|
-| 203 | Remove Linked List Elements | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23203.Remove_Linked_List_Elements.py) |
-| 206 | Reverse Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23206.Reverse_Linked_List.py) |
+| 203 | Remove Linked List Elements | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23203.Remove_Linked_List_Elements.py) |
+| 206 | Reverse Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23206.Reverse_Linked_List.py) |
 | 207 | Course Schedule | graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23207.Course_Schedule.py) |
 | 208 | Implement Trie (Prefix Tree) | trie | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/trie/%23208.Implement_Trie_(Prefix_Tree).py)|
 | 210 | Course Schedule II| graph | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23210.Course_Schedule_II.py) |
@@ -111,10 +111,10 @@
 | 225 | Implement Stack using Queues |stack | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23225.Implement_Stack_using_Queues.py)|
 | 227 | Basic Calculator II | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23227.Basic_Calculator_II.py)|
 | 232 | Implement Queue using Stacks | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23232.Implement_Queue_using_Stacks.py) |
-| 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23234.Palindrome_Linked_List.py) |
+| 234 | Palindrome Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23234.Palindrome_Linked_List.py) |
 | 235 | Lowest Common Ancestor of a Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23235.Lowest_Common_Ancestor_of_Binary_Search_Tree.py) |
 | 236 | Lowest Common Ancestor of a Binary Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23236.Lowest_Common_Ancestor_of_Binary_Tree.py)|
-| 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23237.Delete_Node_in_Linked_List.py) |
+| 237 | Delete Node in a Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23237.Delete_Node_in_Linked_List.py) |
 | 239 | Sliding Window Maximum | queue | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/queue/%23239.Sliding_Window_Maximum.py)|
 | 240 | Search a 2D Matrix II | DFS | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23240.Search_a_2D_Matrix_II.py) |
 | 249 | Group Shifted Strings | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23249.Group%20Shifted%20Strings.py) |
@@ -148,7 +148,7 @@
 | 317 | Shortest Distance from All Buildings | BFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23317.Shortest_Distance_from_All_Buildings.py) |
 | 322 | Coin Change | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23322.Coin_Change.py)|
 | 323 | Number of Connected Components in an Undirected Graph | graph | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23323.Number_of_Connected_Components_in_an_Undirected_Graph.py)|
-| 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23328.Odd_Even_Linked_List.py) |
+| 328 | Odd Even Linked List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23328.Odd_Even_Linked_List.py) |
 | 332 | Reconstruct Itinerary | graph |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23332.Reconstruct_Itinerary.py)|
 | 333 | Largest BST Subtree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23333.Largest_BST_Subtree.py) |
 | 337 | House Robber III | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23337.House_Robber_III.py)|
@@ -159,7 +159,7 @@
 | 362 | Design Hit Counter | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23362.Design_Hit_Counter.py) |
 | 364 | Nested List Weight Sum II | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23364.Nested_List_Weight_Sum_II.py) |
 | 366 | Find Leaves of Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23366.Find_Leaves_of_Binary_Tree.py) |
-| 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23369.Plus_One_Linked_List.py)|
+| 369 | Plus One Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23369.Plus_One_Linked_List.py)|
 | 377 | Combination Sum IV | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23377.Combination_Sum_IV.py) |
 | 378 | Kth Smallest Element in a Sorted Matrix | heap | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23378.Kth_Smallest_Element_in_Sorted_Matrix.py) |
 | 380 | Insert Delete GetRandom O(1) | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23380.Insert_Delete_GetRandom_O(1).py) |
@@ -173,7 +173,7 @@
 | 417 | Pacific Atlantic Water Flow | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23417.Pacific_Atlantic_Water_Flow.py)|
 | 426 | Convert Binary Search Tree to Sorted Doubly Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23426.Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List.py) |
 | 443 | String Compression | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23443.String_Compression.py)|
-| 445 | Add Two Numbers II | linked list | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23445.Add_Two_Numbers_II.py)|
+| 445 | Add Two Numbers II | linked list | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23445.Add_Two_Numbers_II.py)|
 | 461 | Hamming Distance | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit-manipulation/%23461.Hamming_Distance.py) |
 | 463 | Island Perimeter | DFS | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23463.Island_Perimeter.py)|
 | 464 | Can I Win | DFS+meomry | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23464.Can_I_Win.py)|
@@ -221,7 +221,7 @@
 | 704 | Binary Search | binary search | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23704.Binary_Search.py)|
 | 705 | Design HashSet | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23705.Design_HashSet.py) |
 | 706 | Design HashMap | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23706.Design_HashMap.py) |
-| 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23707.Design_Linked_List.py)|
+| 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23707.Design_Linked_List.py)|
 | 713 | Subarray Product Less Than K | two pointer |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/two%20pointer/%23713.Subarray_Product_Less_Than_K.py)|
 | 716 | Max Stack | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23716.Max_Stack.py) |
 | 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
