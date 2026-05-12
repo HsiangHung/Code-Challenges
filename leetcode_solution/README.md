@@ -178,6 +178,7 @@
 | 463 | Island Perimeter | DFS | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23463.Island_Perimeter.py)|
 | 464 | Can I Win | DFS+meomry | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23464.Can_I_Win.py)|
 | 470 | Implement Rand10() Using Rand7() | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23470.Implement_Rand10()_Using_Rand7().py)|
+| 475 | Heaters | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary%20search/%23475.Heaters.py)|
 | 486 | Predict the Winner | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23486.Predict_the_Winner.py)|
 | 490 | The Maze | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23490.The_Maze.py)|
 | 493 | Reverse Pairs | sort | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%23493.Reverse_Pairs.py)|
