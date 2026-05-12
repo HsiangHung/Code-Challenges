@@ -33,7 +33,7 @@
 | 62 | Unique Paths| dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2362.Unique_Paths_I.py)|
 | 63 | Unique Paths II | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2363.Unique_Paths_II.py)|
 | 64 | Minimum Path Sum | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2364.Minimum_Path_Sum.py)|
-| 66 | Plus One | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%2366.Plus_One.py) |
+| 66 | Plus One | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit-manipulation/%2366.Plus_One.py) |
 | 67 | Add Binary | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2367.Add_Binary.py) |
 | 68 | Text Justification | string | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2368.Text_Justification.py)|
 | 69 | Sqrt(x) | binary search | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%2369.Sqrt(x).py)|
@@ -74,7 +74,7 @@
 | 131 | Palindrome Partitioning | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23131.Palindrome_Partitioning.py)|
 | 133 | Clone Graph | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23133.Clone_Graph.py) |
 | 135 | Candy | greedy | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/greedy/%23135.Candy.py)|
-| 137 | Single Number II | bit manipulation | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%23137.Single_Number_II.py)|
+| 137 | Single Number II | bit manipulation | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit-manipulation/%23137.Single_Number_II.py)|
 | 138 | Copy List with Random Pointer | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23138.Copy_List_with_Random_Pointer.py) |
 | 139 | Word Break | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23139.Word_Break.py) |
 | 140 | Word Break II | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23140.Word_Break_II.py) |
@@ -174,7 +174,7 @@
 | 426 | Convert Binary Search Tree to Sorted Doubly Linked List| tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23426.Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List.py) |
 | 443 | String Compression | string | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23443.String_Compression.py)|
 | 445 | Add Two Numbers II | linked list | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/link%20list/%23445.Add_Two_Numbers_II.py)|
-| 461 | Hamming Distance | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit%20manipulation/%23461.Hamming_Distance.py) |
+| 461 | Hamming Distance | bit manipulation | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/bit-manipulation/%23461.Hamming_Distance.py) |
 | 463 | Island Perimeter | DFS | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23463.Island_Perimeter.py)|
 | 464 | Can I Win | DFS+meomry | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23464.Can_I_Win.py)|
 | 470 | Implement Rand10() Using Rand7() | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23470.Implement_Rand10()_Using_Rand7().py)|
