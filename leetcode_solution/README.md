@@ -93,7 +93,7 @@
 | 156 | Binary Tree Upside Down | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23156.Binary_Tree_Upside_Down.py) |
 | 160 | Intersection of Two Linked Lists | linked list| easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23160.Intersection_of_Two_Linked_Lists.py) |
 | 173 | Binary Search Tree Iterator | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23173.Binary_Search_Tree_Iterator.py)|
-| 187 | Repeated DNA Sequences | hash table | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23187.Repeated_DNA_Sequences.py)|
+| 187 | Repeated DNA Sequences | hash table | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%23187.Repeated_DNA_Sequences.py)|
 | 198 | House Robber| dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23198.House_Robber.py) |
 | 199 | Binary Tree Right Side View | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23199.Binary_Tree_Right_Side_View.py) |
 | 200 |  Number of Islands | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23200.Number_of_Islands.py)|
@@ -224,7 +224,7 @@
 | 707 | Design Linked List | linked list | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23707.Design_Linked_List.py)|
 | 713 | Subarray Product Less Than K | two pointer |medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/two%20pointer/%23713.Subarray_Product_Less_Than_K.py)|
 | 716 | Max Stack | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23716.Max_Stack.py) |
-| 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23721.Accounts_Merge.py) |
+| 721 | Accounts Merge | hash table | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%23721.Accounts_Merge.py) |
 | 724 | Find Pivot Index | array | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23724.Find_Pivot_Index.py)|
 | 726 | Number of Atoms | stack | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23726.Number_of_Atoms.py)|
 | 729 | My Calendar I | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23729.My_Calendar_I.py)|
@@ -232,9 +232,9 @@
 | 767 | Reorganize String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23767.Reorganize_String.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 791 | Custom Sort String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23791.Custom_Sort_String.py)|
-| 811 | Subdomain Visit Count | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23811.Subdomain_Visit_Count.py) |
+| 811 | Subdomain Visit Count | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%23811.Subdomain_Visit_Count.py) |
 | 824 | Goat Latin | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23824.Goat_Latin.py) |
-| 825 | Friends Of Appropriate Ages| hash table | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23825.Friends_Of_Appropriate_Ages.py) |
+| 825 | Friends Of Appropriate Ages| hash table | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%23825.Friends_Of_Appropriate_Ages.py) |
 | 844 | Backspace String Compare | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23844.Backspace_String_Compare.py) |
 | 852 |  Peak Index in a Mountain Array | binary search | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23852.Peak_Index_in_a_Mountain_Array.py) |
 | 863 | All Nodes Distance K in Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23863.All_Nodes_Distance_K_in_Binary_Tree.py) |
@@ -243,7 +243,7 @@
 | 973 | K Closest Points to Origin | heap | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23973.K_Closest_Points_to_Origin.py)|
 | 987 | Vertical Order Traversal of a Binary Tree | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23987.Vertical_Order_Traversal_of_a_Binary_Tree.py)|
 | 994 | Rotting Oranges | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23994.Rotting_Oranges.py) |
-| 997 | Find the Town Judge | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%23997.Find_the_Town_Judge.py) |
+| 997 | Find the Town Judge | hash table | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%23997.Find_the_Town_Judge.py) |
 | 1004 | Max Consecutive Ones III| array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231004.Max_Consecutive_Ones_III.py)|
 | 1026 | Maximum Difference Between Node and Ancestor | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231026.Maximum_Difference_Between_Node_and_Ancestor.py)|
 | 1041 | Robot Bounded In Circle | math | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%231041.Robot_Bounded_In_Circle.py)|
@@ -259,7 +259,7 @@
 | 1229 | Meeting Scheduler | array |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231229.Meeting_Scheduler.py)|
 | 1249 | Minimum Remove to Make Valid Parentheses | stack | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231249.Minimum_Remove_to_Make_Valid_Parentheses.py) |
 | 1254 | Number of Closed Islands | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231254.Number_of_Closed_Islands.py)|
-| 1275 | Find Winner on a Tic Tac Toe Game| hash table | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash%20table/%231275.Find_Winner_on_a_Tic_Tac_Toe_Game.py)|
+| 1275 | Find Winner on a Tic Tac Toe Game| hash table | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%231275.Find_Winner_on_a_Tic_Tac_Toe_Game.py)|
 | 1352 | Product of the Last K Numbers | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231352.Product_of_the_Last_K_Numbers.py) |
 | 1366 | Rank Teams by Votes | sort |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%231366.Rank_Teams_by_Votes.py)|
 | 1382 | Balance a Binary Search Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%231382.Balance_a_Binary_Search_Tree.py) |
