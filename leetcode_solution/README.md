@@ -139,6 +139,7 @@
 | 285 | Inorder Successor in BST | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23285.Inorder_Successor_in_BST.py)|
 | 286 | Walls and Gates | DFS | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23286.Walls_and_Gates.py)|
 | 287 | Find the Duplicate Number | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23287.Find_the_Duplicate_Number.py)|
+| 289 | Game of Life | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23289.Game_of_Life.py)|
 | 295 | Find Median from Data Stream | heap | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23295.Find_Median_from_Data_Stream.py)|
 | 296 | Best Meeting Point | math, DFS | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/math/%23%20296.%20Best%20Meeting%20Point%20(hard).py)|
 | 298 | Binary Tree Longest Consecutive Sequence | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23298.Binary_Tree_Longest_Consecutive_Sequence.py)|
