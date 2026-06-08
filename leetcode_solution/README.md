@@ -157,6 +157,7 @@
 | 338 | Counting Bits | dynamical programming | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23338.Counting_Bits.py)|
 | 341 | Flatten Nested List Iterator | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23341.Flatten_Nested_List_Iterator.py)|
 | 353 | Design Snake Game| design | medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23353.Design_Snake_Game.py)|
+| 359 | Logger Rate Limiter | design | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23359.Logger_Rate_Limiter.py)|
 | 360 | Sort Transformed Array | array | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23360.Sort_Transformed_Array.py) |
 | 362 | Design Hit Counter | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23362.Design_Hit_Counter.py) |
 | 364 | Nested List Weight Sum II | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23364.Nested_List_Weight_Sum_II.py) |
