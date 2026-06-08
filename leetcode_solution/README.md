@@ -4,6 +4,7 @@
 | 2 | Add Two Numbers | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%232.Add_Two_Numbers.py) |
 | 3 | Longest Substring Without Repeating Characters | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%233.Longest_Substring_Without_Repeatin.py)|
 | 5 | Longest Palindromic Substring | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%235.Longest_Palindromic_Substring.py) |
+| 6 | Zigzag Conversion | string| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%236.ZigZag_Conversion.py) |
 | 10 | Regular Expression Matching | dynamical programming | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%2310.Regular_Expression_Matching.py) |
 | 12 | Integer to Roman | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%2312.Integer_to_Roman.py)|
 | 19 | Remove Nth Node From End of List | linked list | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%2319.Remove_Nth_Node_From_End_of_List.py) | 
