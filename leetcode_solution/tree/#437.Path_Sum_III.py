@@ -2,34 +2,26 @@
 #  
 #
 #
-class Solution(object):
-    def pathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: int
-        """
-        if not root: return 0
-        self.num_sum = 0
-        self.traversal(root, [root.val], sum)
+class Solution:
+    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
         
-        return self.num_sum
+        self.res = 0
+        def dfs(node, path_sums):
+            """
+            path_sums are list of path sum, from any nodes
+            [10] -> [10+5, 10-3, 5, -3] -> ...
+            """
+            if not node:
+                return 
 
-        
-    def traversal(self, root, sumList, sum):
-        
-        for i in range(len(sumList)-1):  ## note here only sum the preious paths
-            sumList[i] += root.val
-            if sumList[i] == sum:
-                self.num_sum += 1
-            
-        if sumList[-1] == sum:
-            self.num_sum += 1
-        
-        if not root.left and not root.right: return
-        
-        if root.left:
-            self.traversal(root.left, sumList+[root.left.val], sum)
-            
-        if root.right:       
-            self.traversal(root.right, sumList+[root.right.val], sum)
+            path_sums = [x + node.val for x in path_sums] + [node.val]
+
+            for i in range(len(path_sums)):
+                if path_sums[i] == targetSum:
+                    self.res += 1
+
+            dfs(node.left, path_sums)
+            dfs(node.right, path_sums)
+
+        dfs(root, [])
+        return self.res
