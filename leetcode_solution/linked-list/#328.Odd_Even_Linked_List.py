@@ -18,22 +18,23 @@ class Solution:
         odd, even = head, head.next
         odd_head, even_head = odd, even
         
-        node, nextNode, nextNextNode = head, head.next, head.next.next
-        pos = 0
-        while nextNode != None and nextNextNode != None:
-            pos += 1
-            if pos % 2 == 1:
-                odd.next = nextNextNode
-                odd = odd.next
-            else:
-                even.next = nextNextNode
-                even = even.next
-            
-            node = nextNode
-            nextNode = nextNextNode
-            nextNextNode = nextNextNode.next
-                  
-        even.next = None
+        curr = even.next
+        while curr and curr.next:
+            # curr is always odd node
+            next_curr = curr.next
+
+            odd.next = curr
+            even.next = next_curr
+
+            odd = odd.next
+            even = even.next
+
+            curr = next_curr.next
+
+        if curr:
+            odd.next = curr
+            odd = odd.next
+
         odd.next = even_head
-        
+        even.next = None
         return odd_head
