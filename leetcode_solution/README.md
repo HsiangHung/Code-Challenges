@@ -247,6 +247,7 @@
 | 863 | All Nodes Distance K in Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23863.All_Nodes_Distance_K_in_Binary_Tree.py) |
 | 876 | Middle of the Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23876.Middle_of_the_Linked_List.py) |
 | 929 | Unique Email Addresses | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23929.Unique_Email_Addresses.py) |
+| 933 | Number of Recent Calls | design | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23933.Number_of_Recent_Calls.py) |
 | 938 | Range Sum of BST | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23938.Range_Sum_of_BST.py) |
 | 958 | Check Completeness of a Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23958.Check_Completeness_of_Binary_Tree.py) |
 | 973 | K Closest Points to Origin | heap | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%23973.K_Closest_Points_to_Origin.py)|
