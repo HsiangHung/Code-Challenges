@@ -9,24 +9,24 @@ class Solution:
         7 = 6 + 1 = 110 + 1 -> 111
         8 = 7 + 1 = 111 + 1 -> 112 -> 120 -> 200 -> 1000
         """
-        dp = [[0], [1]]
-        x = 2
-        while x <= n:
-            arr = dp[x-1].copy()
-            arr[-1] += 1
+        def add_one(binary_rep: list[int]) -> list[int]:
+            i = len(binary_rep) - 1
+            while i >= 0:
+                if binary_rep[i] == 0:
+                    binary_rep[i] = 1
+                    return binary_rep
+                else:
+                    binary_rep[i] = 0
+                    i -= 1
+            if i == -1:
+                return [1] + binary_rep
 
-            y = 1
-            while y < len(arr) and arr[len(arr)-y] == 2:
-                arr[len(arr)-y] = 0
-                y += 1
-                arr[len(arr)-y] += 1
-            
-            if arr[0] == 2:
-                arr[0] = 0
-                dp.append([1] + arr)
-            else:
-                dp.append(arr)
-            x += 1
+        res = []
+        bit_rep = [0]
+        i = 0
+        while i <= n:
+            res.append(sum(bit_rep))
+            bit_rep = add_one(bit_rep)
+            i += 1
 
-        return [sum(x) for x in dp[:(n+1)]]
-
+        return res
