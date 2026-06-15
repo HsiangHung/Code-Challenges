@@ -15,20 +15,13 @@ class Solution:
             return n
 
         start, end = 1, n
-        while end - start > 0:
-
-            if guess(end) == 0:
-                return end
-
-            if guess(start) == 0:
-                return start
-
+        while end - start >= 0:
             mid = (end - start) // 2 + start
             resp = guess(mid)
             if resp == 0:
                 return mid
             elif resp == -1:
-                end = mid
+                end = mid - 1
             else:
-                start = mid
+                start = mid + 1
         
