@@ -7,23 +7,25 @@ class Solution(object):
         :rtype: List[str]
         """
         import copy
-        if digits == '': return []
+        if digits == '': 
+            return []
         
-        mapping = {'2': set({'a','b','c'}), '3': set({'d','e','f'}), '4': set({'g','h','i'}), \
-                '5':set({'j','k','l'}),'6':set({'m','n','o'}), '7':set({'p','q','r','s'}), \
-                '8':set({'t','u','v'}), '9':set({'w','x','y','z'})}
+        d_map = {"2": set(["a", "b", "c"]), "3": set(["d", "e", "f"]), 
+                "4": set(["g", "h", "i"]), "5": set(["j", "k", "l"]), 
+                "6": set(["m", "n", "o"]), "7": set(["p", "q", "r", "s"]), 
+                "8": set(["t", "u", "v"]), "9": set(["w", "x", "y", "z"]) 
+                }
             
-        comb_sets = {}
-        for i in range(len(digits)):
-            digit = digits[i]
-            if i ==0: 
-                comb_sets[i+1] = mapping[digit]
-            else:
-                comb_sets[i+1] = set({})
-                lst = mapping[digit]
-                for ch1 in comb_sets[i]:
-                    for ch2 in lst:
-                        new_ch = ch1+ch2
-                        comb_sets[i+1].add(new_ch)
-                        
-        return list(comb_sets[len(digits)])
+        dp = {0: d_map[digits[0]]}
+        i = 1
+        while i < len(digits):
+
+            combination = set({})
+            for x in dp[i-1]:
+                for y in d_map[digits[i]]:
+                    combination.add(x+y)
+            
+            dp[i] = combination
+            i += 1
+        
+        return list(dp[len(digits)-1])
