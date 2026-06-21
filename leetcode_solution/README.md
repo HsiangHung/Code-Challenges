@@ -273,6 +273,7 @@
 | 1229 | Meeting Scheduler | array |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231229.Meeting_Scheduler.py)|
 | 1249 | Minimum Remove to Make Valid Parentheses | stack | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%231249.Minimum_Remove_to_Make_Valid_Parentheses.py) |
 | 1254 | Number of Closed Islands | DFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231254.Number_of_Closed_Islands.py)|
+| 1268 | Search Suggestions System | heap | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/heap/%231268.Search_Suggestions_System.py)|
 | 1275 | Find Winner on a Tic Tac Toe Game| hash table | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/hash-table/%231275.Find_Winner_on_a_Tic_Tac_Toe_Game.py)|
 | 1352 | Product of the Last K Numbers | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%231352.Product_of_the_Last_K_Numbers.py) |
 | 1366 | Rank Teams by Votes | sort |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%231366.Rank_Teams_by_Votes.py)|
