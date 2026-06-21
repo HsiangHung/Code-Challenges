@@ -283,6 +283,7 @@
 | 1574 | Shortest Subarray to be Removed to Make Array Sorted | DFS | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%231574.Shortest_Subarray_to_be_Removed_to_Make_Array_Sorted.py) |
 | 1971 | Find if Path Exists in Graph | BFS | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%231971.Find_if_Path_Exists_in_Graph.py) |
 | 2095 | Delete the Middle Node of a Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%232095.Delete_the_Middle_Node_of_a_Linked_List.py) |
+| 2130 | Maximum Twin Sum of a Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%232130.Maximum_Twin_Sum_of_a_Linked_List.py) |
 | 2150 | Find All Lonely Numbers in the Array | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%232150.Find_All_Lonely_Numbers_in_the_Array.py) |
 | 2502 | Design Memory Allocator | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%232502.Design_Memory_Allocator.py) |
 | 3507 |  Minimum Pair Removal to Sort Array I | array | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%233507.Minimum_Pair_Removal_to_Sort_Array_I.py) |
