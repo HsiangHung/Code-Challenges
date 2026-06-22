@@ -1,33 +1,22 @@
-## [Leetcode#605] Can Place Flowers
-##
-##
-class Solution(object):
-    def canPlaceFlowers(self, flowerbed, n):
-        """
-        :type flowerbed: List[int]
-        :type n: int
-        :rtype: bool
-        """
-        if n == 0: return True
+#
+# 605. Can Place Flowers
+#
+class Solution:
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         
-        ## the idea: if there are neigbors of an empty spot == 1
-        ##           change to 2. e.g. [0,1,0,0,0,1,0] => [2,1,2,0,2,1,2]
-        ##           then we can easily see the only available spot is only one.
-        
-
         for i in range(len(flowerbed)):
+            # We can only consider planting if the current plot is empty
             if flowerbed[i] == 0:
-                if i > 0 and flowerbed[i-1] == 1:
-                    flowerbed[i] = 2
                 
-                if i < len(flowerbed)-1 and flowerbed[i+1] == 1:
-                    flowerbed[i] = 2
-            
-                if flowerbed[i] == 0:
+                empty_left = (i == 0) or (flowerbed[i - 1] == 0)
+                empty_right = (i == len(flowerbed) - 1) or (flowerbed[i + 1] == 0)
+                
+                if empty_left and empty_right:
+                    # Plant a flower here to prevent future adjacent plantings
+                    flowerbed[i] = 1
                     n -= 1
-                    flowerbed[i] = 1        
-                
-                if n == 0: return True
-            
-        return False
-                
+                    # Early exit: if we've planted enough flowers, stop searching
+                    if n == 0:
+                        return True
+                        
+        return n <= 0 # If we finished the loop and n is still > 0, we failed
