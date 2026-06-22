@@ -7,6 +7,8 @@
 def search1(target, arr):
     """
     This func looks for index where arr[i] < target but arr[i+1] >= target
+
+    Time complexity O(n)
     """
     if arr[0] >= target:
         return 0
@@ -31,6 +33,8 @@ def search1(target, arr):
 def search2(target, arr):
     """
     This func looks for index where arr[i] < target but arr[i+1] >= target
+
+    Time complexity O(log n)
     """
     if arr[0] >= target:
         return 0
@@ -46,3 +50,14 @@ def search2(target, arr):
             return mid
         elif arr[mid] < target:
             l = mid + 1
+        else:
+            r = mid - 1
+
+
+if __name__ == "__main__":
+
+    arr = [0,1,3,4,5,8,10,12,50]
+    print(search2(6, arr))
+    print(search2(-1, arr))
+    print(search2(3, arr))
+    print(search2(100, arr))
