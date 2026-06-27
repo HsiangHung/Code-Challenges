@@ -192,8 +192,10 @@
 | 490 | The Maze | BFS | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23490.The_Maze.py)|
 | 493 | Reverse Pairs | sort | hard |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/sort/%23493.Reverse_Pairs.py)|
 | 494 | Target Sum | dynamical programming| medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23494.Target_Sum.py) |
+| 496 | Next Greater Element I | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23496.Next_Greater_Element_I.py) |
 | 499 | The Maze III | BFS + heap | hard | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23499.The_Maze_III.py) |
 | 501 | Find Mode in Binary Search Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23501.Find_Mode_in_Binary_Search_Tree.py) |
+| 503 | Next Greater Element II | stack | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23503.Next_Greater_Element_II.py) |
 | 505 | The Maze II | BFS + heap| medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/BFS/%23505.The_Maze_II.py)|
 | 508 | Most Frequent Subtree Sum | tree| medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23508.Most_Frequent_Subtree_Sum.py)|
 | 513 | Find Bottom Left Tree Value | tree | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23513.Find_Bottom_Left_Tree_Value.py)|
