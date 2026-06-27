@@ -22,6 +22,7 @@ class Solution:
                 i += 1
         
         if len(intervals) > 1:
+            # since previous i loop only up to len(..)-1, here need to check
             if intervals[-1][0] < intervals[-2][1]:
                 intervals.pop()
         
