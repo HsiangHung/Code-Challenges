@@ -1,5 +1,5 @@
 #
-# 889. Construct Binary Tree from Preorder and Postorder Traversal
+# 496. Next Greater Element I
 #
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
