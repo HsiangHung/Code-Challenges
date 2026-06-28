@@ -241,6 +241,7 @@
 | 729 | My Calendar I | binary search | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23729.My_Calendar_I.py)|
 | 739 | Daily Temperatures | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23739.Daily_Temperatures.py)|
 | 740 | Delete and Earn | dynamical programming | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23740.Delete_and_Earn.py) |
+| 746 | Min Cost Climbing Stairs | dynamical programming | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23746.Min_Cost_Climbing_Stairs.py) |
 | 767 | Reorganize String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23767.Reorganize_String.py)|
 | 785 | Is Graph Bipartite? | graph | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/graph/%23785.Is_Graph_Bipartite.py)|
 | 791 | Custom Sort String | string | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23791.Custom_Sort_String.py)|
