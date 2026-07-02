@@ -215,6 +215,7 @@
 | 611 | Valid Triangle Number | array | medium| [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23611.Valid_Triangle_Number.py) |
 | 617 | Merge Two Binary Trees | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23617.Merge_Two_Binary_Trees.py)|
 | 621 | Task Scheduler| brain teasers | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain-teaser/%23621.Task_Scheduler.py)|
+| 622 | Design Circular Queue| design | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%23622.Design_Circular_Queue.py)|
 | 636 | Exclusive Time of Functions | stack | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23636.Exclusive_Time_of_Functions.py) |
 | 638 | Shopping Offers | DFS + DP | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/DFS/%23638.Shopping_Offers.py)|
 | 647 | Palindromic Substrings | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23647.Palindromic_Substrings.py)|
