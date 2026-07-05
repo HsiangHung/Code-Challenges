@@ -12,11 +12,10 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        if not root: return 
-        
-        self.invertTree(root.left)
-        self.invertTree(root.right)
-        
-        root.left, root.right = root.right, root.left
+        if not root:
+            return 
+
+        l, r = self.invertTree(root.left), self.invertTree(root.right)
+        root.left, root.right = r, l
         
         return root
