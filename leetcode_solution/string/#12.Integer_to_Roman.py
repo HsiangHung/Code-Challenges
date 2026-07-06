@@ -27,4 +27,39 @@ class Solution:
                 num -= i* val
             
         return ans
+    
+
+    # solution - 2: totally consider string
+    def intToRoman2(self, num: int) -> str:
+        sub_dict = {
+            0: {"4": "IV", "9": "IX"}, # 4, 9
+            1: {"4": "XL", "9": "XC"}, # 40, 90
+            2: {"4": "CD", "9": "CM"}, # 400, 900
+        }
+
+        add_dict = {0: "I", 1: "X", 2: "C", 3: "M"}
+        five_dict = {0: "V", 1: "L", 2: "D"}
+
+        num_str = str(num)
+
+        ans = []
+        i = len(num_str)-1
+        digit = 0
+        while i >= 0:
+            if num_str[i] in ("4", "9"):
+                ans.append(sub_dict[digit][num_str[i]])
+            else:
+                if int(num_str[i]) >= 5: # 5, 6, 7, 8
+                    # 70 -> five_dict[1] + add_dict[1] * (7-5)
+                    ans.append(
+                        five_dict[digit] + add_dict[digit]*(int(num_str[i])-5)
+                    )
+                else: # 0, 1, 2, 3
+                    # 300 -> add_dict[2] * 3
+                    ans.append(
+                        add_dict[digit] * int(num_str[i])
+                    )
+            i -= 1
+            digit += 1
         
+        return "".join(ans[::-1])
