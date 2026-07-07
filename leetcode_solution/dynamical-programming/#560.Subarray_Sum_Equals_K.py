@@ -3,32 +3,34 @@
 #
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        '''
-        NOTE: the array elements could be negative
-        time complexity O(N), space complexity O(N) solution:
-        a. https://blog.csdn.net/fuxuemingzhu/article/details/82767119?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
-        b. https://www.youtube.com/watch?v=HbbYPQc-Oo4
-        
-        index i:    0  1  2  3   4  5  6  7
-           array = [3, 4, 7, 2, -3, 1, 4, 2]  k =7
-        prefix_sum  3  7 14 16  13 14 18 20
-            
-        when prefix_sum - k exists in prefix_sum set, there exists a subarray with sum=7
-             sum(0, 1); sum(2,2); at i=5, prefix_sum-7 = 7 and 7 exists in set;
-             at i=7, prefix_sum-7 = 13 and 13 exists in set
-        return 4
-        
-        need to save prefix_sum as dictionary and count.
-        e.g. corner case: [0,0,0,0,0,0]
-        '''
-        num_subarray=0
-        
-        subsum_dict = {0: 1}
+        """
+        build a dict to collect prefix_sum with key of prefix_sum - k
+        if the key exist, meaning during process, there exist subarray sum = k
+        ref: https://www.youtube.com/watch?v=HbbYPQc-Oo4
+
+        e.g. nums = [3,4,7,2,-3,1,4,2], k=7, ans = 4 ([3,4],[7],[7,2,-3,1],[1,4,2])
+
+         x  sum  ans  sum-k  prefix_sum_dict
+              0    0         {0: 1}
+         3    3    0     -4  {0: 1, 3: 1}
+         4    7    1      0  {0: 1, 3: 1, 7: 1}   we have [3,4] and sum-k=0. so ans=1
+         7   14    2      7  {0: 1, 3: 1, 7: 1, 14: 1}  we have [7], for sum-k=7, so ans=2
+         2   16    2      9  {0: 1, 3: 1, 7: 1, 14: 1, 16: 1}
+        -3   13    2      6  {0: 1, 3: 1, 7: 1, 14: 1, 16: 1, 13: 1}
+         1   14    3      7  {0: 1, 3: 1, 7: 1, 14: 2, 16: 1, 13: 1}, sum=14 & sum-k exist, from [3,4,7] -> [3,4,7,2,-3,1], difference [2,-3,1]
+         4   18    3     11  {0: 1, 3: 1, 7: 1, 14: 2, 16: 1, 13: 1, 18: 1}, 
+         2   20    4     13   sum=20 & sum-k=13 exist, from [3,4,7,2,-3,1] -> [3,4,7,2,-3,1,4,2], difference is [1,4,2]
+        """
+
+        ans = 0
         prefix_sum = 0
-        for i in range(len(nums)):
-            prefix_sum += nums[i]
-            if prefix_sum - k in subsum_dict:
-                num_subarray += subsum_dict[prefix_sum-k]
-            subsum_dict[prefix_sum] = subsum_dict.get(prefix_sum, 0) + 1
+        presum_dict = {0: 1}
+        for x in nums:
+            prefix_sum += x
+
+            if prefix_sum - k in presum_dict:
+                ans += presum_dict[prefix_sum - k]
             
-        return num_subarray
+            presum_dict[prefix_sum] = presum_dict.get(prefix_sum, 0) + 1
+
+        return ans
