@@ -253,6 +253,7 @@
 | 844 | Backspace String Compare | stack | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/stack/%23844.Backspace_String_Compare.py) |
 | 852 |  Peak Index in a Mountain Array | binary search | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%23852.Peak_Index_in_a_Mountain_Array.py) |
 | 863 | All Nodes Distance K in Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23863.All_Nodes_Distance_K_in_Binary_Tree.py) |
+| 870 | Advantage_Shuffle | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%23870.Advantage_Shuffle.py) |
 | 876 | Middle of the Linked List | linked list | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%23876.Middle_of_the_Linked_List.py) |
 | 889 | Construct Binary Tree from Preorder and Postorder Traversal | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal.py) |
 | 929 | Unique Email Addresses | string | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/string/%23929.Unique_Email_Addresses.py) |
