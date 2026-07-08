@@ -4,6 +4,8 @@
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
         """
+        ref: https://www.youtube.com/watch?v=m17yOR5_PpI
+
         * build a indirect (ignore arrows) and direct grap.
           e.g. dir_g = {0:[1], 1:[3], 2:[3], 4:[0,5]}
                indir_g = {0:[1], 1:[0,3], 2:[3], 3:[1,2], 4:[0,5], 5:[4]} 
