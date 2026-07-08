@@ -15,22 +15,29 @@ class Solution:
 
         so during process, only left shift one digit, and keep rightmost digits, and contact finally.
         """
-        if num1 == "0" or num2 == "0": 
-            return "0"
 
-        num1 = int(num1)
-        res = 0
-        rightmost_digit = []
-        for i, x in enumerate(list(num2)[::-1]): # e.g. "456" -> ["6", "5", "4"]
+        def single_multi(n1, n2):
+            "n2 is a single digit"
+            multi = ""
+            next_digit = 0
+            for i in range(len(n1)-1, -1, -1):
+                res = int(n1[i]) * int(n2) + next_digit
+                next_digit, r = res // 10, res % 10
+                multi = str(r) + multi
+            return str(next_digit) + multi if next_digit != 0 else multi
 
-            multilication = num1 * int(x)
+        memory = {} 
+        # at most only 10 keys in this dict to speed up calculation
 
-            if i == 0:
-                res = str(multilication)
-            else:
-                if int(res) < 10:
-                    res = "0" + res
-                rightmost_digit.insert(0, res[-1])
-                res = str(int(res[:-1]) + multilication)
+        ans = 0
+        d = 1
+        for i in range(len(num2)-1, -1, -1):
+            if num2[i] not in memory:
+                sub_multi = int(single_multi(num1, num2[i]))
+                memory[num2[i]] = sub_multi
 
-        return res + "".join(rightmost_digit)
+            ans += memory[num2[i]] * d
+            d *= 10
+
+        return str(ans)
+        
