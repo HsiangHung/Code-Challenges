@@ -6,6 +6,7 @@ class Solution:
         """
         ref: https://www.youtube.com/watch?v=viTxUBa_Jdo
         going through index for each number built in a dict
+        using two points, to look up longest possible sequence
         """
 
         def get_longest_sequence(arr, k):
