@@ -1,5 +1,5 @@
 #
-# 735. Asteroid Collision
+# 735. Asteroid Collisiong
 # 
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
