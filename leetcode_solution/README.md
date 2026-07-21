@@ -221,6 +221,7 @@
 | 647 | Palindromic Substrings | dynamical programming |medium|[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23647.Palindromic_Substrings.py)|
 | 652 | Find Duplicate Subtrees | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23652.Find_Duplicate_Subtrees.py) |
 | 654 | Maximum Binary Tree | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23654.Maximum_Binary_Tree.py) |
+| 666 | Path Sum IV | tree | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23666.path_sum_IV.py) |
 | 670 | Maximum Swap| brain teasers | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/brain-teaser/%23670.Maximum_Swap.py) |
 | 671 | Second Minimum Node In a Binary Tree | tree | easy |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%23671.Second_Minimum_Node_In_Binary_Tree.py)|
 | 678 | Valid Parenthesis String | dynamical programming | medium |[link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%23678.Valid_Parenthesis_String.py) |
