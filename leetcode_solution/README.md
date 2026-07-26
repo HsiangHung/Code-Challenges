@@ -300,6 +300,7 @@
 | 2130 | Maximum Twin Sum of a Linked List | linked list | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/linked-list/%232130.Maximum_Twin_Sum_of_a_Linked_List.py) |
 | 2150 | Find All Lonely Numbers in the Array | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%232150.Find_All_Lonely_Numbers_in_the_Array.py) |
 | 2300 | Successful Pairs of Spells and Potions | binary search | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/binary-search/%232300.Successful_Pairs_of_Spells_and_Potions.py) |
+| 2331 | Evaluate Boolean Binary Tree | tree | easy | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/tree/%232331.Evaluate_Boolean_Binary_Tree.py) |
 | 2502 | Design Memory Allocator | design | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/design/%232502.Design_Memory_Allocator.py) |
 | 2831 | Find the Longest Equal Subarray | array | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/array/%232831.Find_the_Longest_Equal_Subarray.py) |
 | 3148 | Maximum Difference Score in a Grid | dynamical programming | medium | [link](https://github.com/HsiangHung/Code-Challenges/blob/master/leetcode_solution/dynamical-programming/%233148.Maximum_Difference_Score_in_a_Grid.py) |
