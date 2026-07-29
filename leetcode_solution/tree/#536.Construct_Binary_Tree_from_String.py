@@ -10,6 +10,8 @@
 class Solution:
     def str2tree(self, s: str) -> Optional[TreeNode]:
         """
+        inspired by https://www.youtube.com/watch?v=Ydz6dv36v_4
+        
         node stack. e.g. 4(2(3)(1))(6(5))
         1. [4]
         2. [4, 2] 4.left = 2
